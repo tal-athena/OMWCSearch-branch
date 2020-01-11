@@ -1,0 +1,41 @@
+﻿@model OMWebiSearch.Areas.ViewModels.ToolbarViewModel
+
+<input type="hidden" id="hdnToolbarButtonsData" value="@Json.Encode(Model.ToolbarItems)" />
+
+@if (Model.IsNewInEnabled || Model.ToolbarItems.Count > 0)
+{
+    <div class="toolbarWrapper">
+        <div class="toolbarMenu">
+
+            @if (Model.IsNewInEnabled)
+            {
+	            <div id="newInButton" class="toolbarButton toolbarCustomButton">
+					<img class="iconBox" src="~/Content/Images/ButtonNew036.png" />
+		            <span class="buttonText">New In</span>
+		            <span id="newInButtonDropdown"></span>
+				</div>
+                <div class="toolbarButton toolbarCustomButton" data-position="99" ng-controller="OMWParentCtrl" ng-click="openModal()">
+                    <img class="iconBox" src="~/Content/Images/ButtonNew036.png" />
+                    <span class="buttonText">Parent</span>
+                </div>
+				<div class="newInItems">
+                    <ul id="newInItems"></ul>
+                </div>
+            }
+
+            @HeaderFieldsHelpers.RenderToolbar(Model.ToolbarItems)
+
+
+            <div class="toolbarButton toolbarCombobox">
+                <input type="hidden" id="hdnToolbarComboboxValue" value="@Json.Encode(Model.viewSelectData)" />
+                <input type="hidden" id="hdnToolbarComboboxViewID" value="@ViewBag.ViewID" />
+                <div id="toolbarCombobox" class=""></div>
+            </div>
+
+        </div>
+
+        <div class="toolbarOverlay"></div>
+
+        <div class="clear"></div>
+    </div>
+}

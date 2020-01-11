@@ -1,0 +1,20 @@
+﻿@using OMWebiSearch.Areas.ViewModels
+@model SearchResultsViewModel
+@{
+    ViewBag.Title = "title";
+}
+
+<script id="searchResultTemplateGrid" type="text/x-jquery-tmpl">
+    <div id="searchResultGrid" style="margin-left: 10px; overflow: visible !important;"></div>
+</script>
+
+<div id="searchHits"></div>
+
+<div id="SearchPreviewPanel" class="result">
+    <div id="prAll">
+        <h3 id="prHeader"></h3>
+        <h4 id="prDate"></h4>
+        <div id="prText">
+        </div>
+    </div>
+</div>

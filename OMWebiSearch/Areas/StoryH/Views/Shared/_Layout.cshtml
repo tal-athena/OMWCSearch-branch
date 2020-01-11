@@ -1,0 +1,51 @@
+﻿@using System.Web.Mvc
+@using System.Web.Mvc.Html
+@using OMWebiSearch.Areas.ViewModels
+@{
+    Layout = "~/Areas/Common/Views/_BaseLayout.cshtml";
+}
+
+
+<link href="@Url.Content("~/Content/Styles/StoryH.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/Scripts/OMW_StoryH.js")" type="text/javascript"></script>
+
+@RenderSection("InitStoryH")
+
+@Html.Hidden("storyType", "storyH")
+<div id="idStoryContainer">
+    <div id="headerM" class="header-wrap1"></div>
+
+    <div id="newHeaderM">
+        <div class="newHeaderMData">
+            @RenderSection("HeaderData", required: false)
+        </div>
+        <div class="expandHeaderButton">
+            <img class="headerButtonImage headerButtonImageExpand" src="/OMWebiSearch/Content/Images/arrow.png" />
+        </div>
+        <div class="clear"></div>
+    </div>
+    @Html.Action("Index", "Ticker", new { area = "Helpers" })
+    <div id="mainPanel">
+        <div id="contentM" class="contentWith1Tap">
+            <div class="panelRight">
+                <div class="storyH-wrap">
+	                <input type="hidden" id="hdnSearchContextID" />
+	                @RenderSection("ToolbarPanel", required: false)
+	                <div ui-layout="{ flow : 'row', dividerSize: dividerSize }" class="ui-layout-panel" ng-controller="uiLayoutController">
+		                <div ui-layout-container size="{{size + 'px'}}" class="ui-layout-story-header" style="height: 0">
+			                @RenderSection("HeaderPanel", required: false)
+		                </div>
+		                <div class="contentPanelWrap" ui-layout-container min-size="200px">
+			                <div id="contentPanel">
+				                @RenderSection("ContentPanel", required: true)
+			                </div>
+		                </div>
+
+	                </div>
+	            </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>

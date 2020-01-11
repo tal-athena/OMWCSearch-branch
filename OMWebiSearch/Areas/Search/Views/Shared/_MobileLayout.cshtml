@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1">
+
+    <title>@ViewBag.Title</title>
+
+    @*<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />*@
+    <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css">
+    <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    @*<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>*@
+    <script src="//code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+
+
+    <link href="@Url.Content("~/Content/Styles/Mobile.css")" rel="stylesheet" type="text/css" />
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/Styles/angular-carousel.css")" />
+    <script src="@Url.Content("~/Scripts/angular-touch.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/angular-carousel.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/requestAnimationFrame.js")" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-sanitize.min.js" type="text/javascript"></script>
+
+    <link href="@Url.Content("~/Content/Styles/jquery-ui.select-plugin.css")" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="http://cdn.jtsage.com/datebox/1.4.3/jqm-datebox-1.4.3.min.css">
+
+    <script type="text/javascript" src="http://cdn.jtsage.com/datebox/1.4.3/jqm-datebox-1.4.3.core.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jtsage.com/datebox/1.4.3/jqm-datebox-1.4.3.mode.datebox.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jtsage.com/datebox/1.4.3/jqm-datebox-1.4.3.mode.durationbox.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jtsage.com/datebox/i18n/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+
+
+</head>
+<body ng-app="OMWMobileNGApp">
+    <div id="mobileApp">
+
+        <script src="@Url.Content("~/Scripts/OMW_MobileSearchPage.js")" type="text/javascript"></script>
+
+
+        <input type="hidden" id="hdnAppBaseUrl" value="@Url.Content("~/")" />
+        <input type="hidden" id="hdnAuthBaseURL" value="@Url.Content("~/Authentication/Account/LogOn")" />
+        <input type="hidden" id="baseURL" value="@Url.Content("~/Story/EditStory/")" />
+
+
+        <div id="searchPreviewCarouselPage" class="ui-page-theme-a" ng-controller="InstantPreviewController">
+            <div class="ui-header ui-bar-inherit">
+				
+	            <div class="ui-btn-right">
+                    <a href="#"
+                       class="parentButton ui-link ui-btn ui-icon-star ui-shadow ui-corner-all ui-btn-icon-right headerCustomControlGroup"
+                       data-role="button" data-transition="slide"
+                       rel="external" data-ajax="false"
+                       role="button">Parent</a>
+
+		            <a href="#"
+		               class="editCarouselButton ui-link ui-btn ui-icon-edit ui-shadow ui-corner-all ui-btn-icon-right headerCustomControlGroup"
+		               data-role="button" data-transition="slide"
+		               rel="external" data-ajax="false"
+		               role="button">Edit</a>
+				
+		            <a href="#"
+		               class="richTextViewCarouselButton ui-link ui-btn ui-icon-eye ui-shadow ui-corner-all ui-btn-icon-right headerCustomControlGroup"
+		               data-role="button" data-transition="slide"
+		               rel="external" data-ajax="false"
+		               role="button">Rich Text</a>
+
+	            </div>
+
+	            <h3 class="ui-title" aria-level="1"></h3>
+				
+	            <div class="ui-btn-left headerCustomControlGroup">
+                    <a href="#"
+                       class="backButtonSearchPreview ui-link ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all"
+                       data-direction="reverse" data-role="button" role="button">Back</a>
+
+                    <a href="@Url.Content("~/Authentication/Account/LogOff")"
+                       class="ui-link ui-btn ui-icon-logout-icon ui-btn-icon-left ui-shadow ui-corner-all "
+                       data-icon="logout-icon" data-iconpos="left" data-ajax="false" data-role="button" role="button">Logout</a>
+
+                    @*<a href="@Url.Content("~/Search/SearchMain/Index")" class="homeButtonSearchPreview ui-link ui-btn ui-icon-home ui-btn-icon-left ui-shadow ui-corner-all "
+                        data-icon="home" data-iconpos="left" data-direction="reverse" data-role="button" role="button">Home</a>*@
+                </div>
+                <a id="mobileToolbarLogo" class="homeButtonSearchPreview" href="@Url.Content("~/Search/SearchMain/Index")" data-direction="reverse">
+                </a>
+            </div>
+            <div class="ui-content" id="searchPreviewCarousel">
+
+                <ul ng-cloak class="carouselHolder" rn-carousel rn-carousel-buffered="true" rn-carousel-index="carouselIndex">
+                    <li ng-repeat="item in searchResults" ng-swipe-right="showPrev()" ng-swipe-left="showNext()">
+                        <div class="slideItem" ng-cloak>
+                            <h3 class="slideTitle">{{item.PreviewHeader}}</h3>
+                            <hr />
+	                        <div class="storyDisplayFieldsList">
+		                        <ul class="ui-listview" data-role="listview">
+			                        <li ng-repeat="field in item.DisplayFields" class=" ui-li-static ui-body-inherit storyDisplayFieldItem">
+				                        <div>
+					                        <span class="fieldName">{{field.name}}:</span>
+					                        <span class="fieldValue" style="background-color:{{field.backgroundColor}}">{{field.value}}</span>
+				                        </div>
+				                        <div style="clear: both;"></div>
+			                        </li>
+		                        </ul>
+	                        </div>
+	                        <div ng-if="!!item.PreviewImage" class="preview-field-image">
+		                        <img ng-src="{{item.PreviewImage}}" />
+	                        </div>
+	                        <div class="rich-text-loader" ng-if="item.isRichTextLoading && !isRichTextViewAborted">
+		                        <div></div>
+	                        </div>
+	                        <p ng-if="!isRichTextView" ng-bind-html="item.PreviewMain" class="slideText"></p>
+	                        <p ng-if="isRichTextView && !item.isRichTextLoading" ng-bind-html="item.richText" class="slideText"></p>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mobileCarouselCurrentPosition ui-footer ui-bar-inherit">
+                Result {{carouselIndex + 1}} from {{totalSearchHits}}
+            </div>
+        </div>
+
+        @RenderBody()
+
+        <div class="ui-page-theme-a" id="parentPage">
+            <div class="ui-header ui-bar-inherit">
+                <div class="ui-btn-right"></div>
+                <h3 class="ui-title" aria-level="1"></h3>
+                <div class="ui-btn-left">
+                    <a href="#"
+                       class="backButtonParent ui-link ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all"
+                       data-direction="reverse" data-role="button" role="button">Back</a>
+                </div>
+                <a id="mobileToolbarLogo" href="@Url.Content("~/Search/SearchMain/Index")" data-direction="reverse">
+                </a>
+            </div>
+            <div class="ui-bar ui-bar-blue">
+                <h3 class="blueBarPageTitle">Parent Page</h3>
+
+            </div>
+
+            <div class="ui-content">
+                <ul id="parentPageItemsList" data-role="listview" data-split-icon="plus" data-split-theme="a"></ul>
+            </div>
+        </div>
+
+
+    </div>
+    <div data-role="popup" id="notificationPopup" class="ui-content" data-position-to="window" data-dismissible="false">
+        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a
+               ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <h3 id="notificationPopupTitle"></h3>
+        <p id="notificationPopupText"></p>
+        <div id="showLoginButton">
+            <a id="navigationLoginLink" href="" rel="external" class="ui-btn ui-corner-all ui-shadow ui-btn-b">Login</a>
+        </div>
+    </div>
+
+
+    
+
+    <script src="@Url.Content("~/Scripts/OMW_MobileCommon.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui.select-plugin.js")" type="text/javascript"></script>
+</body>
+</html>

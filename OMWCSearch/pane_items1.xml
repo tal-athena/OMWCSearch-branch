@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfOMWPaneItemE xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/OMWCSearch">
+  <OMWPaneItemE>
+    <ID>0</ID>
+    <Icon></Icon>
+    <Name>All Agencies</Name>
+    <PaneID>0</PaneID>
+    <SearchProfileID>1</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>1</ID>
+    <Icon></Icon>
+    <Name>RSS Feeds</Name>
+    <PaneID>0</PaneID>
+    <SearchProfileID>499</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>2</ID>
+    <Icon></Icon>
+    <Name>All without Sport and some more text and even more</Name>
+    <PaneID>0</PaneID>
+    <SearchProfileID>109</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>3</ID>
+    <Icon></Icon>
+    <Name>Sport</Name>
+    <PaneID>0</PaneID>
+    <SearchProfileID>25</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>4</ID>
+    <Icon></Icon>
+    <Name>AP</Name>
+    <PaneID>0</PaneID>
+    <SearchProfileID>448</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>5</ID>
+    <Icon></Icon>
+    <Name>DPA</Name>
+    <PaneID>0</PaneID>
+    <SearchProfileID>447</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>6</ID>
+    <Icon></Icon>
+    <Name>Reuters</Name>
+    <PaneID>0</PaneID>
+    <SearchProfileID>9</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>7</ID>
+    <Icon></Icon>
+    <Name>OTS</Name>
+    <PaneID>0</PaneID>
+    <SearchProfileID>449</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>8</ID>
+    <Icon></Icon>
+    <Name>Reuters Arabic</Name>
+    <PaneID>0</PaneID>
+    <SearchProfileID>416</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>9</ID>
+    <Icon></Icon>
+    <Name>Urgent Wires</Name>
+    <PaneID>0</PaneID>
+    <SearchProfileID>110</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>10</ID>
+    <Icon></Icon>
+    <Name>Internal Messages</Name>
+    <PaneID>0</PaneID>
+    <SearchProfileID>412</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>0</ID>
+    <Icon></Icon>
+    <Name>Events Today</Name>
+    <PaneID>1</PaneID>
+    <SearchProfileID>359</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>1</ID>
+    <Icon></Icon>
+    <Name>Events this Week</Name>
+    <PaneID>1</PaneID>
+    <SearchProfileID>363</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>2</ID>
+    <Icon></Icon>
+    <Name>Events this Month</Name>
+    <PaneID>1</PaneID>
+    <SearchProfileID>379</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>3</ID>
+    <Icon></Icon>
+    <Name>Events</Name>
+    <PaneID>1</PaneID>
+    <SearchProfileID>418</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>4</ID>
+    <Icon></Icon>
+    <Name>Contacts</Name>
+    <PaneID>1</PaneID>
+    <SearchProfileID>423</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>5</ID>
+    <Icon></Icon>
+    <Name>My Personal Notes</Name>
+    <PaneID>1</PaneID>
+    <SearchProfileID>445</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>6</ID>
+    <Icon></Icon>
+    <Name>My Tweets</Name>
+    <PaneID>1</PaneID>
+    <SearchProfileID>500</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>7</ID>
+    <Icon></Icon>
+    <Name>All Tweets</Name>
+    <PaneID>1</PaneID>
+    <SearchProfileID>501</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>8</ID>
+    <Icon></Icon>
+    <Name>Web Links</Name>
+    <PaneID>1</PaneID>
+    <SearchProfileID>362</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>0</ID>
+    <Icon></Icon>
+    <Name>Active Stories</Name>
+    <PaneID>2</PaneID>
+    <SearchProfileID>485</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>1</ID>
+    <Icon></Icon>
+    <Name>My Stories</Name>
+    <PaneID>2</PaneID>
+    <SearchProfileID>490</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>2</ID>
+    <Icon></Icon>
+    <Name>All Stories</Name>
+    <PaneID>2</PaneID>
+    <SearchProfileID>491</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>4</ID>
+    <Icon></Icon>
+    <Name>Media Requests</Name>
+    <PaneID>2</PaneID>
+    <SearchProfileID>488</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>6</ID>
+    <Icon></Icon>
+    <Name>Audios</Name>
+    <PaneID>2</PaneID>
+    <SearchProfileID>465</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>7</ID>
+    <Icon></Icon>
+    <Name>User Content</Name>
+    <PaneID>2</PaneID>
+    <SearchProfileID>493</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>0</ID>
+    <Icon></Icon>
+    <Name>My Assignments</Name>
+    <PaneID>3</PaneID>
+    <SearchProfileID>467</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>1</ID>
+    <Icon></Icon>
+    <Name>TV News Shows</Name>
+    <PaneID>3</PaneID>
+    <SearchProfileID>422</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>2</ID>
+    <Icon></Icon>
+    <Name>TV News Planning Lists</Name>
+    <PaneID>3</PaneID>
+    <SearchProfileID>489</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>3</ID>
+    <Icon></Icon>
+    <Name>Items for Approval </Name>
+    <PaneID>3</PaneID>
+    <SearchProfileID>464</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>4</ID>
+    <Icon></Icon>
+    <Name>Unplanned News Items</Name>
+    <PaneID>3</PaneID>
+    <SearchProfileID>470</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>5</ID>
+    <Icon></Icon>
+    <Name>All News Items</Name>
+    <PaneID>3</PaneID>
+    <SearchProfileID>420</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>0</ID>
+    <Icon></Icon>
+    <Name>TV Sports Shows</Name>
+    <PaneID>4</PaneID>
+    <SearchProfileID>453</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>1</ID>
+    <Icon></Icon>
+    <Name>All Sports Items</Name>
+    <PaneID>4</PaneID>
+    <SearchProfileID>477</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>0</ID>
+    <Icon></Icon>
+    <Name>Web Articles</Name>
+    <PaneID>5</PaneID>
+    <SearchProfileID>481</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>2</ID>
+    <Icon></Icon>
+    <Name>Web Links</Name>
+    <PaneID>5</PaneID>
+    <SearchProfileID>362</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>3</ID>
+    <Icon></Icon>
+    <Name>Web Pages</Name>
+    <PaneID>5</PaneID>
+    <SearchProfileID>482</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>0</ID>
+    <Icon></Icon>
+    <Name>TV Sports Shows</Name>
+    <PaneID>6</PaneID>
+    <SearchProfileID>453</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+  <OMWPaneItemE>
+    <ID>1</ID>
+    <Icon></Icon>
+    <Name>TV News Shows</Name>
+    <PaneID>6</PaneID>
+    <SearchProfileID>422</SearchProfileID>
+    <Type>9</Type>
+  </OMWPaneItemE>
+</ArrayOfOMWPaneItemE>

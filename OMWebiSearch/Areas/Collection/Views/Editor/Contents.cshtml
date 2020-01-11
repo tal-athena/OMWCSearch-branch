@@ -1,0 +1,47 @@
+﻿@using OMWebiSearch.Areas.ViewModels
+@model CollectionViewModel
+<h1 id="collectionTitle">Collection editor</h1>
+
+<input id="hdnTemplateId" type="hidden" value="@Model.TemplateId" />
+<input id="hdnCollectionId" type="hidden" value="@Model.CollectionId" />
+
+<div id="collectionPage" ng-controller="CollectionCtrl" ng-init="init('@Model.TemplateId', '@Model.CollectionId')">
+
+	<div page="collection" style="min-height: 300px">
+		<div id="collectionPageGrid" class="grid"
+		     ui-grid="gridOptions"
+		     ui-grid-resize-columns
+		     ui-grid-draggable-rows
+		     ui-grid-edit
+		     ui-grid-cellNav
+		     omw-ui-grid-events="eventFunctions"></div>
+		<div class="grid-header-message" ng-style="getGridHeaderStyle()" ng-cloak title="{{gridHeaderTooltip}}">
+			<div class="message-content-style-2">
+				<span>{{gridHeaderMessage}}</span>
+			</div>
+		</div>
+
+		<div id="loading" ng-show="showLoadingAnimation" style="display:block;">
+			<div class="imageHolder"></div>
+		</div>
+		<div id="userAskMenu" class="context-menu" ng-show="showAskUserContextMenu" ng-cloak>
+			<ul ng-if="askUserContextMenu.items.length">
+				<li ng-repeat="item in askUserContextMenu.items"
+					ng-click="userSelectedOption(item.Item3)">
+
+					<img ng-src="{{item.Item1}}" />
+					<span>{{item.Item2}}</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="link-menu context-menu" ng-show="menuVisible" ng-style="getContextMenuStyles()" ng-cloak>
+		<ul>
+			<li ng-mousedown="openLink()" oncontextmenu="return false">Open</li>
+			<li ng-mousedown="openLink('tab')" oncontextmenu="return false">Open in New Tab</li>
+			<li ng-mousedown="openLink('window')" oncontextmenu="return false">Open in New Window</li>
+		</ul>
+	</div>
+
+</div>

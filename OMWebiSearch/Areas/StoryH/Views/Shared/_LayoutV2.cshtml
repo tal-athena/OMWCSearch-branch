@@ -1,0 +1,28 @@
+﻿@using System.Web.Mvc
+@using System.Web.Mvc.Html
+@using OMWebiSearch.Areas.ViewModels
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>@ViewBag.Title</title>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+
+	<script type="text/javascript" src="~/Scripts/V2/app.js"></script>
+	@RenderSection("Scripts", false)
+
+	<link rel="stylesheet" href="~/Content/V2/common.css" />
+	@RenderSection("Styles", false)
+
+</head>
+<body ng-app="v2" ng-cloak>
+
+	@RenderBody()
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿<div id="header-field-context-button"
+     ng-click="toggleContextMenu($event)"
+     ng-class="{'first-col-button-active': contextMenu.visible}">
+</div>
+
+<div id="header-field-context-menu" class="context-menu" ng-show="contextMenu.visible" ng-cloak ng-style="styles">
+    
+    <ul ng-if="contextMenu.items.length">
+	    <li ng-repeat="item in contextMenu.items"
+	        ng-click="itemClicked(item)"
+			ng-show="!item.checkIfVisible || item.checkIfVisible()"
+            ng-disabled="!!item.checkIfEnabled && !item.checkIfEnabled()"
+            ng-class="{'context-menu-separator': item.id === '-', 'context-menu-item-disabled': !!item.checkIfEnabled && !item.checkIfEnabled(fieldId) }">
+            <span>{{item.text}}</span>
+        </li>
+    </ul>
+</div>
+
+<div id="header-field-context-backdrop" ng-show="contextMenu.visible" ng-click="hideContextMenu()"></div>

@@ -1,0 +1,28 @@
+﻿<div id="editFieldPopUp" class="modalDialog pop-up-dialog" ng-keydown="onKeyDown($event)">
+    <div id="editFieldPopUpContent" 
+         ng-style="{'left': position.left + 'px', 'top': position.top + 'px'}">
+
+        <div ng-if="!showEditFieldPopUp" class="loading"></div>
+
+        <div class="pop-up-body"
+             ng-if="showEditFieldPopUp"
+             ng-bind-html="editFieldContextMenuHtml"></div>
+
+        <div>
+	        <div class="buttons-row">
+		        <button id="btnSave"
+		                ng-class="{ 'loading-indicator': showLoadingAnimation }"
+		                ng-click="saveUpdatedFieldValue()"
+		                class="linkButton save-button">
+					<span>OK</span>
+		        </button>
+		        <button id="btnCancel"
+		                ng-click="cancel()"
+		                class="linkButton cancel-button">
+			        <span>Cancel</span>
+		        </button>
+	        </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+</div>

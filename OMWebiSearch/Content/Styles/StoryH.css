@@ -1,0 +1,70 @@
+﻿
+
+	html
+	{
+		overflow-x: auto !important;
+	}
+
+    html, body, #containerM {
+        min-width: 430px;
+    }
+
+	.editor-only
+	{
+		width: 100% !important;
+		height: 100% !important;
+		position: fixed !important;
+	}
+
+		#idCKEditorContainer
+		{
+			border: none;
+		}
+
+		.editor-only #idNotificationPanel, .editor-only .toolbarWrapper, .editor-only #headerSearchController
+		{
+			height: 0;
+			overflow: hidden;
+			border: none !important;
+		}
+
+    #headerM {
+        display: none;
+    }
+
+    .headerButtonImage {
+        height: 15px;
+        width: 15px;
+        float: right;
+    }
+
+    .headerButtonImageExpand {
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    .headerButtonImageCollapse {
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    #newHeaderM {
+        width: 100%;
+    }
+
+    .newHeaderMData {
+        height: 60px;
+        display: none;
+        background-color: #bfbfbf;
+    }
+
+	.drop-highlight {
+		opacity: 0.25;
+		outline: 1px solid gray;
+	}

@@ -1,0 +1,24 @@
+﻿@using OMWebiSearch.Areas.ViewModels
+@model StoryViewModel
+@Html.Hidden("hdnStoryId", Model.Story.ID.GetEncoded())
+@Html.Hidden("hdnStoryReadonly", Model.Story.ReadOnly.ToString())
+<div id="idCKEditorContainer">
+    @Html.TextAreaFor(m => m.Story.Text)
+    @*<script type="text/javascript">
+    
+        OMWClientContext.Story.SetEditor();
+    
+    </script>*@
+
+    <div class="storyLoader"></div>
+
+    <div class="storyMessage">
+        <div>
+            <div class="storyMessageText"></div>
+            <div class="storyMessageButtonWrap">
+                <button class="storyMessageButton">OK</button>
+            </div>
+        </div>
+    </div>
+
+</div>

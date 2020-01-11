@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <img src="img/anonymous-psn-hacker.jpg" />
+    <h3>Your credentials: <span id="email"></span>, <span id="password"></span></h3>
+    <script>
+        var parameters = location.search.substring(1).split("&");
+
+        var temp = parameters[0].split("=");
+        l = unescape(temp[1]);
+        temp = parameters[1].split("=");
+        p = unescape(temp[1]);
+        document.getElementById("email").innerHTML = l;
+        document.getElementById("password").innerHTML = p;
+    </script>
+</body>
+</html>

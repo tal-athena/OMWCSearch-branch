@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1">
+
+	<title>@ViewBag.Title</title>
+
+	<link rel="stylesheet" href="//code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css">
+	<script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="//code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+
+
+	<link href="@Url.Content("~/Content/Styles/Mobile.css")" rel="stylesheet" type="text/css" />
+
+
+	<link rel="stylesheet" type="text/css" href="http://cdn.jtsage.com/datebox/1.4.3/jqm-datebox-1.4.3.min.css">
+
+	<script type="text/javascript" src="http://cdn.jtsage.com/datebox/1.4.3/jqm-datebox-1.4.3.core.min.js"></script>
+	<script type="text/javascript" src="http://cdn.jtsage.com/datebox/1.4.3/jqm-datebox-1.4.3.mode.datebox.min.js"></script>
+	<script type="text/javascript" src="http://cdn.jtsage.com/datebox/1.4.3/jqm-datebox-1.4.3.mode.durationbox.min.js"></script>
+	<script type="text/javascript" src="http://cdn.jtsage.com/datebox/i18n/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+
+</head>
+<body>
+    <script src="@Url.Content("~/Scripts/OMW_MobileCollectionPage.js")" type="text/javascript"></script>
+
+    @RenderBody()
+
+    <script src="@Url.Content("~/Scripts/OMW_MobileCommon.js")" type="text/javascript"></script>
+</body>
+</html>

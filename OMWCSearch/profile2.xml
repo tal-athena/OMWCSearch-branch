@@ -1,0 +1,3438 @@
+<ArrayOfDCOMWSearchProfile xmlns="OMWSTypes" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>1</ID>
+
+
+    <hasInstantPreview>true</hasInstantPreview>
+    <notifyReadItems>true</notifyReadItems>
+
+
+
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>64308</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Agency Code</a:Label>
+        <a:Position>1283015</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>AFPD</b:string> <b:string> </b:string> <b:string>  </b:string>
+          <b:string>AFPF</b:string>
+          <b:string>ANADOLU</b:string>
+          <b:string>ANSA</b:string>
+          <b:string>AP</b:string>
+          <b:string>ARD</b:string>
+          <b:string>BETA</b:string>
+          <b:string>BZS</b:string>
+          <b:string>Clip</b:string>
+          <b:string>DDP</b:string>
+          <b:string>DPA</b:string>
+          <b:string>EBU</b:string>
+          <b:string>EPD</b:string>
+          <b:string>FENA</b:string>
+          <b:string>HINA</b:string>
+          <b:string>IFAX</b:string>
+          <b:string>IPS</b:string>
+          <b:string>KNA</b:string>
+          <b:string>LNW</b:string>
+          <b:string>OTS</b:string>
+          <b:string>RTR</b:string>
+          <b:string>SID</b:string>
+          <b:string>STINA</b:string>
+          <b:string>WET</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Format>yy-mm-dd HH:mm:ss</a:Format>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Format>yy-mm-dd HH:mm:ss</a:Format>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateOnly</a:DisplayType>
+        <a:Label>Data</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_TimeOnly</a:DisplayType>
+        <a:Label>Time</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>01:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>9</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text alfa beta gamma test very long label</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>119908</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>25</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>71937</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Agency Code</a:Label>
+        <a:Position>1291821</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>AFPD</b:string> <b:string> </b:string> <b:string>  </b:string>
+          <b:string>AFPF</b:string>
+          <b:string>ANADOLU</b:string>
+          <b:string>ANSA</b:string>
+          <b:string>AP</b:string>
+          <b:string>ARD</b:string>
+          <b:string>BETA</b:string>
+          <b:string>BZS</b:string>
+          <b:string>Clip</b:string>
+          <b:string>DDP</b:string>
+          <b:string>DPA</b:string>
+          <b:string>EBU</b:string>
+          <b:string>EPD</b:string>
+          <b:string>FENA</b:string>
+          <b:string>HINA</b:string>
+          <b:string>IFAX</b:string>
+          <b:string>IPS</b:string>
+          <b:string>KNA</b:string>
+          <b:string>LNW</b:string>
+          <b:string>OTS</b:string>
+          <b:string>RTR</b:string>
+          <b:string>SID</b:string>
+          <b:string>STINA</b:string>
+          <b:string>WET</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>109</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>68117</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Agency Code</a:Label>
+        <a:Position>1322592</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>AFPD</b:string> <b:string> </b:string> <b:string>  </b:string>
+          <b:string>AFPF</b:string>
+          <b:string>ANADOLU</b:string>
+          <b:string>ANSA</b:string>
+          <b:string>AP</b:string>
+          <b:string>ARD</b:string>
+          <b:string>BETA</b:string>
+          <b:string>BZS</b:string>
+          <b:string>Clip</b:string>
+          <b:string>DDP</b:string>
+          <b:string>DPA</b:string>
+          <b:string>EBU</b:string>
+          <b:string>EPD</b:string>
+          <b:string>FENA</b:string>
+          <b:string>HINA</b:string>
+          <b:string>IFAX</b:string>
+          <b:string>IPS</b:string>
+          <b:string>KNA</b:string>
+          <b:string>LNW</b:string>
+          <b:string>OTS</b:string>
+          <b:string>RTR</b:string>
+          <b:string>SID</b:string>
+          <b:string>STINA</b:string>
+          <b:string>WET</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>110</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>62375</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>62382</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Agency Code</a:Label>
+        <a:Position>1291964</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>AFPD</b:string> <b:string> </b:string> <b:string>  </b:string>
+          <b:string>AFPF</b:string>
+          <b:string>ANADOLU</b:string>
+          <b:string>ANSA</b:string>
+          <b:string>AP</b:string>
+          <b:string>ARD</b:string>
+          <b:string>BETA</b:string>
+          <b:string>BZS</b:string>
+          <b:string>Clip</b:string>
+          <b:string>DDP</b:string>
+          <b:string>DPA</b:string>
+          <b:string>EBU</b:string>
+          <b:string>EPD</b:string>
+          <b:string>FENA</b:string>
+          <b:string>HINA</b:string>
+          <b:string>IFAX</b:string>
+          <b:string>IPS</b:string>
+          <b:string>KNA</b:string>
+          <b:string>LNW</b:string>
+          <b:string>OTS</b:string>
+          <b:string>RTR</b:string>
+          <b:string>SID</b:string>
+          <b:string>STINA</b:string>
+          <b:string>WET</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>62394</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>62396</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>111</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes"/>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>342</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes"/>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>352</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>62375</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>62382</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Agency Code</a:Label>
+        <a:Position>1291964</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>AFPD</b:string> <b:string> </b:string> <b:string>  </b:string>
+          <b:string>AFPF</b:string>
+          <b:string>ANADOLU</b:string>
+          <b:string>ANSA</b:string>
+          <b:string>AP</b:string>
+          <b:string>ARD</b:string>
+          <b:string>BETA</b:string>
+          <b:string>BZS</b:string>
+          <b:string>Clip</b:string>
+          <b:string>DDP</b:string>
+          <b:string>DPA</b:string>
+          <b:string>EBU</b:string>
+          <b:string>EPD</b:string>
+          <b:string>FENA</b:string>
+          <b:string>HINA</b:string>
+          <b:string>IFAX</b:string>
+          <b:string>IPS</b:string>
+          <b:string>KNA</b:string>
+          <b:string>LNW</b:string>
+          <b:string>OTS</b:string>
+          <b:string>RTR</b:string>
+          <b:string>SID</b:string>
+          <b:string>STINA</b:string>
+          <b:string>WET</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>62394</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>62396</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>359</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3461270</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>3464723</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>361</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Title</a:Label>
+        <a:Position>3602133</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Check</a:DisplayType>
+        <a:Label>Recording Job ?</a:Label>
+        <a:Position>3602135</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueInt">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>1</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3602127</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>3598273</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>362</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3502750</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>363</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3461270</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>3464727</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>3464725</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>379</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3597882</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Title</a:Label>
+        <a:Position>3597898</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>City</a:Label>
+        <a:Position>3597908</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Country</a:Label>
+        <a:Position>3597910</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Argentina</b:string>
+          <b:string>Australia</b:string>
+          <b:string>Austria</b:string>
+          <b:string>Belgium</b:string>
+          <b:string>Brasil</b:string>
+          <b:string>Canada</b:string>
+          <b:string>China</b:string>
+          <b:string>Croatia</b:string>
+          <b:string>Denmark</b:string>
+          <b:string>France</b:string>
+          <b:string>Germany</b:string>
+          <b:string>Great Britain</b:string>
+          <b:string>India</b:string>
+          <b:string>Italy</b:string>
+          <b:string>Netherlands</b:string>
+          <b:string>Poland</b:string>
+          <b:string>South Africa</b:string>
+          <b:string>Spain</b:string>
+          <b:string>Sudan</b:string>
+          <b:string>Sweden</b:string>
+          <b:string>Switzerland</b:string>
+          <b:string>Thailand</b:string>
+          <b:string>United States</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>3597912</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>3597896</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>412</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3600222</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>413</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>135054</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>416</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>119908</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>418</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Start Date</a:Label>
+        <a:Position>3604724</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>End Date</a:Label>
+        <a:Position>3604726</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3598877</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Title</a:Label>
+        <a:Position>3604723</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>City</a:Label>
+        <a:Position>3604735</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Country</a:Label>
+        <a:Position>3604737</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Argentina</b:string>
+          <b:string>Australia</b:string>
+          <b:string>Austria</b:string>
+          <b:string>Belgium</b:string>
+          <b:string>Brasil</b:string>
+          <b:string>Canada</b:string>
+          <b:string>China</b:string>
+          <b:string>Croatia</b:string>
+          <b:string>Denmark</b:string>
+          <b:string>France</b:string>
+          <b:string>Germany</b:string>
+          <b:string>Great Britain</b:string>
+          <b:string>India</b:string>
+          <b:string>Italy</b:string>
+          <b:string>Netherlands</b:string>
+          <b:string>Poland</b:string>
+          <b:string>South Africa</b:string>
+          <b:string>Spain</b:string>
+          <b:string>Sudan</b:string>
+          <b:string>Sweden</b:string>
+          <b:string>Switzerland</b:string>
+          <b:string>Thailand</b:string>
+          <b:string>United States</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>3604739</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>3604741</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>420</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3598841</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Author</a:Label>
+        <a:Position>3602445</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>3602455</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_List</a:DisplayType>
+        <a:Label>Base Type</a:Label>
+        <a:Position>3602448</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Article</b:string>
+          <b:string>Assignment</b:string>
+          <b:string>Audio</b:string>
+          <b:string>Bulletin</b:string>
+          <b:string>Clip</b:string>
+          <b:string>Contact</b:string>
+          <b:string>Container</b:string>
+          <b:string>Coverage</b:string>
+          <b:string>Directive Mixer</b:string>
+          <b:string>Event</b:string>
+          <b:string>File</b:string>
+          <b:string>Image</b:string>
+          <b:string>Insert</b:string>
+          <b:string>Intro</b:string>
+          <b:string>Live</b:string>
+          <b:string>Media Req.</b:string>
+          <b:string>Message</b:string>
+          <b:string>Music</b:string>
+          <b:string>Note</b:string>
+          <b:string>Package</b:string>
+          <b:string>Plan</b:string>
+          <b:string>Radio Show</b:string>
+          <b:string>Resource</b:string>
+          <b:string>Rundown</b:string>
+          <b:string>Song</b:string>
+          <b:string>Standard</b:string>
+          <b:string>Studio</b:string>
+          <b:string>Task</b:string>
+          <b:string>Topic</b:string>
+          <b:string>TV Show</b:string>
+          <b:string>UGC</b:string>
+          <b:string>Web Link</b:string>
+          <b:string>Wire</b:string>
+          <b:string>Wrapper</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_List</a:DisplayType>
+        <a:Label>Status</a:Label>
+        <a:Position>3602444</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string> </b:string>
+          <b:string>Approved</b:string>
+          <b:string>Ready</b:string>
+          <b:string>Work</b:string>
+          <b:string>-</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Sched. Date</a:Label>
+        <a:Position>3602452</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    <a:OMWSearchParam>
+        <a:DateCode>4</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateOnly</a:DisplayType>
+        <a:Label>Sched. Date</a:Label>
+        <a:Position>3602452</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>422</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3594174</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Sched. Date</a:Label>
+        <a:Position>3602118</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>2012-03-09T00:00:00+01:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>423</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Last Name</a:Label>
+        <a:Position>3604751</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3598870</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>424</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>64308</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Agency Code</a:Label>
+        <a:Position>1283015</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>AFPD</b:string> <b:string> </b:string> <b:string>  </b:string>
+          <b:string>AFPF</b:string>
+          <b:string>ANADOLU</b:string>
+          <b:string>ANSA</b:string>
+          <b:string>AP</b:string>
+          <b:string>ARD</b:string>
+          <b:string>BETA</b:string>
+          <b:string>BZS</b:string>
+          <b:string>Clip</b:string>
+          <b:string>DDP</b:string>
+          <b:string>DPA</b:string>
+          <b:string>EBU</b:string>
+          <b:string>EPD</b:string>
+          <b:string>FENA</b:string>
+          <b:string>HINA</b:string>
+          <b:string>IFAX</b:string>
+          <b:string>IPS</b:string>
+          <b:string>KNA</b:string>
+          <b:string>LNW</b:string>
+          <b:string>OTS</b:string>
+          <b:string>RTR</b:string>
+          <b:string>SID</b:string>
+          <b:string>STINA</b:string>
+          <b:string>WET</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>445</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3600867</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>447</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>119908</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>448</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>119908</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>449</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>119908</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>452</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3601047</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>453</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3602031</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Sched. Date</a:Label>
+        <a:Position>3602039</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>2012-03-09T00:00:00+01:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+     <a:OMWSearchParam>
+        <a:DateCode>4</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateOnly</a:DisplayType>
+        <a:Label>Sched. Date</a:Label>
+        <a:Position>3602452</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>454</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3602173</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Author</a:Label>
+        <a:Position>3602183</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>456</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3602198</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>457</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3602212</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Title</a:Label>
+        <a:Position>3604602</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Start Date</a:Label>
+        <a:Position>3604603</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>End Date</a:Label>
+        <a:Position>3604592</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>2012-03-09T00:00:00+01:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>3604594</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>3604596</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Country</a:Label>
+        <a:Position>3604598</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Argentina</b:string>
+          <b:string>Australia</b:string>
+          <b:string>Austria</b:string>
+          <b:string>Belgium</b:string>
+          <b:string>Brasil</b:string>
+          <b:string>Canada</b:string>
+          <b:string>China</b:string>
+          <b:string>Croatia</b:string>
+          <b:string>Denmark</b:string>
+          <b:string>France</b:string>
+          <b:string>Germany</b:string>
+          <b:string>Great Britain</b:string>
+          <b:string>India</b:string>
+          <b:string>Italy</b:string>
+          <b:string>Netherlands</b:string>
+          <b:string>Poland</b:string>
+          <b:string>South Africa</b:string>
+          <b:string>Spain</b:string>
+          <b:string>Sudan</b:string>
+          <b:string>Sweden</b:string>
+          <b:string>Switzerland</b:string>
+          <b:string>Thailand</b:string>
+          <b:string>United States</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>City</a:Label>
+        <a:Position>3604600</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>464</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3598841</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Author</a:Label>
+        <a:Position>3605659</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>465</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>466</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>467</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3600867</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_List</a:DisplayType>
+        <a:Label>Status</a:Label>
+        <a:Position>3601111</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string> </b:string>
+          <b:string>Approved</b:string>
+          <b:string>Ready</b:string>
+          <b:string>Work</b:string>
+          <b:string>-</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>Approved</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>469</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3598841</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Author</a:Label>
+        <a:Position>3602445</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>470</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3598841</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Author</a:Label>
+        <a:Position>3602447</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>471</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>64308</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Agency Code</a:Label>
+        <a:Position>1283015</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>AFPD</b:string> <b:string> </b:string> <b:string>  </b:string>
+          <b:string>AFPF</b:string>
+          <b:string>ANADOLU</b:string>
+          <b:string>ANSA</b:string>
+          <b:string>AP</b:string>
+          <b:string>ARD</b:string>
+          <b:string>BETA</b:string>
+          <b:string>BZS</b:string>
+          <b:string>Clip</b:string>
+          <b:string>DDP</b:string>
+          <b:string>DPA</b:string>
+          <b:string>EBU</b:string>
+          <b:string>EPD</b:string>
+          <b:string>FENA</b:string>
+          <b:string>HINA</b:string>
+          <b:string>IFAX</b:string>
+          <b:string>IPS</b:string>
+          <b:string>KNA</b:string>
+          <b:string>LNW</b:string>
+          <b:string>OTS</b:string>
+          <b:string>RTR</b:string>
+          <b:string>SID</b:string>
+          <b:string>STINA</b:string>
+          <b:string>WET</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>472</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>68117</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Agency Code</a:Label>
+        <a:Position>1322592</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>AFPD</b:string> <b:string> </b:string> <b:string>  </b:string>
+          <b:string>AFPF</b:string>
+          <b:string>ANADOLU</b:string>
+          <b:string>ANSA</b:string>
+          <b:string>AP</b:string>
+          <b:string>ARD</b:string>
+          <b:string>BETA</b:string>
+          <b:string>BZS</b:string>
+          <b:string>Clip</b:string>
+          <b:string>DDP</b:string>
+          <b:string>DPA</b:string>
+          <b:string>EBU</b:string>
+          <b:string>EPD</b:string>
+          <b:string>FENA</b:string>
+          <b:string>HINA</b:string>
+          <b:string>IFAX</b:string>
+          <b:string>IPS</b:string>
+          <b:string>KNA</b:string>
+          <b:string>LNW</b:string>
+          <b:string>OTS</b:string>
+          <b:string>RTR</b:string>
+          <b:string>SID</b:string>
+          <b:string>STINA</b:string>
+          <b:string>WET</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>473</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>71937</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Agency Code</a:Label>
+        <a:Position>1291821</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>AFPD</b:string> <b:string> </b:string> <b:string>  </b:string>
+          <b:string>AFPF</b:string>
+          <b:string>ANADOLU</b:string>
+          <b:string>ANSA</b:string>
+          <b:string>AP</b:string>
+          <b:string>ARD</b:string>
+          <b:string>BETA</b:string>
+          <b:string>BZS</b:string>
+          <b:string>Clip</b:string>
+          <b:string>DDP</b:string>
+          <b:string>DPA</b:string>
+          <b:string>EBU</b:string>
+          <b:string>EPD</b:string>
+          <b:string>FENA</b:string>
+          <b:string>HINA</b:string>
+          <b:string>IFAX</b:string>
+          <b:string>IPS</b:string>
+          <b:string>KNA</b:string>
+          <b:string>LNW</b:string>
+          <b:string>OTS</b:string>
+          <b:string>RTR</b:string>
+          <b:string>SID</b:string>
+          <b:string>STINA</b:string>
+          <b:string>WET</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>474</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>119908</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>475</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>119908</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>476</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3598841</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Author</a:Label>
+        <a:Position>3602443</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>477</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3598841</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>Dummy Value</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Author</a:Label>
+        <a:Position>3602445</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>1</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>3602456</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>Politics</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Base Type</a:Label>
+        <a:Position>3602448</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Article</b:string>
+          <b:string>Assignment</b:string>
+          <b:string>Audio</b:string>
+          <b:string>Bulletin</b:string>
+          <b:string>Clip</b:string>
+          <b:string>Contact</b:string>
+          <b:string>Container</b:string>
+          <b:string>Coverage</b:string>
+          <b:string>Directive Mixer</b:string>
+          <b:string>Event</b:string>
+          <b:string>File</b:string>
+          <b:string>Image</b:string>
+          <b:string>Insert</b:string>
+          <b:string>Intro</b:string>
+          <b:string>Live</b:string>
+          <b:string>Media Req.</b:string>
+          <b:string>Message</b:string>
+          <b:string>Music</b:string>
+          <b:string>Note</b:string>
+          <b:string>Package</b:string>
+          <b:string>Plan</b:string>
+          <b:string>Radio Show</b:string>
+          <b:string>Resource</b:string>
+          <b:string>Rundown</b:string>
+          <b:string>Song</b:string>
+          <b:string>Standard</b:string>
+          <b:string>Studio</b:string>
+          <b:string>Task</b:string>
+          <b:string>Topic</b:string>
+          <b:string>TV Show</b:string>
+          <b:string>UGC</b:string>
+          <b:string>Web Link</b:string>
+          <b:string>Wire</b:string>
+          <b:string>Wrapper</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>Package</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_List</a:DisplayType>
+        <a:Label>Status</a:Label>
+        <a:Position>3602444</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string> </b:string>
+          <b:string>Approved</b:string>
+          <b:string>Ready</b:string>
+          <b:string>Work</b:string>
+          <b:string>-</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>Ready</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Sched. Date 1</a:Label>
+        <a:Position>3602455</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+     <a:OMWSearchParam>
+        <a:DateCode>4</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateOnly</a:DisplayType>
+        <a:Label>Sched. Date</a:Label>
+        <a:Position>3602452</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>4</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Sched. Date</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>2012-03-05T00:00:00+01:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Check</a:DisplayType>
+        <a:Label>Recording Job ?</a:Label>
+        <a:Position>11</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueInt">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>1</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_TimeOnly</a:DisplayType>
+        <a:Label>Time</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>01:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>478</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>FUll text value</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>4</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Sched. Date</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>2012-03-05T00:00:00+01:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Check</a:DisplayType>
+        <a:Label>Recording Job ?</a:Label>
+        <a:Position>11</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueInt">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>1</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+     <a:OMWSearchParam>
+        <a:DateCode>4</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateOnly</a:DisplayType>
+        <a:Label>Sched. Date</a:Label>
+        <a:Position>3602452</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>479</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>4</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Sched. Date</a:Label>
+        <a:Position>3</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>2012-03-05T00:00:00+01:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+     <a:OMWSearchParam>
+        <a:DateCode>4</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateOnly</a:DisplayType>
+        <a:Label>Sched. Date</a:Label>
+        <a:Position>3602452</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>480</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Artist</a:Label>
+        <a:Position>9</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>481</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>482</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>483</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes"/>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>485</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>18</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Title</a:Label>
+        <a:Position>3</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>17</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>488</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Title</a:Label>
+        <a:Position>1</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Check</a:DisplayType>
+        <a:Label>Recording Job ?</a:Label>
+        <a:Position>11</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueInt">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>1</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>7</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>489</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>4</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Start Date</a:Label>
+        <a:Position>3</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>2012-03-05T00:00:00+01:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>490</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>18</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Title</a:Label>
+        <a:Position>3</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>17</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>491</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>18</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Title</a:Label>
+        <a:Position>3</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>17</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>492</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>4</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>493</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>4</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>494</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>2</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>119908</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>14</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>3</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_DateTime</a:DisplayType>
+        <a:Label>Created at</a:Label>
+        <a:Position>16</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueDateTime">
+          <a:IsEmpty>true</a:IsEmpty>
+          <a:Value>0001-01-01T00:00:00</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>495</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>18</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Title</a:Label>
+        <a:Position>3</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>5</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Category</a:Label>
+        <a:Position>17</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>Business</b:string>
+          <b:string>Entertainment &amp; Lifestyle</b:string>
+          <b:string>Health &amp; Environment</b:string>
+          <b:string>Politics</b:string>
+          <b:string>Science &amp; Technology</b:string>
+          <b:string>Sports</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>496</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Title</a:Label>
+        <a:Position>3602133</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3602127</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Keywords</a:Label>
+        <a:Position>3598273</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>497</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Assigned to</a:Label>
+        <a:Position>3601125</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3600867</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_List</a:DisplayType>
+        <a:Label>Status</a:Label>
+        <a:Position>3601111</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string> </b:string>
+          <b:string>Approved</b:string>
+          <b:string>Ready</b:string>
+          <b:string>Work</b:string>
+          <b:string>-</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value>Approved</a:Value>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>498</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Title</a:Label>
+        <a:Position>3</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>499</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Agency Code</a:Label>
+        <a:Position>4</a:Position>
+        <a:SelectionList xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <b:string>AFPD</b:string> <b:string> </b:string> <b:string>  </b:string>
+          <b:string>AFPF</b:string>
+          <b:string>ANADOLU</b:string>
+          <b:string>ANSA</b:string>
+          <b:string>AP</b:string>
+          <b:string>ARD</b:string>
+          <b:string>BETA</b:string>
+          <b:string>BZS</b:string>
+          <b:string>Clip</b:string>
+          <b:string>DDP</b:string>
+          <b:string>DPA</b:string>
+          <b:string>EBU</b:string>
+          <b:string>EPD</b:string>
+          <b:string>FENA</b:string>
+          <b:string>HINA</b:string>
+          <b:string>IFAX</b:string>
+          <b:string>IPS</b:string>
+          <b:string>KNA</b:string>
+          <b:string>LNW</b:string>
+          <b:string>OTS</b:string>
+          <b:string>RTR</b:string>
+          <b:string>SID</b:string>
+          <b:string>STINA</b:string>
+          <b:string>WET</b:string>
+        </a:SelectionList>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>3</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>500</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>9</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+  <DCOMWSearchProfile>
+    <ColumnCount>2</ColumnCount>
+    <ID>501</ID>
+    <Name i:nil="true"/>
+    <SearchParams xmlns:a="OMWSTypes">
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Title</a:Label>
+        <a:Position>7</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Text</a:DisplayType>
+        <a:Label>Full Text</a:Label>
+        <a:Position>9</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+      <a:OMWSearchParam>
+        <a:DateCode>0</a:DateCode>
+        <a:DisplayType>eOMFieldDisplayType_Combo</a:DisplayType>
+        <a:Label>Author</a:Label>
+        <a:Position>13</a:Position>
+        <a:SelectionList i:nil="true" xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <a:Value i:type="a:OMWValueString">
+          <a:IsEmpty>false</a:IsEmpty>
+          <a:Value/>
+        </a:Value>
+      </a:OMWSearchParam>
+    </SearchParams>
+  </DCOMWSearchProfile>
+</ArrayOfDCOMWSearchProfile>

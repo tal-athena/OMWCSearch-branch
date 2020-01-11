@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<script type="text/javascript" src="channel.js"></script>
+
+</head>
+
+<body>
+	<br />
+	<div>
+		<button style="font-size: 26px" onclick="callPluginNotification()">Call Plugin NOTIFICATION</button>
+		<button style="font-size: 26px" onclick="callPluginRequest()">Call Plugin REQUEST</button>
+	</div>
+	<div style="margin-top: 20px">
+		<input value="Sample input to test page reload command" />
+	</div>
+	
+</body>
+
+<script type="text/javascript">
+
+	function callPluginNotification()
+	{
+		var channelName = "cef_channel";
+		WebPlugin.UrlParams = { CefChannel: channelName };
+		var channel = WebPlugin.Host.channelFactory(channelName);
+		channel.postMessage("some JSON NOTIFICATION");
+	}
+	
+	function callPluginRequest()
+	{
+		var channelName = "cef_channel";
+		WebPlugin.UrlParams = { CefChannel: channelName };
+		WebPlugin.Message = { isMessage: function(msg) { return true } };
+		
+		var channel = WebPlugin.Host.channelFactory(channelName);
+		channel.sendRequest("some JSON REQUEST").then((response) => alert("JavaScript received response: " + response), (error) => alert("JavaScript received error: " + error.message));
+	}
+
+	/*function callTestNotification()
+	{
+		try
+		{
+			var msg = "";
+			if (!!external)
+			{
+				if (!!external.onNotify)
+				{
+					external.onNotify("This comes from JS!");
+					msg = "Async notification sent";
+				}
+				else
+					msg = "external.onNotify is not defined";
+			}
+			else
+				msg = "external is not defined";
+				
+			alert(msg);
+		}
+		catch (e)
+		{
+			alert(e);
+		}
+	}
+
+	function callTestRequest()
+	{
+		try
+		{
+			var msg = "";
+			if (!!external)
+			{
+				if (!!external.onRequest)
+				{
+					var promise = external.onRequest("This comes from JS!");
+					if (!!promise)
+					{
+						if (!!promise.then)
+						{
+							promise.then((response) => alert('Promise success: ' + response), (error) => alert("Promise fail: " + error.message));
+							msg = "Async request started";
+
+						}
+						else
+							msg = "then is not defined";
+					}	
+					else
+						msg = "promise is not defined";
+				}
+				else
+					msg = "external.onRequest is not defined";
+			}
+			else
+				msg = "external is not defined";
+				
+			alert(msg);
+		}
+		catch (e)
+		{
+			alert(e);
+		}
+	}*/
+
+</script>
+
+</html>

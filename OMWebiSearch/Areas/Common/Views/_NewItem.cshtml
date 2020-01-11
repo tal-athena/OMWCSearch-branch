@@ -1,0 +1,71 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+
+
+<div class="commandButtonCollection">
+	<div id="newButtonDiv" class="commandButton">
+		<img src="~/Content/Images/FuncIcons/function_new_032.png" />
+		<span>New</span>
+	</div>
+</div>
+
+<a style="display:none;" href="#openModal"></a>
+
+<div id="openModal" class="modalDialog">
+    <div>
+        <div class="dialogTitlebar">
+            <h2>Create new document</h2>
+            <a id="closeX" href="#" title="Close" class="close"></a>
+        </div>
+
+        <div class="step1">
+            <span class="selectDocumentType">Select document type</span>
+            <div class="documentTypes" id="gridDocumentsController" tabindex="0">
+
+             
+            </div>
+
+            <div class="buttonsRight">
+                <button id="btnNext" onclick="OMWClientContext.CreateDocument.OnDocumentTypeSelected()" class="linkButton nextButton">Next</button>
+            </div>
+        </div>
+
+        @*step2*@
+        <div class="step2">
+            <div class="buttonsLeft">
+                <button onclick="OMWClientContext.CreateDocument.OnBackToDocumentTypes()" class="linkButton previousButton">Document type</button>
+            </div>
+            <div class="parents">
+                <span class="selectDocumentType">Select parent</span>
+                <div class="documentTypes" id="gridParentsController">
+                        <table id="selectParent" class="ui-widget ui-widget-content" style="width: 100%;">
+                            <thead>
+                                <tr class="ui-widget-header ">
+                                    <th></th>
+                                    <th>The Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </div>
+
+
+        <div class="buttons">
+            <table>
+                <tr>
+                    <td>
+                        <button id="btnSave"
+                            onclick="OMWClientContext.CreateDocument.OnSaveDocument()" 
+                            class="linkButton nextButton">Save</button></td>
+                    <td style="padding-left: 40px;">
+                        <button onclick="OMWClientContext.CreateDocument.OnCloseDialog()" class="linkButton">Cancel</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+

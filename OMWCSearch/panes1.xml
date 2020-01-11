@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfOMWPaneE xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/OMWCSearch">
+  <OMWPaneE>
+    <ID>0</ID>
+    <Name>Agencies</Name>
+    <Type>1</Type>
+  </OMWPaneE>
+  <OMWPaneE>
+    <ID>1</ID>
+    <Name>Events and more</Name>
+    <Type>1</Type>
+  </OMWPaneE>
+  <OMWPaneE>
+    <ID>2</ID>
+    <Name>Cross Media</Name>
+    <Type>1</Type>
+  </OMWPaneE>
+  <OMWPaneE>
+    <ID>3</ID>
+    <Name>News</Name>
+    <Type>1</Type>
+  </OMWPaneE>
+  <OMWPaneE>
+    <ID>4</ID>
+    <Name>Sports</Name>
+    <Type>1</Type>
+  </OMWPaneE>
+  <OMWPaneE>
+    <ID>5</ID>
+    <Name>Internet</Name>
+    <Type>1</Type>
+  </OMWPaneE>
+  <OMWPaneE>
+    <ID>6</ID>
+    <Name>Playout</Name>
+    <Type>1</Type>
+  </OMWPaneE>
+</ArrayOfOMWPaneE>

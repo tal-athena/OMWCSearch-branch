@@ -1,0 +1,38 @@
+﻿@model OMWebiSearch.Areas.ViewModels.ToolbarViewModel
+
+<input type="hidden" id="hdnToolbarButtonsData" value="@Json.Encode(Model.ToolbarItems)" />
+
+@if (Model.ToolbarItems.Count > 0 || !Model.StoryReadonly)
+{
+    <div class="toolbarWrapper">
+        <div class="toolbarMenu">
+
+            @if (!Model.StoryReadonly)
+            {
+                <div id="saveButton" class="toolbarButton toolbarCustomButton toolbar-button-disabled">
+                    <img class="iconBox" src="~/Content/Images/ButtonSave036.png" />
+                    <span class="buttonText">Save</span>
+                </div>
+            }
+
+            <div id="deleteButton" class="toolbarButton toolbarCustomButton">
+                <img class="iconBox" src="~/Content/Images/dialog_close.png" />
+                <span class="buttonText">Delete</span>
+            </div>
+
+            @HeaderFieldsHelpers.RenderToolbar(Model.ToolbarItems)
+
+
+            <div class="toolbarButton toolbarCombobox">
+                <input type="hidden" id="hdnToolbarComboboxValue" value="@Json.Encode(Model.viewSelectData)" />
+                <input type="hidden" id="hdnToolbarComboboxViewID" value="@ViewBag.ViewID" />
+                <div id="toolbarCombobox" class=""></div>
+            </div>
+
+        </div>
+
+        <div class="toolbarOverlay"></div>
+
+        <div class="clear"></div>
+    </div>
+}

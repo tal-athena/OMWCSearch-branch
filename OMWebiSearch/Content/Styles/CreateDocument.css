@@ -1,0 +1,187 @@
+﻿
+  .selectedRow{
+        background-color: rgb(247, 175, 62);
+    }
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.3);
+	z-index: -9999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.showModalDialog{
+    opacity:1;
+	pointer-events: auto;
+    z-index: 9999;
+}
+
+.modalDialog > div {
+    
+	width: 600px;
+    height: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 0px 3px 13px 3px;
+	border-radius: 5px;
+    background-color: rgb(222, 222, 226);
+}
+
+.close {
+      background-image: url(../../content/images/dialog_close.png) !important;
+    background-position: right;
+	line-height: 25px;
+	position: absolute;
+	right: 6px;
+    height:25px;
+	top: 2px;
+	width: 22px;
+
+}
+
+.linkButton {
+    background-repeat: no-repeat;
+    background-size: 20px;
+    border: none;
+    background-color: transparent;
+    vertical-align: middle;
+    padding-bottom: 3px ;
+    font-weight: bold;
+    cursor: pointer;
+    height: 40px;
+}
+
+    .linkButton:hover {
+        text-decoration: underline;
+    }
+
+
+ .buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+}
+
+ .dialogTitlebar{
+    border-color: transparent;
+    
+    margin-left:-3px;
+    margin-right:-3px;
+
+    height: 35px ;
+    padding-top: 2px;
+    background-color: rgb(191, 191, 196);
+    background-image: none;
+ }
+ .dialogTitlebar > h2{
+     font-size:medium;
+    line-height:35px;
+    margin-left:10px;
+}
+
+ .nextButton {
+    width: 90px;
+    background-image: url(../../content/images/dialog_continue.png) !important;
+    background-position: right;
+}
+
+ .previousButton {
+    width: 160px;
+    background-image: url(../../content/images/dialog_previous.png) !important;
+    background-position: left;
+}
+
+ .step1 {
+    position: absolute;
+    width: 575px;
+    height: 300px;
+    margin-left:10px;
+    /*margin-top:5px;*/
+}
+
+  .selectDocumentType {
+      display:block;
+
+        font-weight: bold;
+        font-size:16px;
+        margin: 5px;
+    }
+
+    .step1 .documentTypes {
+        height: 260px;
+        width: 460px;
+        overflow: scroll; 
+        background-color:white;
+
+        float:left;
+    }
+
+     .step1 .documentTypes td {
+            height: 15px;
+        }
+
+    .step1 .buttonsRight {
+        width: 110px;
+        text-align: center;
+
+        float:right;
+    }
+
+    
+ .step2 {
+    position: absolute;
+    width: 575px;
+    height: 300px;
+     margin-left:20px;
+}
+
+    .step2 .buttonsLeft {
+        float: left;
+        width: 160px;
+        margin-top: 30px;   
+    }
+
+ .step2 .parents {
+    float: right;
+    right: 10px;
+    width: 400px;
+   
+}
+
+
+   .step2 .parents .gridParents {
+        height: 250px;
+        background-color: transparent;
+    }
+
+
+
+    .step2 .documentTypes {
+        height: 260px;
+        width: 360px;
+        overflow: scroll; 
+        background-color:white;
+    }
+
+     .step2 .documentTypes td {
+         
+            height: 15px;
+        }
+      .step2 .documentTypes td > div{
+             padding:6px;
+        }
+ 

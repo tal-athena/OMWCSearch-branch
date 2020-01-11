@@ -1,0 +1,40 @@
+﻿@{
+	Layout = null;
+}
+
+<div id="listFieldDialog" class="modalDialog pop-up-dialog" keyboard-navigation keyboard-save="open()" keyboard-cancel="close()">
+	<div class="offline-story-dialog">
+
+		<div class="dialogTitlebar">
+			<h2>Saved Story</h2>
+			<a id="closeX" tab-order="0" title="Close" class="close" ng-click="close()"></a>
+		</div>
+
+		<div class="listFieldDialog-loading" ng-if="showLoadingAnimation">
+		</div>
+
+		<div class="pop-up-body">
+
+			<span>Server version</span>
+			<div class="story-preview" ng-bind-html="serverStory"></div>
+
+			<span>Local version</span>
+			<div class="story-preview" ng-bind-html="localStory"></div>
+
+		</div>
+
+		<div style="height: 36px">
+			<button ng-click="keepLocalVersion()" class="toolbarButton toolbarCustomButton pull-right" tab-order="3" style="margin-right: 5px">
+				<span>Keep local version</span>
+			</button>
+			<button ng-click="keepServerVersion()" class="toolbarButton toolbarCustomButton pull-right" tab-order="2" style="margin-right: 5px">
+				<span>Keep server version</span>
+			</button>
+			<button ng-click="copyToClipboard()" class="toolbarButton toolbarCustomButton pull-right" tab-order="1" style="margin-right: 5px">
+				<span>Copy the local storage version to clipboard</span>
+			</button>
+		</div>
+
+	</div>
+</div>
+

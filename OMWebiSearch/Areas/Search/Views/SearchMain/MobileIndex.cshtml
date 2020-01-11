@@ -1,0 +1,131 @@
+﻿@using System.Web.Script.Serialization
+@using OMWebiSearch.Areas.ViewModels
+@model SearchMainPageViewModel
+@{
+    ViewBag.Type = OMWSTypes.EPageType.Search;
+    ViewBag.Title = "Search";
+    Layout = "~/Areas/Search/Views/Shared/_MobileLayout.cshtml";
+}
+
+<div data-role="page" class="searchHitsPage" id="searchHits" data-external-page="true"
+     data-url="@Url.Content("~/Search/SearchMain/Index/" + Model.NavigationPaneItemId.ToString() + "/" + Model.NavigationPaneId.ToString())"
+     data-title="Stories">
+
+    <script type="text/javascript">
+        var columnsSpecification = @Html.Raw(new JavaScriptSerializer().Serialize(Model.GridView));
+    </script>
+
+    <input type="hidden" id="NavigationPaneId" value="@Model.NavigationPaneId.ToString()" />
+    <input type="hidden" id="hdnSearchContextID" value="-1" />
+    <input type="hidden" id="selectedSearchProfileItems" value="@Model.NavigationPaneItemId.ToString()" />
+    <input type="hidden" id="hdnStoriesBaseURL" value="@Url.Content("~/Search/SearchMain/")" />
+    <input type="hidden" id="hdnStoryBaseURL" value="@Url.Content("~/Story/EditStory/Index/")" />
+    <input type="hidden" id="hdnContentBaseURL" value="@Url.Content("~/Content/")" />
+    <input type="hidden" value="@Session["searchContext"]" id="hdnSessionData" />
+
+    <input type="hidden" id="hdnMobileLoadSearchProfile" value="@Url.Content("~/Search/SearchMain/MobileLoadSearchProfile/" + Model.NavigationPaneItemId)" />
+
+    @*HEADER*@
+    <div class="searchHitsHeader">
+        <div class="ui-header ui-bar-inherit">
+
+            <h3 class="ui-title" aria-level="1"></h3>
+
+            <div class="ui-btn-left headerCustomControlGroup">
+                <a href="@Url.Content("~/Search/SearchMain/GetNavigationPaneItems/" + Model.NavigationPaneId.ToString() + "/0")"
+                   class="backButton ui-link ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all"
+                   id="searchResultsBackButton" data-icon="back" data-transition="slide" data-direction="reverse" role="button">Back</a>
+
+                <a href="@Url.Content("~/Authentication/Account/LogOff")"
+                   class="ui-link ui-btn ui-icon-logout-icon ui-btn-icon-left ui-shadow ui-corner-all"
+                   data-icon="logout-icon" data-iconpos="left" data-ajax="false" data-role="button" role="button">Logout</a>
+
+                @*<a href="@Url.Content("~/Search/SearchMain/Index")" class="ui-link ui-btn ui-icon-home ui-btn-icon-left ui-shadow ui-corner-all "
+                    data-icon="home" data-iconpos="left" data-direction="reverse" data-role="button" role="button">Home</a>*@
+
+            </div>
+            <a id="mobileToolbarLogo" href="@Url.Content("~/Search/SearchMain/Index")" data-direction="reverse">
+            </a>
+        </div>
+        <div class="ui-bar ui-bar-blue">
+            <h3 id="searchHitsHeader" class="blueBarPageTitle"></h3>
+        </div>
+    </div>
+
+	<div data-role="navbar" class="nav-glyphish ui-navbar ui-mini" id="searchNavigationHeader">
+		<ul class="ui-grid">
+			<li class="resultsNavBtn">
+				<a data-transition="slide" class="ui-btn ui-btn-active ui-icon-refresh ui-btn-icon-left  navBtnResults">
+					Results
+				</a>
+			</li>
+			<li class="searchFieldsNavBtn">
+				<a data-transition="slide" class="ui-btn ui-icon-search ui-btn-icon-left  navBtnSeachFields">
+					Search Fields
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div data-role="popup" id="idSelectPluginPopup" data-theme="a" data-dismissible="false">
+		<div class="select-plugin-loader">
+			<img src="~/Content/Images/loader1.gif" />
+		</div>
+		<div class="select-plugin-content">
+			<ul data-role="listview" class="ui-listview">
+				<li>
+					<label class="select-plugin-field-title"></label>
+				</li>
+				<li>
+					<div class="select-plugin-popup-buttons">
+						<div class="ui-btn ui-icon-delete ui-btn-icon-left ui-corner-all ui-shadow">Cancel</div>
+						<div class="ui-btn ui-icon-carat-d ui-btn-icon-left ui-corner-all ui-shadow">OK</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="select-plugin-list ui-listview" data-role="listview"></ul>
+		</div>
+	</div>
+
+	@*CONTENT*@
+    <div class="resultsPage mobilePage">
+        <div data-role="content" id="searchHitsContent">
+            <ul class="listSearchHits" data-role="listview"></ul>
+        </div>
+        <div id="searchHitsFooter" data-role="footer">
+            <a href="#" id="loadMoreItems" class="loadMoreItems" data-inline="false">Load more items</a>
+        </div>
+    </div>
+
+    <div class="searchFieldsPage mobilePage">
+        <div data-role="content" id="searchFieldsContent">
+
+            @*Render all header fields*@
+            @Html.Action("MobileLoadSearchProfile", new { id = Model.NavigationPaneItemId })
+
+
+            @*Render sort*@
+            <div class="sort-field">
+                <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+                    <h4>Sort Order</h4>
+                    @foreach (var column in Model.GridView.columns)
+                    {
+                        <div class="ui-input-btn ui-btn ui-mini sort-button" data-fieldid="@column.FieldID">
+                            @column.columnName<span></span>
+                        </div>
+                    }
+
+                </div>
+            </div>
+            <script>
+                OMWMobileSearch.searchArray = [{Ascending: 0,FieldID: 4},{Ascending: 1,FieldID: 11},{Ascending: 0,FieldID: 2}];
+            </script>
+
+        </div>
+        <div id="searchFieldsFooter" data-role="footer">
+            <a href="#" id="resetSearchFields" data-inline="false">Reset search parameters</a>
+        </div>
+    </div>
+
+</div>
+

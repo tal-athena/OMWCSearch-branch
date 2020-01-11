@@ -1,0 +1,3748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfOMWAStory xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/OMWCSearch">
+  <OMWAStory>
+    <ColumnCount>3</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>19</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>85</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 1</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>206</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value></d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1032</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>5001</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 2</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>5003</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 8</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23710</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>true</ReadOnly>
+    <Text>The transportation, government and public service sectors in France are expecting considerable disruptions as trade unions go on strike to protest against President Nicolas Sarkozy’s planned pension reforms.
+</Text>
+    <Title>French railway workers go on strike ahead of nationwide protests</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>2</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>11</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 2</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>20</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>91</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>100</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>omis</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>129</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>206</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value></d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>219</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>222</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23709</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>true</ReadOnly>
+    <Text>The man leading Munich's campaign to host the 2018 Winter Olympics has stepped down, citing illness. Willy Bogner, a former Olympic skier, will be replaced by his deputy, Bernhard Schwank.
+</Text>
+    <Title>Munich's Winter Olympics bid chief resigns due to illness</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>1</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>13</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 1</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+          <d5p1:string>Selection 10</d5p1:string>
+          <d5p1:string>Selection 11</d5p1:string>
+          <d5p1:string>Selection 12</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>191</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23708</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>true</ReadOnly>
+    <Text>A survivor of a German-ordered air strike, which killed 142 people in Afghanistan last year, has launched a legal challenge against the German Ministry of Defense.
+</Text>
+    <Title>Civilian victim of Kunduz air strike sues German government</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>3</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>7</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Undefined</DisplayType>
+        <FieldID>21</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDocumentID">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>
+            <d5p1:PinnID>4342172</d5p1:PinnID>
+            <d5p1:PoolID>-6</d5p1:PoolID>
+            <d5p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d5p1:SystemID>
+          </d5p1:Value>
+        </FieldValue>
+        <Label i:nil="true" />
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>60</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>90</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 8</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+          <d5p1:string>Selection 10</d5p1:string>
+          <d5p1:string>Selection 11</d5p1:string>
+          <d5p1:string>Selection 12</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1026</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23707</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>One host country won't be ready for the tournament, and foreigners in the domestic league will doom England. Those are just two bits of nonsense being spread about soccer's next big competition.
+</Text>
+    <Title>Misapprehensions abound ahead of Euro 2012 in Poland and Ukraine</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>3</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>86</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 2</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>92</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>1</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Undefined</DisplayType>
+        <FieldID>189</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDocumentID">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label i:nil="true" />
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23706</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>Oleg Bebenin's friends and colleagues mourned his passing at Monday's funeral and said they couldn't believe that the 36-year-old journalist and family man killed himself. Bebenin was an outspoken government critic.
+</Text>
+    <Title>Mourners question death of Belarus journalist at funeral</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>1</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>7</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>19</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>22</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 5</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+          <d5p1:string>Selection 10</d5p1:string>
+          <d5p1:string>Selection 11</d5p1:string>
+          <d5p1:string>Selection 12</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>59</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>ROUTINE</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>91</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 1</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>129</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>304</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 5</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1026</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1029</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1036</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23705</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>Eggs and shoes were hurled at former British Prime Minister Tony Blair in Dublin by anti-war protestors angry at his new book which defends Blair's decision to invade Iraq.
+</Text>
+    <Title>Tony Blair pelted with eggs at Dublin book signing</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>1</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>11</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 2</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>19</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>28</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>60</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>86</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 5</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>1004</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1036</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23704</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>Internet giant Google has suffered a setback after a German court ruled that its subsidiary, YouTube, is responsible for videos its users upload in violation of copyright law.
+</Text>
+    <Title>German court rules against YouTube in copyright row</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>1</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>61</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>184</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>226</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>303</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 10</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+          <d5p1:string>Selection 10</d5p1:string>
+          <d5p1:string>Selection 11</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1036</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23703</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>Germany has joined many of its NATO allies in drastically cutting its military budget, and even the US is now cautiously mooting defense "efficiencies," but is this a response to huge national debts, or a new strategy?
+</Text>
+    <Title>Budget cuts are a good pretext for reforming military policy, say experts</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>3</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>8</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Merkel hails contentious new power policy as greenest in the world</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>11</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 5</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+          <d5p1:string>Selection 10</d5p1:string>
+          <d5p1:string>Selection 11</d5p1:string>
+          <d5p1:string>Selection 12</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Undefined</DisplayType>
+        <FieldID>21</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDocumentID">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>
+            <d5p1:PinnID>4342172</d5p1:PinnID>
+            <d5p1:PoolID>-6</d5p1:PoolID>
+            <d5p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d5p1:SystemID>
+          </d5p1:Value>
+        </FieldValue>
+        <Label i:nil="true" />
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>91</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 3</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+          <d5p1:string>Selection 10</d5p1:string>
+          <d5p1:string>Selection 11</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>219</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>226</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23702</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>Germany's chancellor says her coalition's plan to extend the lifespan of nuclear power plants as a bridge towards renewable energy will prove the most environmentally friendly in the world. But not everyone's convinced.
+</Text>
+    <Title>Merkel hails contentious new power policy as greenest in the world</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>2</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>18</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Deutsche Welle: DW-WORLD.DE</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Undefined</DisplayType>
+        <FieldID>21</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDocumentID">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>
+            <d5p1:PinnID>4342172</d5p1:PinnID>
+            <d5p1:PoolID>-6</d5p1:PoolID>
+            <d5p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d5p1:SystemID>
+          </d5p1:Value>
+        </FieldValue>
+        <Label i:nil="true" />
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>184</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23701</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>Utopia, freedom and international exchange are at the core of this year's Beethovenfest. Beethoven has a particular power that brings people together, says the festival's Director Ilona Schmiel.
+</Text>
+    <Title>Politicians could learn from Beethoven, says festival head Ilona Schmiel</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>2</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>1</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>2010-09-07T09:12:35.077+02:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>28</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>86</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 1</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>129</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>191</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 2</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+          <d5p1:string>Selection 10</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>226</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>1015</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value> </d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1026</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1029</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>1034</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>1</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23700</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>true</ReadOnly>
+    <Text>Gustav Mahler, Sigmund Freud and Rainer Maria Rilke may have spoken German, but were born in what is now the Czech Republic. The Czechs haven't viewed them as fellow countrymen - until recently.
+</Text>
+    <Title>Czechs recognize German-speaking legacy</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>4</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>6</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>62</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>101</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>184</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1005</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>1011</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>5003</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 1</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23699</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>The 21-year-old defender Holger Badstuber has pushed aside far more experienced players at Bayern Munich and in the German national team. But he'll need to improve to cement his status.
+</Text>
+    <Title>Defender Badstuber tackles tough sophomore season</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>3</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>13</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>omis</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>18</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 2</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>61</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>1</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>305</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>1017</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1028</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23698</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>true</ReadOnly>
+    <Text>The Spanish government has urged the Basque separatist group ETA to renounce all violence, calling its offer of an unspecified ceasefire insufficient.
+</Text>
+    <Title>Spain dismisses ETA ceasefire offer as insufficient</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>2</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>13</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>omis</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Undefined</DisplayType>
+        <FieldID>21</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDocumentID">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>
+            <d5p1:PinnID>4342172</d5p1:PinnID>
+            <d5p1:PoolID>-6</d5p1:PoolID>
+            <d5p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d5p1:SystemID>
+          </d5p1:Value>
+        </FieldValue>
+        <Label i:nil="true" />
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>59</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 1</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>62</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>88</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 2</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>101</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>304</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 4</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>1000</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1028</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1032</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>3201</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>5949488</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>5001</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>5060</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23697</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>true</ReadOnly>
+    <Text>A small clique of northern countries currently governs the Arctic Circle. But as the Polar Ice Cap melts, external powers have expressed an interest in the energy-rich region, raising eyebrows among the Arctic nations.
+</Text>
+    <Title>Taming the Arctic: How to govern the spoils of climate change</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>2</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>62</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>90</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Deutsche Welle: DW-WORLD.DE
+</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>92</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>100</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 1</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>226</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1005</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1006</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>1034</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23696</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>The United Nations has launched what is being called the first anti-corruption academy, aimed at turning out a new generation of top-of-the-line corruption fighters. New types of financial crimes will be investigated.
+</Text>
+    <Title>UN's new anti-corruption academy aims spotlight at financial crime</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>1</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>1</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>2010-09-07T09:12:35.063+02:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>9</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>90</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 3</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>100</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 1</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>1034</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>5003</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23695</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>Two teenagers have been convicted of murder and causing bodily harm. The young men had beaten a 50-year-old at a train station in Munich after the man tried to protect four students from being attacked.
+</Text>
+    <Title>Teenagers sentenced for murder that shocked Germany</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>3</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>7</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 1</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>91</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>100</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>omis</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1006</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>5003</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23694</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>Moldovans stayed away from the polls in a referendum on whether the voters should elect their president directly. The low turnout has dashed hopes of a resolution to the political deadlock in the country.
+</Text>
+    <Title>Moldovan referendum on constitutional reform fails</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>2</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>12</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>60</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>305</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1026</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>1033</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1036</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>3201</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>5977187</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23693</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>A beating at a train station near Munich last year left a man dead and had many people wondering how they would have reacted. Now, a police seminar is providing answers on what to do in a public emergency.
+</Text>
+    <Title>Munich residents take courage classes in light of deadly beating</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>2</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>2</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>2010-09-06T18:00:44.14+02:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>8</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 1</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>62</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>101</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>206</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 10</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+          <d5p1:string>Selection 10</d5p1:string>
+          <d5p1:string>Selection 11</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>226</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>304</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>305</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>1033</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1035</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23692</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>true</ReadOnly>
+    <Text>A survey says one in five Germans would vote for a party headed by outspoken banker Thilo Sarrazin, whose controversial book on race and integration has topped German best-seller lists since being published last week.
+</Text>
+    <Title>One in five Germans would vote for banker embroiled in race row</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>4</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>6</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 4</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>11</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 4</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>59</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 2</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>91</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>205</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>227</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value></d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1028</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1035</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23691</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>Police say one person was killed and 20 others injured on Sunday after a group of spectators were struck by a biplane that failed to take off during an air show just north of the Bavarian city of Nuremberg.
+</Text>
+    <Title>Spectator killed after botched takeoff at German air show</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>4</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>2</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>2010-09-06T18:00:44.11+02:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>3</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>omis</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>13</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>omis</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>91</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 7</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>185</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 5</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>305</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1006</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23690</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>true</ReadOnly>
+    <Text>Basque separatist group ETA has said it will not "carry out armed actions" in its campaign for independence, according to a video obtained by the BBC. The Spanish government, meanwhile, has rejected the announcement.
+</Text>
+    <Title>Basque separatist group ETA declares ceasefire</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>1</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>12</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>13</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>omis</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>16</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>World</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>20</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Undefined</DisplayType>
+        <FieldID>21</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDocumentID">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>
+            <d5p1:PinnID>4342172</d5p1:PinnID>
+            <d5p1:PoolID>-6</d5p1:PoolID>
+            <d5p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d5p1:SystemID>
+          </d5p1:Value>
+        </FieldValue>
+        <Label i:nil="true" />
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>85</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>5965148</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>87</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 2</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>90</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Deutsche Welle: DW-WORLD.DE
+</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>205</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>226</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>303</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 3</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+          <d5p1:string>Selection 10</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>5021</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23689</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>true</ReadOnly>
+    <Text>The ongoing wrangling over the methods of WikiLeaks has led to a broader debate about whistleblowing. While it has been an accepted practice in the United States for a long time, that's not the case in Europe.
+</Text>
+    <Title>Europe, US take different approaches to whistleblowing</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>2</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>88</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 2</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Undefined</DisplayType>
+        <FieldID>213</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDocumentID">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label i:nil="true" />
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>227</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 6</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+          <d5p1:string>Selection 10</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>305</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1005</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1026</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1036</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>5001</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 2</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>5060</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 5</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23688</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>true</ReadOnly>
+    <Text>German Chancellor Angela Merkel's coalition government has decided to extend the lifespan of the country's nuclear power plants. Opposition parties and environmentalists are firmly against the changes.
+</Text>
+    <Title>German government decides to extend lifespan of nuclear plants</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>4</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>20</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>185</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1002</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>1004</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23687</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>In contrast to perceptions that young people are highly promiscuous, a new study on youth sexuality has found that more and more German teenagers are waiting for first-time sex.
+</Text>
+    <Title>Report finds German teens having sex later and less often than before</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>3</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>3</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 2</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>5</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>omis</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>10</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 1</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>19</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>1</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>22</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>omis</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>59</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 7</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>89</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 6</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>90</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 9</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+          <d5p1:string>Selection 10</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>129</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Undefined</DisplayType>
+        <FieldID>189</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDocumentID">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label i:nil="true" />
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>1001</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>1034</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23686</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>Riding waves in the middle of the city? A river in Munich's English Garden has hosted surfers and curious spectators alike for 30 years. Although long forbidden, experienced surfers can now ride the waves legally.
+</Text>
+    <Title>Surfers hit the waves in Munich's first summer of legal river surfing</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>4</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>12</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>13</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>omis</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>18</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Deutsche Welle: DW-WORLD.DE</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>20</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>7</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>218</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>omis</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>219</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>303</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 1</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>1001</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1002</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1036</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23685</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>There's no lack of soccer talent in the east of Germany - but the money isn't there to support it. This season, for the first time since unification, not a single eastern team has made it into the Bundesliga.
+</Text>
+    <Title>Eastern German soccer clubs struggle to stay in the game</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>2</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>1</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>2010-09-06T21:50:28.297+02:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>59</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 4</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>185</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 5</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>205</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>218</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>omis</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>219</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>1000</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>1033</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23684</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>The opening of a new synagogue in the city of Mainz and the recent ordaining of two rabbis in Leipzig have given a boost to the renaissance of Jewish culture in Germany.
+</Text>
+    <Title>Mainz synagogue highlights revival of Jewish life in Germany</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>2</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>13</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>omis</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>18</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Deutsche Welle: DW-WORLD.DE</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>128</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>129</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>191</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Undefined</DisplayType>
+        <FieldID>213</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDocumentID">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label i:nil="true" />
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>303</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>1034</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1035</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23683</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>EU trade commissioner Karel de Gucht has said he didn't mean to cause offence to the Jewish community after he was criticized for comments blaming the "Jewish lobby" in the US for blocking Mideast peace.
+</Text>
+    <Title>EU trade chief seeks to defuse row over "anti-Semitic" remarks</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>3</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>1</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>2010-09-07T09:12:35+02:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>12</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>62</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>1</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>219</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>222</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 1</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1006</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1032</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23682</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>Thousands of people have been rallying across France and in some European cities to protest against the deportation of Roma as well as other new security measures adopted by French President Nicolas Sarkozy's government.
+</Text>
+    <Title>Thousands rally against French Roma explusions</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>3</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>1</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>2010-09-07T09:12:34.983+02:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>2</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>2010-09-06T18:00:44.047+02:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>11</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>59</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>ROUTINE</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>84</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>129</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>1003</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23681</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>true</ReadOnly>
+    <Text>A new series of forest and bush fires have started up in southern Russia, killing an estimated eight people and leaving hundreds of people homeless.
+</Text>
+    <Title>Eight dead as fires flare up again in southern Russia</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>2</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>1</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>2010-09-07T08:37:29.67+02:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>10</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>Selection 5</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>13</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 3</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>17</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>28</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>86</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 4</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>226</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1005</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1035</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23680</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>With coalition talks deadlocked in Belgium and the Netherlands, both European countries have been plunged into political crisis.
+</Text>
+    <Title>Belgium and the Netherlands in political limbo after coalition talks fail</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>4</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>2</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>2010-09-06T18:00:44.017+02:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>3</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 3</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>5</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>omis</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>22</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 7</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+          <d5p1:string>Selection 10</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>85</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>5968183</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>91</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value i:nil="true" />
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>92</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>1</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Number</DisplayType>
+        <FieldID>219</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Number field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>227</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value></d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>1004</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1006</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23679</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>No longer curious contraptions designed by hobby mechanics in garden sheds, electronic bikes have ditched the bulky batteries and become feats of engineering with motors small enough to fit inside the back wheel.
+</Text>
+    <Title>New bikes push cyclists into electronic age</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>1</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>5</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 4</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+          <d5p1:string>Selection 10</d5p1:string>
+          <d5p1:string>Selection 11</d5p1:string>
+          <d5p1:string>Selection 12</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Text</DisplayType>
+        <FieldID>16</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Europe</d5p1:Value>
+        </FieldValue>
+        <Label>Text field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>19</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Undefined</DisplayType>
+        <FieldID>21</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDocumentID">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>
+            <d5p1:PinnID>4342172</d5p1:PinnID>
+            <d5p1:PoolID>-6</d5p1:PoolID>
+            <d5p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d5p1:SystemID>
+          </d5p1:Value>
+        </FieldValue>
+        <Label i:nil="true" />
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>184</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>226</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Duration</DisplayType>
+        <FieldID>1005</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueTimeSpan">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>PT0S</d5p1:Value>
+        </FieldValue>
+        <Label>Duration field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Check</DisplayType>
+        <FieldID>1017</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueInt">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>1</d5p1:Value>
+        </FieldValue>
+        <Label>Check field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23678</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>true</ReadOnly>
+    <Text>A high-profile sex abuse trial has come to an end in Portugal, with a court sentencing six out of seven defendants to jail terms of between five and 18 years for a string of child abuse offenses in a state-run care home.
+</Text>
+    <Title>High-profile Portuguese sex trial finds six out of seven guilty</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+  <OMWAStory>
+    <ColumnCount>2</ColumnCount>
+    <HeaderFields>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>2</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>2010-09-06T18:00:44.017+02:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_DateTime</DisplayType>
+        <FieldID>1000</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueDateTime">
+          <d5p1:IsEmpty>true</d5p1:IsEmpty>
+          <d5p1:Value>0001-01-01T00:00:00</d5p1:Value>
+        </FieldValue>
+        <Label>DateTime field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" />
+      </OMWNamedField>
+      <OMWNamedField>
+        <DisplayType>eOMFieldDisplayType_Combo</DisplayType>
+        <FieldID>3201</FieldID>
+        <FieldValue xmlns:d5p1="OMWSTypes" i:type="d5p1:OMWValueString">
+          <d5p1:IsEmpty>false</d5p1:IsEmpty>
+          <d5p1:Value>Selection 6</d5p1:Value>
+        </FieldValue>
+        <Label>Combo field 0</Label>
+        <RecordID>0</RecordID>
+        <SelectionList xmlns:d5p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <d5p1:string>Selection 1</d5p1:string>
+          <d5p1:string>Selection 2</d5p1:string>
+          <d5p1:string>Selection 3</d5p1:string>
+          <d5p1:string>Selection 4</d5p1:string>
+          <d5p1:string>Selection 5</d5p1:string>
+          <d5p1:string>Selection 6</d5p1:string>
+          <d5p1:string>Selection 7</d5p1:string>
+          <d5p1:string>Selection 8</d5p1:string>
+          <d5p1:string>Selection 9</d5p1:string>
+          <d5p1:string>Selection 10</d5p1:string>
+          <d5p1:string>Selection 11</d5p1:string>
+          <d5p1:string>Selection 12</d5p1:string>
+        </SelectionList>
+      </OMWNamedField>
+    </HeaderFields>
+    <ID xmlns:d3p1="OMWSTypes">
+      <d3p1:PinnID>23677</d3p1:PinnID>
+      <d3p1:PoolID>2</d3p1:PoolID>
+      <d3p1:SystemID>545105ec-63c3-4ff4-9024-e5e60630e069</d3p1:SystemID>
+    </ID>
+    <ReadOnly>false</ReadOnly>
+    <Text>China's growing economic and defense ties with Pakistan are no secret. But a US report claiming China is discreetly pouring troops into the strategic Pakistan-administered western part of Kashmir has sparked worries.
+</Text>
+    <Title>China's growing ties with Pakistan raise US concerns</Title>
+    <isHTML>false</isHTML>
+  </OMWAStory>
+</ArrayOfOMWAStory>

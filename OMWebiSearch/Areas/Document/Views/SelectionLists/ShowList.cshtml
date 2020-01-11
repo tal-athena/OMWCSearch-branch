@@ -1,0 +1,30 @@
+﻿@model IEnumerable<OMWCSearch.Interfaces.OMWSelectionListItem>
+@{
+    Layout = null;
+}
+
+@*<div id="contain-documents" class="ui-widget">*@
+    <table id="documents" class="ui-widget ui-widget-content" style="width: 100%">
+        <thead>
+            <tr class="ui-widget-header ">
+                <th></th>
+                <th>Name</th>
+                <th>Directory</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            { 
+                <tr id="@item.ID" data-templateid="4167" data-dirid="PDIsMTg5MjcsZjczMjNhMGMtZTAzZS00YzFhLTgwZDEtNGMwMmRmNDExMDRjPg==">
+                    <td>
+                        <div style='padding: 6px'>
+                            <img src="@String.Format("/OMWebiSearch{0}",item.IconURL)" />  
+                        </div>
+                    </td>
+                    <td>@item.Name@* @Html.Hidden("doc-id",item.ID)*@ </td>
+                    <td>@item.Directory</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+@*</div>*@

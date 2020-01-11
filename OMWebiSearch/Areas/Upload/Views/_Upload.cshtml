@@ -1,0 +1,50 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+
+<div class="commandButtonCollection">
+	<div id="uploadButtonDiv" class="commandButton">
+		<img src="~/Content/Images/FuncIcons/object_save_032.png" />
+		<span>Upload</span>
+	</div>
+</div>
+
+<a style="display:none;" href="#openUploadModal"></a>
+
+<div id="openUploadModal" class="modalDialog">
+	<div>
+		<div class="dialogTitlebar">
+			<h2>Upload files</h2>
+			<a id="closeUploadModal" href="#" title="Close">X</a>
+		</div>
+		<div>
+			<div id="uploadsHeaderButtons">
+
+				<div class="toolbarButton fileinput-button">
+					<img class=" iconBox" src="/OMWebiSearch/Content/Images/ButtonFind036.png">
+					<span class="buttonText">Add Files</span>
+					<input id="fileUpload" type="file" name="uploadFile" multiple>
+				</div>
+				<div class="toolbarButton upload-start-all">
+					<img class=" iconBox" src="/OMWebiSearch/Content/Images/ButtonFind036.png">
+					<span class="buttonText">Start Upload</span>
+				</div>
+				<div class="toolbarButton upload-clear-table">
+					<img class=" iconBox" src="/OMWebiSearch/Content/Images/ButtonFind036.png">
+					<span class="buttonText">Clear Table</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div id="uploadsArea">
+
+				<ul id="uploads"></ul>
+
+
+				<!-- The global progress bar -->
+				@*<div id="uploadProgress" class="progress">
+                        <div class="progress-bar progress-bar-success"></div>
+                    </div>*@
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,33 @@
+﻿@using OMWebiSearch.Areas.ViewModels
+@model OMWCSearch.Domain.HtmlStory
+@{
+	ViewBag.Title = "Edit Story";
+	Layout = "~/Areas/StoryH/Views/Shared/_LayoutV2.cshtml";
+}
+
+@section Scripts
+{
+	<script type="text/javascript" src="~/Scripts/V2/controllers/story-controller.js"></script>
+
+	<script src="@Url.Content("~/Content/ckeditor/ckeditor.js")" type="text/javascript"></script>
+
+	<script type="text/javascript" src="~/Scripts/V2/directives/ckeditor-directive.js"></script>
+}
+
+@section Styles
+{
+	<link rel="stylesheet" href="~/Content/V2/story.css" />
+}
+
+<script type="text/javascript"></script>
+
+<div ng-controller="StoryController as vm" ng-init="vm.init('@VirtualPathUtility.ToAbsolute("~/")', '@Model.storyId', '@Model.templateId', '@Model.systemId', '@Model.srcFieldId')">
+	<textarea ng-show="!vm.isLoading"
+			  ck-editor
+			  options="vm.options"
+			  ng-model="vm.storyText"
+			  on-change="vm.onChange()"
+			  on-save="vm.onSave()"
+			  is-save-enabled="vm.isSaveEnabled"></textarea>
+	<div ng-if="vm.isInitialLoad" class="loader"></div>
+</div>

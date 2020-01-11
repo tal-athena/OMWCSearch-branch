@@ -1,0 +1,208 @@
+﻿@using System.Web.Script.Serialization
+@using OMWebiSearch.Areas.ViewModels
+@model SearchMainPageViewModel
+@{
+	ViewBag.Type = OMWSTypes.EPageType.Search;
+	ViewBag.Title = "Search";
+	Layout = "~/Areas/Search/Views/Shared/_MobileLayout.cshtml";
+}
+
+<input type="hidden" id="hdnBaseUrl" value="@Url.Content("~/")" />
+
+<div data-role="page" id="searchProfiles">
+
+
+	<div data-role="header">
+		<h3></h3>
+		<div class="ui-btn-left headerCustomControlGroup">
+
+			<a href="@Url.Content("~/Authentication/Account/LogOff")"
+			   class="headerCustomControlGroup" data-icon="logout-icon" data-iconpos="left"
+			   data-ajax="false" data-role="button" role="button">Logout</a>
+
+
+		</div>
+
+		<div class="ui-btn-right">
+
+			<a href="#startPagePopupMenu" data-rel="popup" data-transition="slideup"
+			   class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-a">
+				<span id="idStartMenu">Menu</span>
+				<div id="idLocalStorageIndicator" class="ui-li-count" style="display: none"></div>
+
+			</a>
+
+			<div data-role="popup" id="startPagePopupMenu">
+				<ul data-role="listview" data-inset="true" style="min-width:210px;">
+					<li>
+						<a href="#newStoryPage" class="ui-link ui-btn ui-icon-star ui-btn-icon-left ui-shadow ui-corner-all"
+						   rel="external"
+						   data-role="button" role="button">Create</a>
+					</li>
+					<li id="uploadButtonContainer">
+						<span id="uploadButton" class="ui-link ui-btn ui-icon-star ui-btn-icon-left ui-shadow ui-corner-all btn-file">
+							<span id="uploadButtonText">Upload</span>
+							<input type="file" id="fileUpload" href="#">
+						</span>
+					</li>
+					<li id="idUnsavedChangesButton" style="display: none">
+						<a href="#idUnsavedChangesPage" class="ui-link ui-btn ui-icon-star ui-btn-icon-left ui-shadow ui-corner-all"
+						   rel="external"
+						   data-role="button" role="button">Unsaved Changes</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<div data-role="popup" id="uploadPopupMenu">
+				<h3>Upload</h3>
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<div id="uploadContent"></div>
+			</div>
+			<div data-role="popup" id="uploadMatchesPopupMenu">
+				<h3>Matches</h3>
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<ul id="matchContent"></ul>
+
+				<button id="matchCancel" class="btn btn-danger">Cancel</button>
+			</div>
+		</div>
+
+
+
+	</div>
+	<div class="ui-bar ui-bar-blue">
+		<h3 class="blueBarPageTitle">Search Profiles</h3>
+
+	</div>
+
+	<div data-role="content">
+		<input type="hidden" id="selectedSearchProfile" value="0" />
+		<ul id="searchProfilesList" data-role="listview">
+			@foreach (var navigationPane in (Model as PageViewModelBase).NavigationPanes)
+			{
+				<li id="navigationPane@(navigationPane.ID)">
+
+					<a class="mobileNavigationPane" data-name="@navigationPane.Name" data-id="@(navigationPane.ID)"
+					   href="@Url.Content("~/Search/SearchMain/GetNavigationPaneItems/" + navigationPane.ID.ToString() + "/0")">
+						@navigationPane.Name
+					</a>
+
+				</li>
+			}
+		</ul>
+	</div>
+
+	<div data-role="footer">
+	</div>
+
+
+
+	<script src="@Url.Content("~/Scripts/jquery-upload/jQuery-File-Upload-9.9.3/js/vendor/jquery.ui.widget.js")"></script>
+	<script src="@Url.Content("~/Scripts/jquery-upload/jQuery-File-Upload-9.9.3/js/jquery.iframe-transport.js")"></script>
+	<script src="@Url.Content("~/Scripts/jquery-upload/jQuery-File-Upload-9.9.3/js/jquery.fileupload.js")"></script>
+	<script src="@Url.Content("~/Scripts/OMW_MobileUpload.js")" type="text/javascript"></script>
+
+	@if (ViewBag.LocalStorageEnabled != null && ViewBag.LocalStorageEnabled)
+	{
+		<script src="@Url.Content("~/Scripts/OMW_LocalStorage.js")" type="text/javascript"></script>
+		<input type="hidden" id="idMobileStoryURL" value="@Url.Content("~/Story/EditStory")" />
+	}
+
+</div>
+
+
+
+
+<div data-role="page" id="newStoryPage">
+	<div data-role="header">
+		<h3></h3>
+
+		<a href="@Url.Content("~/Search/SearchMain/Index")" class="ui-link ui-btn ui-icon-delete ui-btn-icon-left ui-shadow ui-corner-all "
+		   data-icon="delete" data-iconpos="left" data-direction="reverse" data-role="button" role="button">Cancel</a>
+
+		<span>
+			<a id="mobileToolbarLogo" href="@Url.Content("~/Search/SearchMain/Index")" data-direction="reverse">
+			</a>
+		</span>
+
+	</div>
+	<div class="ui-bar ui-bar-blue">
+		<h3 class="blueBarPageTitle">Create new document</h3>
+
+	</div>
+
+	<div data-role="content">
+		<ul id="newStoryItemsList" data-role="listview" data-split-icon="plus" data-split-theme="a"></ul>
+	</div>
+
+	<div data-role="footer">
+	</div>
+</div>
+
+
+<div data-role="page" id="idUnsavedChangesPage">
+	<div data-role="header">
+		<h3 class="ui-title" aria-level="1"></h3>
+
+		<div class="ui-btn-left headerCustomControlGroup">
+			<a href="@Url.Content("~/Search/SearchMain/Index")"
+			   class="backButton  ui-link ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all "
+			   data-direction="reverse" data-role="button" role="button">Back</a>
+
+		</div>
+
+	</div>
+	<div class="ui-bar ui-bar-blue">
+		<h3 class="blueBarPageTitle">Unsaved Changes</h3>
+	</div>
+
+	<div data-role="content">
+		<ul id="idStoriesList" data-role="listview">
+		</ul>
+	</div>
+
+</div>
+
+<div data-role="page" id="idReviewUnsavedChanges">
+	<div data-role="header" style="height: 78px">
+		<h3 class="ui-title" aria-level="1"></h3>
+
+		<div class="ui-btn-left headerCustomControlGroup">
+
+			<a href="#idUnsavedChangesPage"
+			   class="backButton  ui-link ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all "
+			   data-direction="reverse" data-role="button" role="button">Back</a>
+
+			<a href="#" id="idKeepServerVersion"
+			   class="ui-link ui-btn ui-shadow ui-corner-all "
+			   data-direction="reverse" data-role="button" role="button">Keep server version</a>
+
+			<a href="#" id="idKeepLocalVersion"
+			   class="ui-link ui-btn ui-shadow ui-corner-all "
+			   data-direction="reverse" data-role="button" role="button">Keep local version</a>
+
+			<a href="#" id="idCopyLocalToClipboard"
+			   class="ui-link ui-btn ui-shadow ui-corner-all "
+			   data-direction="reverse" data-role="button" role="button">Copy local version to clipboard</a>
+
+			<a href="#" id="idOpenStory"
+			   class="ui-link ui-btn ui-shadow ui-corner-all "
+			   data-direction="reverse" data-role="button" role="button">Open story</a>
+		</div>
+
+	</div>
+	<div class="ui-bar ui-bar-blue">
+		<h3 class="blueBarPageTitle">Review</h3>
+	</div>
+
+	<div data-role="content">
+		<h3>Server version</h3>
+		<div id="idServerStory">
+			<div class="serverStoryLoader" style="display: block"></div>
+		</div>
+		<h3>Local version</h3>
+		<div id="idLocalStory"></div>
+	</div>
+
+</div>

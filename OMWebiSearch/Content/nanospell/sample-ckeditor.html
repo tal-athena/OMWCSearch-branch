@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CKEditor</title>
+        <script src="https://cdn.ckeditor.com/4.4.0/standard/ckeditor.js"></script>
+        <script src="autoload.js"></script>
+    </head>
+    <body>
+        <textarea id="editor1">asd asdasdas dasd asd as das d</textarea>
+        <textarea id="editor2">test</textarea>
+        <script>
+            CKEDITOR.replace('editor1');
+            CKEDITOR.replace('editor2');
+           
+            nanospell.ckeditor('all',{ 
+              dictionary : "en",  // 24 free international dictionaries  
+              server : "asp"      // can be php, asp, asp.net or java
+            }); 
+
+        </script>
+    </body>
+</html>

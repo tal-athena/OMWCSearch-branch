@@ -1,0 +1,81 @@
+﻿@using System.Web.Mvc.Html
+@using OMWebiSearch.Areas.ViewModels
+@model OMWebiSearch.Areas.ViewModels.StoryPageViewModel
+@{
+	ViewBag.Type = OMWSTypes.EPageType.Story;
+	ViewBag.Title = "Index";
+	Layout = "~/Areas/StoryH/Views/Shared/_Layout.cshtml";
+}
+
+
+@section InitStoryH
+{
+	<div id="idIframeLoader" class="iframe-loader">
+	</div>
+
+	<script type="text/javascript">
+
+		$(document.body).css("overflow", "hidden");
+		setTimeout(function ()
+		{
+			$(document.body).css("overflow", "auto");
+			$(".expandHeaderButton").hide();
+			$("#idIframeLoader").remove();
+		},
+			800);
+
+	</script>
+
+	<script type="text/javascript">
+	    OMWClientContext.InitStory('@Url.Content("~/")', parseInt('@Model.NavigationPaneNumber'), parseInt('@Model.NavigationPaneItemId'));
+	</script>
+}
+
+@section HeaderData
+{
+
+	@*@Html.Hidden("baseURL", Url.Action("Index", "StoryH", new { area = "StoryH" }))*@
+	@Html.Hidden("baseURL", Url.Content("~/StoryH/StoryH/"))
+
+	<a href="@Url.Action("Index", "StoryH", new { area = "StoryH", id = Model.Story.ID.GetEncoded() })">Link to the current page </a>
+	<a href="@Url.Action("Index", "EditStory", new { area = "Story", id = Model.Story.ID.GetEncoded() })">Link to the story page </a>
+}
+
+@section ToolbarPanel
+{
+	@Html.Partial("~/Areas/StoryH/Views/Shared/StoryHButtonsView.cshtml", new ToolbarViewModel() { viewSelectData = ViewBag.ToolbarComboBox, ToolbarItems = ViewBag.ToolbarButtons, StoryReadonly = Model.Story.ReadOnly })
+}
+
+@section HeaderPanel
+{
+	@Html.Hidden("hdnShowText", Model.Story.ShowText)
+	@Html.Hidden("hdnTitle", Model.Story.Title)
+	@Html.Hidden("hdnPageType", "Story")
+	@Html.Hidden("hdnIsRTLText", ((bool) ViewBag.IsRTLText).ToString())
+
+	@Html.Partial("LoadStoryFields", new StoryViewModel() { Story = Model.Story })
+
+	@if (Model.Story.ShowText == true)
+	{
+		<script type="text/javascript">
+			OMWClientContext.Story.SetupHeaderFields();
+			// TODO
+			//OMWClientContext.UpdateHeaderFields();
+		</script>
+	}
+	else
+	{
+		<script type="text/javascript">
+			OMWClientContext.Story.SetupHeaderFields();
+		</script>
+	}
+}
+
+@section ContentPanel
+{
+	@if (Model.Story.ShowText == true)
+	{
+		@Html.Partial("LoadStoryContent", new StoryViewModel() { Story = Model.Story })
+	}
+}
+

@@ -1,0 +1,327 @@
+﻿@using OMWebiSearch.Areas.Common
+@using OMWebiSearch.Areas.ViewModels
+@using OMWCSearch
+@using OMWSTypes
+@model StoryViewModel
+
+@functions {
+    public static bool IsEditable(OMWNamedField field)
+    {
+        return true;
+    }
+
+    public static bool HasSuggestions(OMWNamedField field)
+    {
+        return true;
+    }
+}
+
+@foreach (var headerField in Model.Story.HeaderFields)
+{
+    <li class="headerFields">
+
+        @switch (headerField.DisplayType)
+        {
+            case EOMWFieldDisplayType.eOMFieldDisplayType_Undefined:
+                break;
+            case EOMWFieldDisplayType.eOMFieldDisplayType_Check:
+                OMWSTypes.OMWValueInt value = (OMWSTypes.OMWValueInt)headerField.FieldValue;
+
+                if (value.Value == 1)
+                {
+                    <label>
+                        <input type="checkbox" class="headerFieldCheckBox" checked="checked" id="checkbox_@headerField.FieldID"
+                               @(headerField.ReadOnly ? "disabled='disabled'" : "")
+                               data-fieldid="@headerField.FieldID" value="@headerField.FieldValue" />
+                        @headerField.Label
+                    </label>    }
+                else
+                {
+                    <label>
+                        <input type="checkbox" class="headerFieldCheckBox" id="checkbox_@headerField.FieldID"
+                               checked=""
+                               @(headerField.ReadOnly ? "disabled='disabled'" : "")
+                               data-fieldid="@headerField.FieldID" value="@headerField.FieldValue" />
+                        @headerField.Label
+                    </label>    }
+                break;
+
+            case EOMWFieldDisplayType.eOMFieldDisplayType_Hyperlink:
+                OMWSTypes.OMWValueString hyperLinkValue = (OMWSTypes.OMWValueString)headerField.FieldValue;
+
+                <label for="hyperlink_@headerField.FieldID">@headerField.Label</label>  if (!headerField.ReadOnly)
+                {
+                    <div class="hyperlinkContent">
+                        <span class="editHyperLink ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext ui-btn-inline"></span>
+
+                        <a class="fieldInputHyperlinkEditable" data-fieldid="@headerField.FieldID" id="hyperlink_@headerField.FieldID"
+                           href="@hyperLinkValue">@hyperLinkValue</a>
+                        <div class="clear"></div>
+                    </div>    }
+                else
+                {
+                    <div>
+                        <a class="fieldInputHyperlink" data-fieldid="@headerField.FieldID" id="hyperlink_@headerField.FieldID"
+                           href="@hyperLinkValue">@hyperLinkValue</a>
+                    </div>    }
+                break;
+
+
+            case EOMWFieldDisplayType.eOMFieldDisplayType_DateTime:
+                OMWSTypes.OMWValueDateTime dateTimeValue = (OMWSTypes.OMWValueDateTime)headerField.FieldValue;
+
+                var timeVal = "";
+                try
+                {
+                    var timeString = (headerField.FieldValue as OMWValueDateTime).Value.TimeOfDay.ToString();
+                    timeVal = headerField.FieldValue.IsEmpty ? string.Empty : timeString;
+                }
+                catch (Exception) { timeVal = ""; }
+                var dateVal = "";
+                try
+                {
+                    var dateString = (headerField.FieldValue as OMWValueDateTime).Value.ToShortDateString();
+                    dateVal = headerField.FieldValue.IsEmpty ? string.Empty : dateString;
+                }
+                catch (Exception) { dateVal = ""; }
+
+
+                <label for="inputDate_@headerField.FieldID">@headerField.Label</label>
+                <div class="dateTimePickerWithDelete">
+                    <span class="@(headerField.ReadOnly ? "disabledClearDatePicker" : "clearDatePicker") pickerClearValue ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline"></span>
+
+                    <div class="aside dateTimeSearchInput pickerContent">
+
+                        <input class="dateInput dateTimeDate" type="text" data-role="datebox"
+                               @(headerField.ReadOnly ? "disabled='disabled'" : "")
+                               data-options='{"mode":"datebox", "useFocus":true, "useInline":false, "enablePopup":true, "lockInput":true, "useButton":true}'
+                               data-fieldid="@headerField.FieldID" id="inputDate_@headerField.FieldID" value="@dateVal" />
+
+                        <input class="dateInput dateTimeInputRight dateTimeTime" type="text" data-role="datebox"
+                               @(headerField.ReadOnly ? "disabled='disabled'" : "")
+                               data-options='{"mode":"timebox", "useFocus":true, "useInline":false, "enablePopup":true, "lockInput":true, "useButton":true, "overrideTimeFormat": 24, "overrideTimeOutput":"%k:%M:%S"}'
+                               data-fieldid="@headerField.FieldID" id="inputTime_@headerField.FieldID" value="@timeVal" />
+
+                    </div>
+                </div>
+
+                break;
+
+
+
+
+
+            case EOMWFieldDisplayType.eOMFieldDisplayType_Duration:
+
+                var durationOnlyVal = "";
+                try
+                {
+                    //durationOnlyVal = headerField.FieldValue.IsEmpty ? string.Empty : string.Format("{0 Day, HH:mm:ss}", (headerField.FieldValue as OMWValueTime).Value);
+
+                    var durationString = (headerField.FieldValue as OMWValueTime).Value.TimeOfDay.ToString();
+                    if (!headerField.FieldValue.IsEmpty)
+                    {
+                        durationOnlyVal = (headerField.FieldValue as OMWValueTime).Value.Day.ToString() + " Day, " + durationString;
+                    }
+
+
+                    //var durationInputString = (headerField.FieldValue as OMWValueTime).Value.ToShortDateString();
+                    //durationOnlyVal = headerField.FieldValue.IsEmpty ? string.Empty : durationInputString;
+                }
+                catch (Exception) { durationOnlyVal = ""; }
+
+                <label for="duration_@headerField.FieldID">@headerField.Label</label>
+                <div class="dateTimePickerWithDelete">
+                    <span class="@(headerField.ReadOnly ? "disabledClearDatePicker" : "clearDatePicker") pickerClearValue ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline"></span>
+                    <div class=" pickerContent">
+
+                        <input class="dateInput" type="text" data-role="datebox"
+                               data-options='{"mode":"durationbox","useFocus":true, "useInline":false, "enablePopup":true, "lockInput":true, "useButton":true}'
+                               @(headerField.ReadOnly ? "disabled='disabled'" : "")
+                               data-fieldid="@headerField.FieldID"
+                               id="duration_@headerField.FieldID" value="@durationOnlyVal" />
+                    </div>
+                </div>  break;
+
+
+
+
+
+
+            case EOMWFieldDisplayType.eOMFieldDisplayType_TimeOnly:
+
+                var timeOnlyVal = "";
+                try
+                {
+                    var timeInputString = (headerField.FieldValue as OMWValueTime).Value.TimeOfDay.ToString();
+                    timeOnlyVal = headerField.FieldValue.IsEmpty ? string.Empty : timeInputString;
+                }
+                catch (Exception) { timeOnlyVal = ""; }
+
+                <label for="time_@headerField.FieldID">@headerField.Label</label>
+                <div class="dateTimePickerWithDelete">
+                    <span class="@(headerField.ReadOnly ? "disabledClearDatePicker" : "clearDatePicker") pickerClearValue ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline"></span>
+                    <div class=" pickerContent">
+
+                        <input class="dateInput" type="text" data-role="datebox" data-fieldid="@headerField.FieldID"
+                               @(headerField.ReadOnly ? "disabled='disabled'" : "")
+                               data-options='{"mode":"timebox", "useFocus":true, "useInline":false, "enablePopup":true, "lockInput":true, "useButton":true, "overrideTimeFormat": 24, "overrideTimeOutput":"%k:%M:%S"}' data-id="@headerField.FieldID"
+                               id="time_@headerField.FieldID" value="@timeOnlyVal" />
+
+                    </div>
+                </div>  break;
+
+
+
+
+            case EOMWFieldDisplayType.eOMFieldDisplayType_DateOnly:
+                var dateOnlyVal = "";
+                try
+                {
+                    var dateInputString = (headerField.FieldValue as OMWValueDate).Value.ToShortDateString();
+                    dateOnlyVal = headerField.FieldValue.IsEmpty ? string.Empty : dateInputString;
+                }
+                catch (Exception) { dateOnlyVal = ""; }
+
+                <label for="date_@headerField.FieldID">@headerField.Label</label>
+                <div class="dateTimePickerWithDelete">
+                    <span class="@(headerField.ReadOnly ? "disabledClearDatePicker" : "clearDatePicker") pickerClearValue ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline"></span>
+                    <div class=" pickerContent">
+
+                        <input class="dateInput" data-fieldid="@headerField.FieldID"
+                               @(headerField.ReadOnly ? "disabled='disabled'" : "")
+                               type="text" data-role="datebox" data-options='{"mode":"datebox","useFocus":true, "useInline":false, "enablePopup":true, "lockInput":true, "useButton":true}'
+                               data-id="@headerField.FieldID"
+                               id="date_@headerField.FieldID" value="@dateOnlyVal" />
+                    </div>
+                </div>break;
+
+
+            case EOMWFieldDisplayType.eOMFieldDisplayType_MultilineText:
+
+                <label for="multiline_@headerField.FieldID">@headerField.Label</label>
+                <textarea id="multiline_@headerField.FieldID" data-fieldid="@headerField.FieldID"
+                          class="headerMultiline"
+                          @(headerField.ReadOnly ? "disabled='disabled'" : "")
+                          name="textarea">
+					@((!headerField.FieldValue.IsEmpty) ? (headerField.FieldValue as OMWValueString).Value : String.Empty)
+				</textarea>
+
+                break;
+
+
+
+            case EOMWFieldDisplayType.eOMFieldDisplayType_Combo:
+
+                var valueSelected = false;
+
+                if (headerField.Dynamic)
+                {
+                    <div class="select-widget"
+                         data-role="selectWidget"
+                         data-title="@headerField.Label"
+                         data-field-id="@headerField.FieldID"
+                         data-story-id="@Model.Story.ID.EncodedID"
+                         data-value="@headerField.FieldValue"
+                         data-separator=";"
+                         data-auto-save="true"
+                         data-content-url="@Url.Content("~/Content")"
+                         data-dynamic-url="@Url.Action("GetDynamicListValues", "EditStory")"
+                         data-suggestions-url="@Url.Action("GetListFieldSuggestions", "EditStory")"
+                         data-is-read-only="@(headerField.ReadOnly ? "true" : "false" )"
+                         data-is-editable="@(IsEditable(headerField) ? "true" : "false" )"
+                         data-is-dynamic="@(headerField.Dynamic ? "true" : "false")"
+                         data-is-multi-select="true"
+                         data-has-selection-list="@(headerField.HasSelectionList ? "true" : "false")">
+
+                        <label>@headerField.Label</label>
+                    </div>
+                }
+                else
+                {
+                    <label class="select" for="combo_@headerField.FieldID">@headerField.Label</label>
+                    <select id="combo_@headerField.FieldID"
+                            data-fieldid="@headerField.FieldID"
+                            class="headerCombo" @(headerField.ReadOnly ? "disabled='disabled'" : "")>
+
+                        @foreach (var item in headerField.SelectionList)
+                        {
+                            if (item == ((OMWValueString)headerField.FieldValue).Value)
+                            {
+                                valueSelected = true;
+                                <option selected="selected" value="@item">@item</option>
+                            }
+                            else
+                            {
+                                <option value="@item">@item</option>
+                            }
+                        }
+
+                        @if (!valueSelected)
+                        {
+                            <option selected="selected" value="@headerField.FieldValue">@headerField.FieldValue</option>
+                        }
+                    </select>
+                }
+
+                break;
+
+            case EOMWFieldDisplayType.eOMFieldDisplayType_List:
+                <div class="select-widget"
+                     data-role="selectWidget"
+                     data-title="@headerField.Label"
+                     data-field-id="@headerField.FieldID"
+                     data-story-id="@Model.Story.ID.EncodedID"
+                     data-value="@headerField.FieldValue"
+                     data-separator=";"
+                     data-content-url="@Url.Content("~/Content")"
+                     data-dynamic-url="@Url.Action("GetDynamicListValues", "EditStory")"
+                     data-suggestions-url="@Url.Action("GetListFieldSuggestions", "EditStory")"
+                     data-is-read-only="@(headerField.ReadOnly ? "true" : "false" )"
+                     data-is-editable="@(IsEditable(headerField) ? "true" : "false" )"
+                     data-is-dynamic="@(headerField.Dynamic ? "true" : "false")"
+                     data-auto-save="true"
+                     data-is-multi-select="true"
+                     data-show-suggestions="@(HasSuggestions(headerField) ? "true" : "false")"
+                     data-has-selection-list="@(headerField.HasSelectionList ? "true" : "false")">
+
+                    <label>@headerField.Label</label>
+                    <select data-role="none">
+                        @foreach (var item in headerField.SelectionList)
+                        {
+                            <option value="@item">@item</option>
+                        }
+
+                    </select>
+                </div>
+
+
+                break;
+
+
+            default:
+
+                <label for="input_@headerField.FieldID">@headerField.Label</label>
+                <input type="text" class="fieldInputText" data-fieldid="@headerField.FieldID" id="input_@headerField.FieldID"
+                       value="@headerField.FieldValue"
+                       @(headerField.ReadOnly ? "disabled='disabled'" : "") />
+
+
+                break;
+        }
+
+    </li>
+}
+
+
+<div data-role="popup" id="popupHyperlinkEdit" data-history="false">
+    <div data-role="header">
+        <h1>Edit</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <input type="text" id="newHyperlinkValue" value="">
+
+        <a href="#" class="popupHyperlinkEditSaveBtn ui-btn ui-corner-all ui-shadow ui-btn-inline">OK</a>
+        <a href="#" class="popupHyperlinkEditCancelBtn ui-btn ui-corner-all ui-shadow ui-btn-inline">Cancel</a>
+    </div>
+</div>  

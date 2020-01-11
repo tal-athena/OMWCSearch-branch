@@ -1,0 +1,269 @@
+﻿@using System.Web.Configuration
+<!DOCTYPE html>
+<html>
+<head>
+	<title>@ViewBag.Title</title>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
+	@* <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.min.js"></script>*@
+
+	<script src="@Url.Content("~/Scripts/jquery-ui-timepicker-addon.js")"></script>
+
+	@*TimePicki jquery plugin*@
+	<link href="@Url.Content("~/Content/TimePicki/css/timepicki.css")" rel="stylesheet" type="text/css" />
+	<script src="@Url.Content("~/Content/TimePicki/js/timepicki.js")"></script>
+
+	@* <script src="@Url.Content("~/Scripts/jHtmlArea-0.7.0-vsdoc.js")" type="text/javascript"></script> *@
+	<script src="@Url.Content("~/Scripts/jquery.maskedinput-1.3.min.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/jquery.tmpl.min.js")" type="text/javascript"></script>
+
+	<link href="@Url.Content("~/Content/angular-ui-grid/ui-grid.min.css")" rel="stylesheet" type="text/css" />
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-animate.js" type="text/javascript"></script>
+
+
+	<script src="@Url.Content("~/Content/angular-ui-grid/ui-grid.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Content/ui-grid-draggable-rows/js/draggable-rows.js")" type="text/javascript"></script>
+	@*<script src="@Url.Content("~/Scripts/ng-grid-navigation.js")" type="text/javascript"></script>*@
+
+	<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/Styles/angular-carousel.css")" />
+	<script src="@Url.Content("~/Scripts/angular-touch.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/angular-carousel.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/requestAnimationFrame.js")" type="text/javascript"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-sanitize.min.js" type="text/javascript"></script>
+
+	@*<script src="@Url.Content("~/Scripts/jquery-ui-1.10.0.min.js")" type="text/javascript"></script>*@
+	<script src="@Url.Content("~/Scripts/JSON2.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/knockout-2.1.0.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/knockout.jQueryUI-sortable.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/kendo.web.min.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/jquery.signalR-2.0.3.js")"></script>
+	<script src="@Url.Content("~/signalr/hubs")"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/Styles/split-pane.css")" />
+	<link href="@Url.Content("~/Content/Styles/ui-layout.css")" rel="stylesheet" type="text/css" />
+
+	<script src="@Url.Content("~/Scripts/splitter.js")"></script>
+
+	<script src="@Url.Content("~/Scripts/ui-layout.js")"></script>
+
+	<script src="@Url.Content("~/Scripts/OMW_NavigationPane.js")"></script>
+	<script src="@Url.Content("~/Scripts/OMW_Common.js")" type="text/javascript"></script>
+
+
+
+	<script src="@Url.Content("~/Scripts/OMW_SearchResults.js")" type="text/javascript"></script>
+
+
+	<script src="@Url.Content("~/Scripts/OMW_NotificationStrings.js")"></script>
+
+	<script src="@Url.Content("~/Scripts/Shared/OMW_Shared_index.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/Shared/Directives/OMW_first_column_context_menu_directive.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/Shared/Directives/OMW_Shared_internal_link_directive.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/Shared/Directives/OpenGridRowOptionsContextMenuDirective.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/Shared/Directives/OMW_ui_grid_events.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/Shared/Directives/CopyAsDialog.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/Shared/Directives/ui-grid-row-navigation.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/Shared/Services/OMW_Column_size_service.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/Shared/Services/OMW_PopUpDialog.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/Shared/Services/EditFieldPopUpDialog.js")" type="text/javascript"></script>
+
+	<script src="@Url.Content("~/Scripts/MRU/OMW_MRU_index.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/MRU/OMW_MRU.js")" type="text/javascript"></script>
+
+	@if (ViewBag.Type == OMWSTypes.EPageType.Story)
+	{
+		<script src="@Url.Content("~/Content/ckeditor/ckeditor.js")" type="text/javascript"></script>
+		@*<script src="@Url.Content("~/Content/nanospell/autoload.js")" type="text/javascript"></script>*@
+		<script src="@Url.Content("~/Scripts/OMW_HeaderSearch.js")" type="text/javascript"></script>
+
+		<script src="@Url.Content("~/Scripts/OMW_Story.js")" type="text/javascript"></script>
+
+		<script src="@Url.Content("~/Scripts/ng-tags-input.min.js")" type="text/javascript"></script>
+
+		if (ViewBag.LocalStorageEnabled != null && ViewBag.LocalStorageEnabled)
+		{
+			<script src="@Url.Content("~/Content/ckeditor/plugins/omwlocalstorage/plugin.js")" type="text/javascript"></script>
+		}
+
+		<script src="@Url.Content("~/Content/ckeditor/plugins/mediainsert/plugin.js")" type="text/javascript"></script>
+	}
+
+	@if (ViewBag.LocalStorageEnabled != null && ViewBag.LocalStorageEnabled)
+	{
+		<script src="@Url.Content("~/Scripts/OMW_LocalStorage.js")" type="text/javascript"></script>
+	}
+
+	<script src="@Url.Content("~/Scripts/Search/OMW_OfflineStories_service.js")"></script>
+	<script src="@Url.Content("~/Scripts/Search/OMW_OfflineStory_service.js")"></script>
+    <script src="@Url.Content("~/Scripts/Parent/OMW_Parent_index.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Parent/OMW_Parent.js")" type="text/javascript"></script>
+
+	@if (ViewBag.Type == OMWSTypes.EPageType.Collection)
+    {
+
+		<script src="@Url.Content("~/Content/context-menu/context-menu.js")" type="text/javascript"></script>
+		<link href="@Url.Content("~/Content/context-menu/context-menu.css")" rel="stylesheet" type="text/css" />
+		@*<script src="@Url.Content("~/Content/context-menu/angular-context-menu.js")" type="text/javascript"></script>*@
+
+		<script type="text/javascript" src="@Url.Content("~/Scripts/OMW_Collection.js")"></script>
+		@*<script type="text/javascript" src="@Url.Content("~/Scripts/OMW_CollectionConfig.js")"></script>*@
+		<script src="@Url.Content("~/Scripts/OMW_HeaderSearch.js")" type="text/javascript"></script>
+
+		<script src="@Url.Content("~/Scripts/Collection/OMW_Collection_index.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Collection/OMW_Collection_columns_service.js")" ty type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Collection/OMW_Collection_decorator.js")" ty type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Collection/OMW_Collection_compile_directive.js")" ty type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Collection/OMW_Collection_controller.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Collection/OMW_Collection_service.js")" ty type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Collection/Directives/OMW_Collection_grid_dynamic_height_directive.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Collection/Directives/OMW_Collection_ui_grid_row_directive.js")" type="text/javascript"></script>
+
+		<script src="@Url.Content("~/Scripts/ng-tags-input.min.js")" type="text/javascript"></script>
+	}
+	@if (ViewBag.Type == OMWSTypes.EPageType.Search)
+	{
+		<script type="text/javascript" src="@Url.Content("~/Scripts/OMW_Collection.js")"></script>
+
+
+		<script src="@Url.Content("~/Scripts/HeaderSearch/OMW_HeaderSearch_index.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/HeaderSearch/OMW_ListFieldDialog.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Shared/Directives/HeaderFieldDirective.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/HeaderSearch/KeyboardNavigation.js")" type="text/javascript"></script>
+
+
+		<script src="@Url.Content("~/Scripts/Search/OMW_Search_index.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Search/OMW_Search_Result_controller.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Search/OMW_Search_Preview_controller.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Search/OMW_Search_HeaderItems_controller.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Search/Directives/OMW_Search_grid_dynamic_height_directive.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Search/Directives/OMW_Search_grid_preview_scroll_directive.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Search/OMW_Search_Result_service.js")" type="text/javascript"></script>
+
+		<script src="@Url.Content("~/Scripts/ng-tags-input.min.js")" type="text/javascript"></script>
+	}
+	@if (ViewBag.Type == OMWSTypes.EPageType.Collection || ViewBag.Type == OMWSTypes.EPageType.Story)
+	{
+		<script src="@Url.Content("~/Scripts/Story/OMW_Story_index.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Story/OMW_Story_controller.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Story/OMW_StoryImagePopUp.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Story/VersionStory.js")" type="text/javascript"></script>
+
+		<script src="@Url.Content("~/Scripts/HeaderSearch/OMW_HeaderSearch_index.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/HeaderSearch/OMW_HeaderSearch_controller.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/HeaderSearch/OMW_ListFieldDialog.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/HeaderSearch/OMW_ListFieldDialogSingle.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/Shared/Directives/HeaderFieldDirective.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/HeaderSearch/Directives/TextareaToolbarDirective.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/HeaderSearch/KeyboardNavigation.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/HeaderSearch/Directives/date_time_directives.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/HeaderSearch/Directives/custom_duration_directive.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/HeaderSearch/Directives/custom_time_directive.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/HeaderSearch/Directives/ng-model-on-blur-directive.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/HeaderSearch/Directives/textarea-on-blur-directive.js")" type="text/javascript"></script>
+		<script src="@Url.Content("~/Scripts/HeaderSearch/Directives/HeaderFieldContextMenuDirective.js")" type="text/javascript"></script>
+
+		<script src="@Url.Content("~/Scripts/HeaderSearch/UndoDialog.js")" type="text/javascript"></script>
+
+	}
+
+	<script src="@Url.Content("~/Scripts/OWM_Editor.js")"></script>
+	<script src="@Url.Content("~/Scripts/OWM_Portlets.js")" type="text/javascript"></script>
+
+	<script src="@Url.Content("~/Scripts/AddDocumentDialog.js")"></script>
+	<script src="@Url.Content("~/Scripts/OWM_ExternalSearch.js")"></script>
+	<script src="@Url.Content("~/Scripts/jcf.js")"></script>
+
+	<link href="@Url.Content("~/Content/Styles/kendo.common.min.css")" rel="stylesheet" type="text/css" />
+	<link href="@Url.Content("~/Content/Styles/kendo.default.min.css")" rel="stylesheet" type="text/css" />
+
+	<link href="@Url.Content("~/Content/Styles/jquery-ui.css")" rel="stylesheet" type="text/css" />
+	<link href="@Url.Content("~/Content/Styles/jquery-ui-timepicker-addon.css")" rel="stylesheet" type="text/css" />
+
+	<link href="@Url.Content("~/Content/Styles/Search.css")" rel="stylesheet" type="text/css" />
+	<link href="@Url.Content("~/Content/Styles/header_overrides.css")" rel="stylesheet" type="text/css" />
+	<link href="@Url.Content("~/Content/Styles/header_fields.css")" rel="stylesheet" type="text/css" />
+	<link href="@Url.Content("~/Content/Styles/Switch.css")" rel="stylesheet" />
+	<link href="@Url.Content("~/Content/Styles/jcf.css")" rel="stylesheet" />
+	<link href="@Url.Content("~/Content/Styles/ng-tags-input.min.css")" rel="stylesheet" type="text/css" />
+
+	<link href="@Url.Content("~/Content/Styles/CreateDocument.css")" rel="stylesheet" />
+
+	<script src="@Url.Content("~/Scripts/OMW_History.js")" type="text/javascript"></script>
+
+	<script src="@Url.Content("~/Scripts/HeaderSearch/ui-layout-controller.js")"></script>
+
+
+</head>
+
+@if (ViewBag.Type == OMWSTypes.EPageType.Search)
+{
+	<text>
+		<body style="margin: 0px; padding: 0px;" ng-app="omwcSearch">
+	</text>
+}
+@if (ViewBag.Type == OMWSTypes.EPageType.Collection)
+{
+	<text>
+		<body style="margin: 0px; padding: 0px;" ng-app="omwCollection">
+	</text>
+}
+@if (ViewBag.Type == OMWSTypes.EPageType.Story)
+{
+	if (ViewBag.EditorOnly != null && ViewBag.EditorOnly == true)
+	{
+		<text>
+			<body style="margin: 0px; padding: 0px;" class="editor-only" ng-app="omwStory" ng-controller="OMWStoryController" id="storyController" data-editor-only="true" @(ViewBag.HideMaxButton != null && ViewBag.HideMaxButton == true ? "data-hide-max-button" : "")>
+		</text>
+	}
+	else
+	{
+		<text>
+			<body style="margin: 0px; padding: 0px;" ng-app="omwStory" ng-controller="OMWStoryController" id="storyController">
+		</text>
+	}
+}
+
+<input id="hdnMinAccordionItemsForScroll" type="hidden" value="@(WebConfigurationManager.AppSettings["MaxNavPanes"])" />
+
+<div id="idNotificationPanel" style="position: absolute; top: 12px; left: 12px; border: 1px solid red; background-color: #c1c1c1;">
+	<a style="color: red;" href="http://search.conosite.com/OMWebiSearch/Story/EditStory/Index/PDIsMjM2ODgsNTQ1MTA1ZWMtNjNjMy00ZmY0LTkwMjQtZTVlNjA2MzBlMDY5Pg==">Editor</a>
+	<div class="pv" id="pv">PRINTER</div>
+	<div>
+		<button onclick="OMWClientContext.NotificationTest('NotificationTest')">Notify</button>
+	</div>
+	<div><button onclick="OMWClientContext.NotificationTest('NotificationErrorTest')">Notify Error</button></div>
+	<div><button onclick="BeforePrint(); ">BeforePrint</button></div>
+</div>
+<div class="notificationContainer" id="messageContainer" style="display:none;"></div>
+
+@Html.Hidden("tabGUID", Guid.NewGuid())
+
+<div id="containerM" class="@(ViewBag.Search == null ? "story-background" : "search-background")">
+	@RenderBody()
+	<div id="footerM"></div>
+</div>
+
+
+@Html.Partial("~/Areas/Common/Views/_SessionExpired.cshtml")
+
+<link href="@Url.Content("~/Content/Styles/Print.css")" rel="stylesheet" type="text/css" />
+
+
+<input type="hidden" id="hdnAppBaseUrl" value="@Url.Content("~/")" />
+
+
+@*<script src="@Url.Content("~/Scripts/jquery-upload/jQuery-File-Upload-9.9.3/js/vendor/jquery.ui.widget.js")"></script>*@
+<script src="@Url.Content("~/Scripts/jquery-upload/jQuery-File-Upload-9.9.3/js/jquery.iframe-transport.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery-upload/jQuery-File-Upload-9.9.3/js/jquery.fileupload.js")"></script>
+
+<script src="@Url.Content("~/Scripts/jquery-upload/OMW_Upload.js")" type="text/javascript"></script>
+
+</body>
+</html>

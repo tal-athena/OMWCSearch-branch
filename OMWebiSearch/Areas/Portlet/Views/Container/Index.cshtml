@@ -1,0 +1,39 @@
+﻿@{
+	ViewBag.Title = "Container";
+	Layout = "~/Areas/Common/Views/_BaseLayout.cshtml";
+}
+
+
+<style>
+	.ui-sortable-placeholder { border: 1px dotted black; visibility: visible !important; height: 324px !important; }
+	.ui-sortable-placeholder * { visibility: hidden; }
+	
+	.portlet { padding: 10px; float: left; }
+	.portlet-header { position: relative; }
+	.portlet-header-title { display: inline-block; margin-top: 7px; }
+	.portlet-header .ui-icon { float: right; margin-top: 7px; margin-right: 5px; cursor:pointer; }
+</style>
+
+<div id="portletsContainer">
+	<div id="portletsContainerTab" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+		<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" data-bind="foreach: categories">
+			<li class="ui-state-default ui-corner-top" data-bind="css: { 'ui-state-active': $parent.selectedCategory() == $data, 'ui-tabs-selected': $parent.selectedCategory() == $data }">
+				<a data-bind="text: $data.name, click: function(data) { $parent.selectCategory(data); }"></a>
+			</li>
+		</ul>
+
+		<div id="categoryPortlets" style="display: inline-block" class="ui-tabs-panel ui-widget-content ui-corner-bottom" data-bind="with: selectedCategory">
+			<div id="sortable" data-bind="foreach: { data: profiles, afterRender: onPortletAdded }, sortableList: profiles">
+				<div class="portlet entry" data-bind="sortableItem: { item: $data, parentList: $parent.profiles }">
+					<div class="ui-widget-header ui-corner-all portlet-header" style="height: 32px; margin-bottom: 7px; text-align: center; vertical-align: middle">
+						<span class="portlet-header-title" data-bind="text: category"></span>
+						<span class="ui-icon ui-icon-closethick" data-bind="click: function(data) { $root.removePortlet($parent, data); }">close</span>
+					</div>
+
+					<div class="portlet-data" style="height: 280px" data-bind="attr: { id: 'portlet-data-' + $data.guid }"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

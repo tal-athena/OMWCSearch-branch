@@ -1,0 +1,46 @@
+﻿@using OMWebiSearch.Areas.ViewModels
+@model SearchProfilesViewModel
+@{
+    ViewBag.Title = "title";
+}
+<div class="header-wrap1">
+    <div class="co-wrap">
+    </div>
+    <div class="header-wrap2">
+        <div>
+            <div class="searchProfileWrapper">
+                <ul id="searchProfilesSelector">
+                    @foreach (var navigationPane in Model.NavigationPanes)
+                    {
+                        <li id="navigationPane@(navigationPane.ID)"><a href="#" class="opener">
+                            <h2>@navigationPane.Name</h2>
+                            <input type="hidden" id="searchProfileID" value="@navigationPane.ID" />
+                        </a>
+                            <div class="searchProfileContainer">
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+            <div class="panelRight">
+
+                <div class="co-wrap">
+                    <div id="control" class="control">
+                        <div class="prof">
+                        </div>
+                    </div>
+                </div>
+                <div class="search-prof-wrap">
+                    @Html.Partial("SearchCommandPanel", new CommandPanelViewModel { RSSUrl = Model.RSSUrl })
+                    <div id="searchProfile" class="head-right">
+                    </div>
+                    <div id="results">
+                        @Html.Partial("SearchResults", new SearchResultsViewModel { SearchHits = Model.SearchHits })
+                        <div class="searchNavigation" id="divSearchNavigation">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

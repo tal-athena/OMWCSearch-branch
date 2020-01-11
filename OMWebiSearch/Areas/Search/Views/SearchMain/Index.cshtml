@@ -1,0 +1,161 @@
+﻿@using System.Web.Script.Serialization
+@using OMWebiSearch.Areas.ViewModels
+@model SearchMainPageViewModel
+@{
+	ViewBag.Type = OMWSTypes.EPageType.Search;
+	ViewBag.Title = "Search";
+	Layout = "~/Areas/Common/Views/_Layout.cshtml";
+}
+
+@section CommandPanel
+{
+	@if (Model.NavigationPaneItemId.HasValue)
+	{
+		<script type="text/javascript">
+            var hasPreview = false;
+            $(document).ready(function () {
+                SeachProfile = @Model.NavigationPaneItemId;
+                NavigationPaneItemId = @Model.NavigationPaneId;
+                OMWClientContext.SearchResults.ShowSearchProfile(parseInt('@Model.NavigationPaneId'), parseInt('@Model.NavigationPaneItemId'));
+
+            });
+
+            selectItem = function() {
+
+                OMWClientContext.SearchResults.SelectPaneItem(parseInt('@Model.NavigationPaneItemId'));
+            };
+		</script>
+	}
+
+	<script type="text/javascript">
+        OMWClientContext.SearchResults.Init('@Url.Content("~/")', parseInt('@Model.NavigationPaneNumber'), parseInt('@Model.NavigationPaneId'), parseInt('@Model.NavigationPaneItemId'));
+
+	</script>
+
+
+	@Html.Partial("SearchCommandPanel", new CommandPanelViewModel { RSSUrl = Model.RSSUrl })
+}
+@section ContentPanel
+{
+
+
+	@Html.Hidden("hdnPageType", "Search")
+	@Html.Hidden("hdnSearchNavigationPaneId", Model.NavigationPaneId)
+
+
+	@Html.Partial("SearchResults", new SearchResultsViewModel { SearchHits = Model.SearchHits })
+	@if (Model.NavigationPaneId != null)
+	{
+		<script type="text/javascript">
+    		var columnsSpecification = @Html.Raw(new JavaScriptSerializer().Serialize(Model.GridView));
+		</script>
+
+		<div ng-controller="SearchResultsController" id="idSearchResults">
+
+			<div id="searchResultsOptions">
+
+				<div grid-preview-scroll grid-api="gridApi" style="min-height: 300px">
+
+					<div id="searchGrid" class="grid"
+						 ui-grid="gridOptions"
+						 ui-grid-resize-columns
+						 ui-grid-draggable-rows
+						 omw-ui-grid-no-drop="true"
+						 ui-grid-infinite-scroll
+						 omw-ui-grid-events="eventFunctions"></div>
+					<div id="loading" ng-show="showLoadingAnimation" style="display:block;">
+						<div class="imageHolder"></div>
+					</div>
+				</div>
+				@*<div id="loading">
+						<div class="imageHolder"></div>
+					</div>*@
+				<div class="searchResultsFooter">
+					<div style="float: left">
+						<a ng-click="prevClick()" href="#">Prev</a>
+						<a ng-click="nextClick()" href="#">Next</a>
+						<a ng-click="toTopClick()" href="#">Go to top</a>
+					</div>
+					<div style="float: right">
+						Items {{viewFrom}} - {{viewTo}} of {{totalSearchHits}} hits.
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		@Html.Action("SearchContent", "SearchMain", new { id = 2 })
+	}
+}
+
+@section ToolbarPanel
+{
+	@Html.Partial("~/Areas/Search/Views/Shared/SearchButtonsView.cshtml", new ToolbarViewModel() { viewSelectData = ViewBag.ToolbarComboBox, ToolbarItems = ViewBag.ToolbarButtons })
+}
+
+@section HeaderPanel
+{
+	@if (Model.NavigationPaneId != null)
+	{
+		<div id="headerPanel" ng-controller="HeaderItems">
+			@Html.Hidden("hdnNumberOfLines", (int) ViewBag.NumberOfLines)
+			@Html.Hidden("hdnMaxFieldsPerLine", (int) ViewBag.MaxFieldsPerLine)
+			@Html.Hidden("hdnHeaderFieldsOrientation", (string) ViewBag.HeaderFieldsOrientation)
+			@Html.Action("LoadSearchProfile", new { id = Model.NavigationPaneItemId })
+		</div>
+	}
+}
+
+@section FullScreenSearchPreview
+{
+	@if (Model.NavigationPaneId != null)
+	{
+		<div id="fullScreenPreview" ng-controller="SearchPreviewController">
+			<div id="fullScreenLoader"></div>
+
+			<div id="previewButtonsContainer">
+				<div class="optsMenuHolder" onclick="OMWClientContext.OnOptsMenuClick()">
+					<div class="optsMenuWrap">
+						<img src="/OMWebiSearch/Content/Images/hambuger_menu.png" class="img125" alt="Options" id="optsMenu" />
+						<div class="optionsButtonDropMenu">
+							<ul>
+								<li class="optSync" onclick="optSyncClick()">
+									<img src="/OMWebiSearch/Content/Images/update.png" id="optSync" alt="Sync" />
+									<span>Sync</span>
+								</li>
+								<li class="optNotify" onclick="optNotifyClick()">
+									<img src="/OMWebiSearch/Content/Images/notif_on.png" id="optNotify" alt="Notify" />
+									<span>Notify</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div>
+					<a class="closeFullScreenPreview" onclick="OMWClientContext.CloseFullScreenPreview()">
+						<img src="/OMWebiSearch/Content/Images/full_screen_close_icon_48.png" alt="Close" width="35" height="35" />
+					</a>
+				</div>
+			</div>
+
+			<div class="carouselHolder">
+				<ul rn-carousel rn-carousel-swipe rn-carousel-buffered="true" rn-carousel-control="true"
+					rn-carousel-index="carouselIndex"
+					ng-swipe-right="showPrev()" ng-swipe-left="showNext()">
+					<li ng-repeat="item in searchResults">
+						<div class="slideItem">
+							<h3 class="slideTitle">{{item.previewHeader}}</h3>
+							<p ng-bind-html="item.previewMain" class="slideText">
+
+							</p>
+							<span class="carouselCurrentIndex clearfix">
+								Result {{carouselIndex + 1}} from {{totalSearchHits}}
+							</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="searchResultsLoader storyLoader"></div>
+		</div>
+	}
+}

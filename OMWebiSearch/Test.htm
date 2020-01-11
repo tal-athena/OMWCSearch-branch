@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> 
+    <script src="/OMWebiSearch/Scripts/jquery.signalR-2.0.3.js"></script>
+    <script src="/OMWebiSearch/signalr/hubs"></script> 
+    <script>
+
+         function initFWS() {
+            //signalR
+            $.connection.hub.logging = true;
+            $.connection.fWSHub.client.OnFWS = function (searchContextID, data) {
+                var oldval = $("#dataTA").val();
+                $("#dataTA").val('OnFWS:' + data + "\n" + oldval);
+            };
+
+            $.connection.hub.start().done(function () {
+                var contextID = Math.floor((Math.random() * 1000000) + 1);
+                $.connection.fWSHub.server.joinFWSGroup(contextID);
+                console.log('$scope.initFWS hub start:' + contextID);
+            });
+         };
+
+        $(document).ready(function () {
+            initFWS();
+        });
+    </script>
+</head>
+<body>
+    <textarea id="dataTA" cols="35" rows="20"></textarea>
+</body>
+</html>

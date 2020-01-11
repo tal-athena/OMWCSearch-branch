@@ -1,0 +1,340 @@
+﻿@using OMWebiSearch.Areas.Common
+@using OMWebiSearch.Areas.ViewModels
+@using OMWSTypes
+@using OMWCSearch.Domain
+@using OMWCSearch.Enums
+@model SearchProfileViewModel
+<div>
+	@{
+
+		var controls = Model.SearchProfile.SearchParams.OrderBy(t => t.Position).ToList();
+		var count = controls.Count();
+		var maxChars = 0; //maximum length of the label
+		controls.ForEach(t => maxChars = UIHelper.GetMaxChars(t.Label, maxChars)); //get max label chars
+		var labelWidth = UIHelper.CalculateLabelWidth(maxChars);
+
+		@Html.Hidden("hdnCount", count.ToString())
+		<div id="dialog-preview" title="">
+		</div>
+
+		@Html.Hidden("hdnSearchProfileId", Model.SearchProfile.ID)
+
+		<div class="searchProfileHeaderFieldsPreview">
+			@for (var i = 0; i < count; i++)
+			{
+				<div class="@(controls[i].DisplayType == EOMWFieldDisplayType.eOMFieldDisplayType_List ? "searchFieldContainerMultiline" : "searchFieldContainer")">
+					<div style='margin-left: 10px;'>
+						@RenderInput(controls[i], labelWidth)
+					</div>
+				</div>
+			}
+		</div>
+	}
+</div>
+
+<script>
+
+    $("#dialog-preview").dialog({
+        autoOpen: false,
+        height: 500,
+        width: 450,
+        show: {
+            effect: "blind",
+            duration: 1000
+        },
+        hide: {
+            effect: "explode",
+            duration: 1000
+        },
+        buttons: {
+            "Close": function () { $(this).dialog("close"); }
+        }
+    });
+</script>
+@*@Html.HiddenFor(x => x.SearchProfile.HasPreview, new { id = "has-preview" })*@
+@helper RenderInput(OMWSearchParam param, string labelWidth)
+{
+
+	<div class="@param.Label">
+		<span class="searchFieldLabel" style="width:@labelWidth;">@param.Label:</span>
+		<div class="searchFieldWrap" style="width: calc(100% - @labelWidth);">
+			@switch (param.DisplayType)
+			{
+				case EOMWFieldDisplayType.eOMFieldDisplayType_Text:
+					<input type="text" id="OMW_SearchTextBox_@(param.Position)" class="SearchInput" />
+					break;
+				case EOMWFieldDisplayType.eOMFieldDisplayType_DateTime:
+					@RenderDateTimeControl(param);
+					break;
+				case EOMWFieldDisplayType.eOMFieldDisplayType_DateOnly:
+					@RenderDateControl(param);
+					break;
+				case EOMWFieldDisplayType.eOMFieldDisplayType_TimeOnly:
+					@RenderTimeControl(param);
+					break;
+
+
+				case EOMWFieldDisplayType.eOMFieldDisplayType_Duration:
+					@RenderDurationControl(param);
+					break;
+
+
+				case EOMWFieldDisplayType.eOMFieldDisplayType_Number:
+					<input type="text" onkeypress="return OMWClientContext.OnlyNumbers();" id="OMW_SearchNumericTextBox_@(param.Position)" class="SearchInput" />
+					break;
+				case EOMWFieldDisplayType.eOMFieldDisplayType_Check:
+					<input class="SearchInput cute-checkbox" type="checkbox" style="width: 15px;" id="OMW_SearchCheckBox_@(param.Position)" />
+					<label for="OMW_SearchCheckBox_@(param.Position)" class="cute-label"></label>
+					break;
+
+
+				case EOMWFieldDisplayType.eOMFieldDisplayType_Combo:
+
+
+
+					<select class="customCombobox " id="OWM_SearchDropDownList_@(param.Position)">
+
+						@if (param.SelectionList != null)
+						{
+							<option value="-1" selected></option>
+							foreach (var item in param.SelectionList)
+							{
+								if (!String.IsNullOrWhiteSpace(item))
+								{
+									<option value="@item">@item</option>
+								}
+								else
+								{
+									var text = "";
+									for (int i = 0; i < item.Length; i++)
+									{
+										text += "&#9251;";
+									}
+									<option value="@Html.Raw(text)">@Html.Raw(text)</option>
+								}
+							}
+						}
+					</select>
+					break;
+
+				case EOMWFieldDisplayType.eOMFieldDisplayType_List:
+					var value = (OMWValueString)param.Value;
+
+					<header-field param-field-type="search"
+								  param-original-value="@value.Value"
+								  param-enable-suggestions="true"
+								  param-static-suggestions="Opt1 val,Opt2 val,Opt3 val"
+								  param-is-dynamic="false"
+								  param-is-read-only="false"
+								  param-control-id="OWM_SearchDropDownList_@(param.Position)"
+								  param-separator=","
+								  param-position="@param.Position"
+								  param-on-edit-click="editListHeaderField">
+					</header-field>
+
+					break;
+			}
+		</div>
+	</div>
+}
+
+@helper RenderDateTimeControl(OMWSearchParam param)
+{
+var dateTimeSearchParam = param as OMWSearchParamDateTime;
+var mode = dateTimeSearchParam == null ? DateTimeDisplayMode.Date : dateTimeSearchParam.Mode;
+var value = dateTimeSearchParam == null ? "" : dateTimeSearchParam.Value.ToString();
+
+if (ShowDateCombobox())
+{
+		<div class="dateTimePickerWithSwich">
+			<input type="text" id="OMW_SearchDatePicker_@(param.Position)" class="dateTimePicker SearchField hidden"
+				   data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)" />
+
+			@RenderDateTimeSelectBox(false, value)
+		</div>
+
+		<span class="date-picker-swich-icon date-picker-calendar"></span>
+}
+else
+{
+		<div class="dateTimePickerWithSwich">
+			<input type="text" id="OMW_SearchDatePicker_@(param.Position)" class="dateTimePicker SearchField"
+				   data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)" />
+
+			@RenderDateTimeSelectBox(true, value)
+		</div>
+
+		<span class="date-picker-swich-icon date-picker-dropdown"></span>
+}
+
+
+}
+
+@helper RenderDateControl(OMWSearchParam param)
+{
+var dateTimeSearchParam = param as OMWSearchParamDateTime;
+var mode = dateTimeSearchParam == null ? DateTimeDisplayMode.Date : dateTimeSearchParam.Mode;
+var value = dateTimeSearchParam == null ? "" : dateTimeSearchParam.Value.ToString();
+
+if (ShowDateCombobox())
+{
+		<div class="dateTimePickerWithSwich">
+			<input type="text" id="OMW_SearchDatePickerDate_@(param.Position)"
+				   data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)"
+				   class="datePicker SearchField hidden" />
+
+			@RenderDateTimeSelectBox(false, value)
+		</div>
+
+		<span class="date-picker-swich-icon date-picker-calendar"></span>
+}
+else
+{
+		<div class="dateTimePickerWithSwich">
+
+			<input type="text" id="OMW_SearchDatePickerDate_@(param.Position)"
+				   data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)"
+				   class="datePicker SearchField " />
+		</div>
+
+		@RenderDateTimeSelectBox(true, value)
+
+		<span class="date-picker-swich-icon date-picker-dropdown"></span>
+}
+}
+
+@helper RenderTimeControl(OMWSearchParam param)
+{
+var dateTimeSearchParam = param as OMWSearchParamDateTime;
+var mode = dateTimeSearchParam == null ? DateTimeDisplayMode.Date : dateTimeSearchParam.Mode;
+var value = dateTimeSearchParam == null ? "" : dateTimeSearchParam.Value.ToString();
+
+
+if (ShowDateCombobox())
+{
+		<div class="dateTimePickerWithSwich">
+			<input type="text" id="OMW_SearchDatePickerTime_@(param.Position)"
+				   data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)"
+				   class="timePicker SearchField hidden" />
+
+			@RenderDateTimeSelectBox(false, value)
+
+		</div>
+
+		<span class="date-picker-swich-icon date-picker-calendar"></span>
+}
+else
+{
+		<div class="dateTimePickerWithSwich">
+			<input type="text" id="OMW_SearchDatePickerTime_@(param.Position)"
+				   data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)"
+				   class="timePicker SearchField " />
+
+			@RenderDateTimeSelectBox(true, value)
+
+		</div>
+
+		<span class="date-picker-swich-icon date-picker-dropdown"></span>
+}
+}
+
+@helper RenderDurationControl(OMWSearchParam param)
+{
+var dateTimeSearchParam = param as OMWSearchParamDateTime;
+var mode = dateTimeSearchParam == null ? DateTimeDisplayMode.Date : dateTimeSearchParam.Mode;
+var value = dateTimeSearchParam == null ? "" : dateTimeSearchParam.Value.ToString();
+
+if (ShowDateCombobox())
+{
+		<div class="dateTimePickerWithSwich">
+
+			<input type="text" id="OMW_SearchDatePickerTime_@(param.Position)" class="durationPicker SearchField hidden" />
+
+			@RenderDateTimeSelectBox(false, value)
+
+		</div>
+
+		<span class="date-picker-swich-icon date-picker-calendar"></span>
+}
+else
+{
+
+		<div class="dateTimePickerWithSwich">
+			<input type="text" id="OMW_SearchDatePickerTime_@(param.Position)" class="durationPicker SearchField " />
+
+			@RenderDateTimeSelectBox(true, value)
+		</div>
+
+		<span class="date-picker-swich-icon date-picker-dropdown"></span>
+}
+}
+
+@helper RenderDateTimeSelectBox(bool hidden, string selectedValue)
+{
+string[] values = new string[] { "ignore", "yesterday", "today", "tomorrow", "last week", "this week",
+		"next week", "last month", "this month", "next month", "last year", "this year", "next year", "last 24 hours" ,
+		"last 12 hours", "last 6 hours", "last 2 hour", "last 1 hour"};
+if (hidden)
+{
+		<select class="date-custom-combobox hidden">
+			@for (int i = 0; i < values.Length; i++)
+			{
+				if (values[i] == selectedValue)
+				{
+					<option selected value="val_@values[i]">@values[i]</option>
+				}
+				else
+				{
+					<option value="val_@values[i]">@values[i]</option>
+				}
+			}
+		</select>
+}
+else
+{
+		<select class="date-custom-combobox">
+			@for (int i = 0; i < values.Length; i++)
+			{
+				if (values[i] == selectedValue)
+				{
+					<option selected value="val_@values[i]">@values[i]</option>
+				}
+				else
+				{
+					<option value="val_@values[i]">@values[i]</option>
+				}
+			}
+		</select>
+}
+}
+
+@functions {
+
+	public static bool DateValueIsSelectOption(string value)
+	{
+		string[] values = new string[] { "ignore", "yesterday", "today", "tomorrow", "last week", "this week",
+		"next week", "last month", "this month", "next month", "last year", "this year", "next year", "last 24 hours" ,
+		"last 12 hours", "last 6 hours", "last 2 hour", "last 1 hour"};
+
+		for (int i = 0; i < values.Length; i++)
+		{
+			if (values[i] == value)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public static bool ShowDateCombobox()
+	{
+		if (DateTime.Now.Millisecond % 2 == 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}

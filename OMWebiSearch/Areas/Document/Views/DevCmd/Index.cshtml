@@ -1,0 +1,41 @@
+﻿@{
+    Layout = null;
+}
+
+<div id="imagePopUpDialog" class="modalDialog pop-up-dialog">
+    <div>
+        <div class="dialogTitlebar">
+            <h2>Edit</h2>
+            <a id="closeX" title="Close" class="close" ng-click="close()"></a>
+        </div>
+
+        <div class="pop-up-body">
+            <div class="pop-up-dialog-table header-fields-pop-up">
+
+                <div></div>
+
+                <div id="loading" ng-show="showLoadingAnimation" style="display:block;">
+                    <div class="imageHolder"></div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="buttons-row">
+                <button id="btnSave"
+                        ng-click="save()"
+                        class="linkButton save-button">
+                    Save
+                </button>
+                <button id="btnCancel"
+                        ng-click="cancel()"
+                        class="linkButton cancel-button">
+                    Cancel
+                </button>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+</div>
+
+

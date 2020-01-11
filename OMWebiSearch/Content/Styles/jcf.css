@@ -1,0 +1,362 @@
+/* hide original element */
+.jcf-hidden {
+	display: block !important;
+	position: absolute !important;
+	left: -9999px !important; /* change to right: -9999px on RTL sites */
+}
+/* custom checkbox styles */
+.chk-area {
+    background: url(../styles/images/control_checkbox_020.png) no-repeat;
+    float: left;
+    height: 10px;
+    margin: 4px 10px 0 0;
+    width: 20px;
+    height: 20px;
+}
+.chk-checked {
+    background: url(../styles/images/control_checkbox_020.png) no-repeat 0 -20px;
+}
+
+.chk-focus {
+	border-color: #f00;
+}
+.chk-disabled {
+	background: #eee;
+}
+.jcf-label-disabled {
+	color: #ccc;
+}
+/* custom radio styles */
+.rad-area {
+	border: 1px solid #777;
+	border-radius: 10px;
+	margin: 0 10px 0 0;
+	float: left;
+	width: 20px;
+	height: 20px;
+}
+.rad-checked {
+	background: #aaf;
+}
+.rad-focus {
+	border-color: #f00;
+}
+.rad-disabled {
+	background: #eee;
+}
+/* custom select styles */
+
+/*.select-area {
+    font-weight: bold;
+    font-size: 10pt;
+    height: 20px;
+    line-height: 1;
+    margin-top: 5px;
+
+
+    border: 1px solid #CCCCCC;
+
+
+    cursor: default;
+    position: relative;
+    border-radius: 5px 5px 5px 5px;
+    background: #ddd;
+    overflow: hidden;
+    position: relative;
+}
+    .select-area:hover{
+         border: 1px solid blue;
+    }
+
+.select-focus {
+    
+     border: 1px solid blue;
+     background: #ffFacd;
+}
+
+.select-area .center {
+	float: left;
+	padding: 3px 10px;
+}
+.select-disabled {
+	background: #eee;
+}
+.select-area .select-opener {
+    background: url(../styles/images/control_menu_020.png) no-repeat;
+    float: right;
+    height: 20px;
+    position: relative;
+    width: 20px;
+    padding:0 3px 0 0
+}
+
+.drop-list li a {
+float: none !important;
+}
+
+.select-options {
+	white-space: nowrap;
+	position: absolute;
+	overflow: hidden;
+	background: #fff;
+}
+.select-options .drop-holder {
+	border: 1px solid #777;
+	overflow: hidden;
+    background: #ddd;
+	height: 1%;
+}
+.select-options ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.select-options ul li {
+	width: 100%;
+	float: left;
+}
+.select-options ul a {
+	text-decoration: none;
+	padding: 5px 10px;
+    min-height: 18px;
+	display: block;
+	cursor: default;
+	color: #000;
+	height: 1%;
+}
+.select-options .item-selected a,
+.select-options a:hover {
+	text-decoration: none;
+	background: rgb(250,170,70);
+	color: #fff;
+}*/
+
+
+/* select options optgroup example styles */
+.select-options .optgroup {
+	clear: both;
+}
+.select-options .optgroup strong {
+	display: block;
+	padding: 5px;
+}
+.select-options .optgroup ul a {
+	padding-left: 30px;
+}
+/* multiple select styles */
+.select-multiple-area {
+	border: 1px solid #777;
+	clear: both;
+}
+.select-multiple-area .multiple-list{
+	border: none;
+	position: static;
+}
+.select-multiple-area .multiple-list ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.select-multiple-area .multiple-list li {
+	margin: 0;
+}
+.select-multiple-area .multiple-list a:hover {
+	text-decoration: none;
+	background: #fff;
+	color: #000;
+}
+.select-multiple-area .multiple-list a {
+	display: block;
+	cursor: default;
+	padding: 5px;
+	color: #000;
+}
+.select-multiple-area .multiple-list .item-selected a {
+	background: #007;
+	color: #fff;
+}
+.select-multiple-area .multiple-list .optgroup strong {
+	display: block;
+	padding: 5px;
+}
+.select-multiple-area .multiple-list .optgroup a {
+	padding-left: 30px;
+}
+.select-disabled  .multiple-list .item-selected a {
+	background: #777;
+}
+.live-example fieldset .select-multiple-area .scrollable-area-wrapper {
+	margin: 0;
+}
+/* textarea example styles (optional) */
+.text-block .control-wrapper {
+	border: 1px solid #777;
+	float: left;
+}
+.text-block textarea {
+	font-size: 10pt;
+	width: 500px;
+	height: 150px;
+	float: left;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+.live-example fieldset .text-block .scrollable-area-wrapper {
+	margin: 0;
+}
+/* custom file input */
+.file-area .jcf-input-wrapper {
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+.file-area .jcf-upload-button {
+	border: 1px solid #777;
+	padding: 10px 15px;
+	background: #777;
+	color: #fff;
+	float: left;
+	height: 20px;
+}
+.file-area .jcf-fake-input {
+	border: 1px solid #777;
+	padding: 10px 15px;
+	float: left;
+	margin: 0 5px;
+	width: 200px;
+	height: 20px;
+}
+.file-disabled .jcf-upload-button {
+	border-color: #eee;
+	background-color: #eee;
+	color: #777;
+}
+.file-disabled .jcf-fake-input {
+	border-color: #eee;
+	color: #aaa;
+}
+/* custom scrollbars styles */
+.scrollable-area-wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.scrollable-area-wrapper .hscrollbar,
+.scrollable-area-wrapper .vscrollbar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 20px;
+}
+.scrollable-area-wrapper .hscroll-left,
+.scrollable-area-wrapper .vscroll-up,
+.scrollable-area-wrapper .hscroll-right,
+.scrollable-area-wrapper .vscroll-down {
+	background: #777;
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+.scrollable-area-wrapper .hscroll-line,
+.scrollable-area-wrapper .vscroll-line {
+	background: #eee;
+	width: 20px;
+	float: left;
+}
+.scrollable-area-wrapper .hscroll-slider,
+.scrollable-area-wrapper .vscroll-slider {
+	background: #ccc;
+	width: 20px;
+	height: 20px;
+}
+.scrollable-area-wrapper .hscrollbar {
+	position: static;
+	height: 20px;
+	top: auto;
+}
+.scrollable-area-wrapper .hscroll-line {
+	height: 20px;
+	width: auto;
+}
+/* misc styles */
+.controls-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.controls-list li {
+	margin: 0 0 10px;
+	overflow: hidden;
+	width: 100%;
+}
+.controls-list label {
+	margin: 0 10px 0 0;
+	float: left;
+}
+.controls-list label.demo-label span {
+	font: bold 11px "Courier New", Courier, monospace;
+	color: #007;
+}
+.controls-list select {
+	width: 150px;
+}
+.live-example fieldset {
+	font-size: 14px;
+	line-height: 20px;
+	border: 1px solid #ddd;
+	display: block;
+	padding: 15px;
+	margin: 0 0 15px;
+}
+.live-example fieldset legend {
+	font-style: italic;
+	color: #000;
+}
+.live-example fieldset .scrollable-area-wrapper {
+	margin: 0 0 20px;
+}
+.scrollable-area {
+	background: #ffe;
+	overflow: auto;
+	height: 200px;
+	width: 400px;
+}
+.anyscrollable .text,
+.hscrollable .text {
+	width: 600px;
+}
+.file-list .row {
+	overflow: hidden;
+	margin: 0 0 10px;
+	width: 100%;
+}
+.file-list .flip .jcf-fake-input {
+	float: right;
+}
+.test-select {
+	width: 123px;
+}
+.select-options li.default {
+	display: none;
+}
+ul.thumbnails {
+	list-style: none;
+	font-size: 50px;
+	line-height: 150px;
+	text-align: center;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+ul.thumbnails li {
+	background: #eee;
+	display: inline;
+	float: left;
+	margin: 15px;
+	width: 150px;
+	height: 150px;
+}
+.btn-disabled {
+	background: #aaa !important;
+}

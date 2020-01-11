@@ -1,0 +1,19 @@
+﻿<a href="#" open-grid-row-options-menu title="Show context menu">
+    <span class="openContextMenu" alt="Show meny"
+          ng-click="showContextMenu($event)"
+          ng-class="{'first-col-button-active': contextMenu.visible}" />
+</a>
+
+<div class="context-menu grid-item-context-menu" ng-cloak>
+	<ul ng-if="contextMenu.items.length">
+		<li ng-repeat="item in contextMenu.items"
+		    ng-click="itemClicked(item, $event)"
+		    ng-mouseenter="onMouseEnter($event, $index, item)"
+		    ng-mouseleave="onMouseLeave($event, $index, item)"
+		    ng-disabled="!!item.checkIfEnabled && !item.checkIfEnabled()"
+		    ng-class="{'context-menu-separator': item.id === '-', 'context-menu-item-disabled': !!item.checkIfEnabled && !item.checkIfEnabled(), 'selected': item.isSelected }">
+			<img ng-src="{{item.icon}}" alt="icon" class="icon" />
+			<span>{{item.text}}</span>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,288 @@
+﻿@using OMWCSearch
+@using OMWebiSearch.Areas.Common
+@using OMWSTypes
+@using OMWCSearch.Interfaces
+
+
+@helper RenderControl(int index, OMWNamedField control, int i, string labelWidth)
+{
+    if (control.DisplayType == EOMWFieldDisplayType.eOMFieldDisplayType_MultilineText)
+    {
+        <div class="headerFieldContainerMultiline storyRow">
+            @RenderFieldInput(index, control, i, labelWidth)
+        </div>
+    }
+    else
+    {
+        <div class="headerFieldContainer storyRow">
+            @RenderFieldInput(index, control, i, labelWidth)
+        </div>
+    }
+}
+
+
+@helper RenderFieldInput(int index, OMWNamedField param, int indexForArray, string labelWidth)
+{
+    <div>
+
+            @switch (param.DisplayType)
+            {
+                case EOMWFieldDisplayType.eOMFieldDisplayType_Undefined:
+
+                    break;
+
+                case EOMWFieldDisplayType.eOMFieldDisplayType_Text:
+                    string type = "url";
+                    if (type == "url")
+                    {
+                        <span class="header-field-label storyFieldLabelURL" onclick="OMWClientContext.Story.LinkTitleClick(@param.FieldID)">@param.Label:</span>
+                        <div class="header-field-input-wrap omw-field-type-text">
+                            @{
+                                var textValue = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueString).Value : String.Empty;
+                                <input type="text"
+                                        id="OMW_Field_@(param.FieldID.ToString())"
+                                        data-fieldid="@param.FieldID.ToString()"
+                                        class="SearchInputLink SearchInput  updateField"
+                                        value="@textValue"
+                                        data-originalval="@textValue"
+                                        @ReadOnlyControl(param) />
+                            }
+                            <div class="headerOpenIcons">
+                                <a href="javascript:void(0);" tabindex="-1" onclick="OMWClientContext.Header.OpenInputLink(OMW_SearchTextBox_@(index));"><span class="openNewTab" alt="Open in New Tab"></span></a>
+                                <a href="javascript:void(0);" tabindex="-1" onclick="OMWClientContext.Header.OpenInputLinkInNewWindow(OMW_SearchTextBox_@(index));"><span class="open" alt="Open"></span></a>
+                            </div>
+                        </div>
+                                }
+                                else
+                                {
+                            <div class="header-field-label">@param.Label:</div>
+                            <div class="header-field-input-wrap omw-field-type-text">
+                                @{
+                                    var textValue = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueString).Value : String.Empty;
+                                    <input type="text" id="OMW_Field_@(param.FieldID.ToString())" 
+                                           value="@textValue" 
+                                           data-originalval="@textValue"
+                                           data-fieldid="@param.FieldID.ToString()"
+                                           class="SearchInput  updateField" @ReadOnlyControl(param) />    
+                                }
+                            </div>
+                    }
+                        break;
+                case EOMWFieldDisplayType.eOMFieldDisplayType_DateTime:
+                    @RenderDateTimeControl(param, index, indexForArray, labelWidth);
+                        break;
+                case EOMWFieldDisplayType.eOMFieldDisplayType_DateOnly:
+                    @RenderDateControl(param, index, indexForArray, labelWidth);
+                        break;
+                case EOMWFieldDisplayType.eOMFieldDisplayType_TimeOnly:
+                    @RenderTimeControl(param, index, indexForArray, labelWidth);
+                        break;
+                case EOMWFieldDisplayType.eOMFieldDisplayType_Duration:
+                    @RenderDurationControl(param, index, indexForArray, labelWidth);
+                        break;
+                case EOMWFieldDisplayType.eOMFieldDisplayType_Number:
+                    <div class="header-field-label">@param.Label:</div>
+                    <div class="header-field-input-wrap omw-field-type-number">
+                        @{
+                            var numValue = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueInt).Value.ToString() : String.Empty;
+                            <input type="text" onkeypress="return OMWClientContext.OnlyNumbers();"
+                                    id="OMW_Field_@(param.FieldID.ToString())"
+                                    data-fieldid="@param.FieldID.ToString()"
+                                    class="SearchInput  updateField"
+                                    @ReadOnlyControl(param)
+                                   value="@numValue"
+                                   data-originalval="@numValue" />
+                        }
+                    </div>
+                    break;
+                case EOMWFieldDisplayType.eOMFieldDisplayType_Check:
+                    <div class="header-field-label">@param.Label:</div>
+                    <div class="header-field-input-wrap omw-field-type-checkbox">
+                        @{
+                            var checkVal = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueInt).Value : 0;
+                            bool checkedVal = false;
+                            if(checkVal > 0)
+                            {
+                                checkedVal = true;
+                            }
+                            <input type="checkbox" class="SearchInput cute-checkbox"
+                                    id="OMW_Field_@(index)" style="width: 15px;" checked="@checkedVal"
+                                    data-originalval="@checkedVal"
+                                    data-fieldid="@param.FieldID.ToString()"
+                                    value="@checkedVal" @ReadOnlyControl(param) />
+                            <label for="OMW_Field_@(index)" class="cute-label"></label>
+                        }
+                    </div>
+                    break;
+                case EOMWFieldDisplayType.eOMFieldDisplayType_Combo:
+                    <div class="header-field-label">@param.Label:</div>
+                    <div class="header-field-input-wrap omw-field-type-combobox">
+                        @{
+                            var comboVal = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueString).Value : String.Empty;
+                            <select data-indexofelement="@indexForArray"
+                                    data-val="@comboVal"
+                                    data-originalval="@comboVal"
+                                    data-fieldid="@param.FieldID.ToString()"
+                                    class="combobox-field"
+                                    @ReadOnlyControl(param)
+                                    id="OMW_Field_@(param.FieldID)">
+
+                                @foreach (var item in param.SelectionList)
+                                {
+                                    if (item == comboVal)
+                                    {
+                                        <option value="@item" selected>@item</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@item">@item</option>
+                                    }
+                                }
+
+                            </select>
+
+                        }
+                    </div>
+                        break;
+
+                    case EOMWFieldDisplayType.eOMFieldDisplayType_List:
+                        <div class="header-field-label">@param.Label:</div>
+                        <div class="header-field-input-wrap">
+                            @{
+                                var listVal = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueString).Value : String.Empty;
+
+								<header-field param-field-type="story"
+	                                            param-original-value="@listVal"
+	                                            param-enable-suggestions="true"
+	                                            param-static-suggestions="Opt1 val;Opt2 val;Opt3 val"
+	                                            param-is-dynamic="true"
+	                                            param-is-read-only="false"
+	                                            param-control-id="OMW_Field_@param.FieldID"
+												param-field-id="@param.FieldID"
+												param-on-edit-click="editListHeaderField">
+	                            </header-field>
+                            }
+                        </div>
+                        break;
+
+                    case EOMWFieldDisplayType.eOMFieldDisplayType_MultilineText:
+
+                        <div class="header-field-label">@param.Label:</div>
+                        <div class="header-field-input-wrap omw-field-type-multiline">
+                            <textarea class="multilineInput"
+                                      data-fieldid="@param.FieldID.ToString()"
+                                      data-originalval="@((!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueString).Value : String.Empty)"
+                                        id="OMW_Field_@(param.FieldID)"
+                                        rows="@param.NumberOfLines" @ReadOnlyControl(param)>
+                                @((!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueString).Value : String.Empty)
+                            </textarea>
+                        </div>
+
+
+                        break;
+
+                    }
+    </div>
+}
+
+@helper ReadOnlyControl(OMWNamedField param)
+{
+    if (param.ReadOnly != null && param.ReadOnly == true)
+    {
+            <text> readonly disabled </text>
+    }
+}
+
+
+@helper RenderDateControl(OMWNamedField param, int index, int indexForArray, string labelWidth)
+{
+    <div class="header-field-label">@param.Label:</div>
+    <div class="header-field-input-wrap omw-field-type-date">
+
+        @{
+            var dateVal = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueDate).Value.ToString() : String.Empty;
+            <input type="text"
+                   id="OMW_Field_@(param.FieldID.ToString())"
+                   data-index="@indexForArray"
+                   data-fieldid="@param.FieldID.ToString()"
+                   class="SearchInput updateDateField dateFormatPicker"
+                   data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)"
+                   @ReadOnlyControl(param)
+                   datepickerfield
+                   data-locale="@UIHelper.GetLocale()"
+                   value="@dateVal"
+                   data-originalval="@dateVal"
+                   readonly="true" />
+        }
+
+    </div>
+}
+
+@helper RenderTimeControl(OMWNamedField param, int index, int indexForArray, string labelWidth)
+{
+    <div class="header-field-label">@param.Label:</div>
+    <div class="header-field-input-wrap omw-field-type-time">
+        @{
+            var dateVal = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueTime).Value.ToString() : String.Empty;
+            <input type="text"
+                   id="OMW_Field_@(param.FieldID.ToString())"
+                   data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)"
+                   data-fieldid="@param.FieldID.ToString()"
+                   @ReadOnlyControl(param)
+                   class="SearchInput updateDateField timeFormat"
+                   value="@dateVal"
+                   data-originalval="@dateVal"
+                   timepickerfield
+                   data-locale="@UIHelper.GetLocale()"
+                   readonly="true" />
+        }
+    </div>
+}
+
+
+@helper RenderDateTimeControl(OMWNamedField param, int index, int indexForArray, string labelWidth)
+{
+
+    <div class="header-field-label">test @param.Label:</div>
+    <div class="header-field-input-wrap omw-field-type-date-time">
+        @{
+            var dateVal = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueDateTime).Value.ToString() : String.Empty;
+            
+            <input type="text"
+                   id="OMW_Field_@(param.FieldID.ToString())"
+                   class="SearchInput updateDateField"
+                   data-fieldid="@param.FieldID.ToString()"
+                   @ReadOnlyControl(param)
+                   value="@dateVal"
+                   data-originalval="@dateVal"
+                   datetimepickerfield
+                   data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)"
+                   data-locale="@UIHelper.GetLocale()"
+                   readonly="true" />
+        }
+    </div>
+}
+
+
+@helper RenderDurationControl(OMWNamedField param, int index, int indexForArray, string labelWidth)
+{
+string value = "";
+try
+{
+    value = param.FieldValue.IsEmpty ? string.Empty : string.Format("{0:HH:mm:ss}", (param.FieldValue as OMWValueTime).Value);
+}
+catch { }
+    <div class="header-field-label">@param.Label: </div>
+    <div class="header-field-input-wrap omw-field-type-duration">
+        <input type="text"
+                id="OMW_Field_@(param.FieldID.ToString())"
+                data-fieldid="@param.FieldID.ToString()"
+                class="SearchInput updateDateField"
+                @ReadOnlyControl(param)
+                value="@value"
+                data-originalval="@value"
+                data-val="@value"
+                durationpickerfield
+                data-locale="@UIHelper.GetLocale()" />
+    </div>
+}

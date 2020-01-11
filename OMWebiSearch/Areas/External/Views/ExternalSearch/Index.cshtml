@@ -1,0 +1,55 @@
+﻿@model OMWebiSearch.Areas.ViewModels.ExternalSearchViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Common/Views/_Layout.cshtml";
+}
+
+
+@section CommandPanel
+{
+    <script type="text/javascript">
+        OMWClientContext.ExternalSearch.Init(@Url.Content("~/"), "@Model.CollectionId");
+    </script>
+}
+
+@section HeaderPanel
+{
+    
+}
+
+@section ContentPanel
+{
+
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+ 
+            $(window).resize(function () {
+                SetContentDim();
+            });
+            SetContentDim();
+            OMWClientContext.ExternalSearch.GetContent();
+
+        });
+        
+        function SetContentDim() {
+            var h = $('#leftSlidebarM').height();
+            var w = $('#leftSlidebarM').width();
+            $('#externalSearch').height(h - 100);
+            $('#externalSearch').width($.clientCoords.w - w - 50);
+        }
+
+
+        $.clientCoords = function() {
+            if (jQuery.browser.msie) {
+                return {
+                    w: document.documentElement.offsetWidth,
+                    h: document.documentElement.offsetHeight
+                };
+            } else
+                return { w: window.innerWidth, h: window.innerHeight };
+        };
+    </script>
+}
+
+

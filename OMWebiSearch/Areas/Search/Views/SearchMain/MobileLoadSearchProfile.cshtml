@@ -1,0 +1,451 @@
+﻿@using OMWebiSearch.Areas.Common
+@using OMWebiSearch.Areas.ViewModels
+@using OMWSTypes
+@using OMWCSearch.Domain
+@using OMWCSearch.Enums
+@model SearchProfileViewModel
+<div>
+	@{
+
+		var controls = Model.SearchProfile.SearchParams.OrderBy(t => t.Position).ToList();
+		var count = controls.Count();
+
+		@Html.Hidden("hdnCount", count.ToString())
+
+
+		<div class="searchProfileHeaderFieldsPreview">
+			@foreach (var item in controls)
+			{
+				<div class="searchFieldContainer">
+					@RenderInput(item)
+				</div>
+			}
+
+		</div>
+	}
+</div>
+
+@helper RenderInput(OMWSearchParam param)
+{
+
+	<div class="searchFieldWrap">
+		@switch (param.DisplayType)
+		{
+			case EOMWFieldDisplayType.eOMFieldDisplayType_Text:
+
+				OMWSTypes.OMWValueString value = (OMWSTypes.OMWValueString)param.Value;
+
+				<label for="OMW_SearchTextBox_@(param.Position)">@param.Label</label>
+				<input type="text" id="OMW_SearchTextBox_@(param.Position)" class="SearchInput"
+					   data-position="@param.Position" data-type="text"
+					   value="@value.Value" data-defaultvalue="@value.Value" />
+				break;
+			case EOMWFieldDisplayType.eOMFieldDisplayType_DateTime:
+				@RenderDateTimeControl(param);
+				break;
+			case EOMWFieldDisplayType.eOMFieldDisplayType_DateOnly:
+				@RenderDateControl(param);
+				break;
+			case EOMWFieldDisplayType.eOMFieldDisplayType_TimeOnly:
+				@RenderTimeControl(param);
+				break;
+
+
+			case EOMWFieldDisplayType.eOMFieldDisplayType_Duration:
+				@RenderDurationControl(param);
+				break;
+
+
+			case EOMWFieldDisplayType.eOMFieldDisplayType_Number:
+
+
+				OMWSTypes.OMWValueInt numValue = (OMWSTypes.OMWValueInt)param.Value;
+				<label for="OMW_SearchNumericTextBox_@(param.Position)">@param.Label</label>
+										<input type="number" id="OMW_SearchNumericTextBox_@(param.Position)" class="SearchInput"
+											   data-position="@param.Position" value="@numValue.Value" data-defaultvalue="@numValue.Value"
+											   data-type="text" />
+
+				break;
+			case EOMWFieldDisplayType.eOMFieldDisplayType_Check:
+				OMWSTypes.OMWValueInt checkValue = (OMWSTypes.OMWValueInt)param.Value;
+
+				if (checkValue.Value == 1)
+				{
+					<label>
+						<input type="checkbox" class="SearchInput searchCheckbox" id="OMW_SearchCheckBox_@(param.Position)"
+							   data-position="@param.Position" checked="checked" data-type="check" data-defaultvalue="@checkValue.Value" />
+						@param.Label
+					</label>
+				}
+				else
+				{
+					<label>
+						<input type="checkbox" class="SearchInput searchCheckbox" id="OMW_SearchCheckBox_@(param.Position)"
+							   data-position="@param.Position" data-type="check" data-defaultvalue="@checkValue.Value" />
+						@param.Label
+					</label>
+				}
+
+				break;
+
+			case EOMWFieldDisplayType.eOMFieldDisplayType_Combo:
+
+				<div class="select-widget"
+				     data-id="OWM_SearchDropDownList_@(param.Position)"
+				     data-class-name="SearchInput"
+				     data-role="selectWidget"
+				     data-title="@param.Label"
+				     data-field-id="@param.Position"
+				     data-story-id=""
+				     data-value="@param.Value"
+				     data-separator=";"
+				     data-auto-save="true"
+				     data-content-url="@Url.Content("~/Content")"
+				     data-dynamic-url="@Url.Action("GetDynamicListValues", "SearchMain")"
+				     data-suggestions-url="@Url.Action("GetListFieldSuggestions", "SearchMain")"
+				     data-is-read-only="false"
+				     data-is-editable="true"
+				     data-is-dynamic="true"
+				     data-is-multi-select="true"
+				     data-show-suggestions="true"
+				     data-has-selection-list="@(param.SelectionList != null ? "true" : "false")">
+
+					<label>@param.Label</label>
+				</div>
+
+				break;
+
+			case EOMWFieldDisplayType.eOMFieldDisplayType_List:
+
+				<div class="select-widget"
+				     data-id="OWM_SearchDropDownList_@(param.Position)"
+				     data-class-name="SearchInput"
+					 data-role="selectWidget"
+					 data-title="@param.Label"
+					 data-field-id="@param.Position"
+					 data-story-id=""
+					 data-value="@param.Value"
+					 data-separator=";"
+					 data-content-url=""
+				     data-dynamic-url="@Url.Action("GetDynamicListValues", "SearchMain")"
+				     data-suggestions-url="@Url.Action("GetListFieldSuggestions", "SearchMain")"
+					 data-is-read-only="false"
+					 data-is-editable="true"
+					 data-is-dynamic="true"
+					 data-auto-save="true"
+					 data-show-suggestions="true"
+				     data-has-selection-list="@(param.SelectionList != null ? "true" : "false")">
+
+					<label>@param.Label</label>
+					<select data-role="none">
+						@foreach (var item in param.SelectionList)
+						{
+							<option value="@item">@item</option>
+						}
+
+					</select>
+				</div>
+
+				break;
+		}
+	</div>
+}
+
+@helper RenderDateTimeControl(OMWSearchParam param)
+{
+OMWSTypes.OMWValueDateTime dateTimeValue = (OMWSTypes.OMWValueDateTime)param.Value;
+string dateValue = dateTimeValue.Value.ToString(param.Format != null ? param.Format : "dd/MM/yyyy");
+string timeValue = dateTimeValue.Value.ToString(param.Format != null ? param.Format : "hh:mm:ss");
+if (dateTimeValue.Value.Year == 1)
+{
+	dateValue = "";
+	timeValue = "";
+}
+	<label for="OMW_SearchDatePicker_@(param.Position)">@param.Label</label>
+	<div class="dateTimePickerWithDelete">
+		@if (ShowDateCombobox())
+		{
+			<div class="datePickerRightButtons">
+				<span class="clearDatePicker pickerClearValue ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline"></span>
+
+				<span class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline date-picker-swich-icon ui-icon-calendar"></span>
+			</div>
+
+			<div class="aside dateTimeSearchInput pickerContent " id="OMW_SearchDatePicker_@(param.Position)"
+				 data-position="@param.Position" data-type="datetime">
+
+				<div class="date-fields hidden">
+					<input class=" dateTimeDate" type="text" data-role="datebox" value="@dateValue" data-defaultvalue="@dateValue"
+						   data-options='{"mode":"datebox", "useFocus":true, "useInline":false, "enablePopup":true, "lockInput":true,"overrideHeaderFormat":"@DateTimeCSJSConvert.CSToJSDateMobile(param.Format)", "useButton":true, "overrideDateFormat":"@DateTimeCSJSConvert.CSToJSDateMobile(param.Format)", "overrideDateFieldOrder": @DateTimeCSJSConvert.GetDateFieldOrder(param.Format) }' />
+
+
+					<input class=" dateTimeInputRight dateTimeTime " type="text" data-role="datebox" value="@timeValue" data-defaultvalue="@timeValue"
+						   data-options='{"mode":"timebox", "useFocus":true, "useInline":false, "enablePopup":true, "lockInput":true, "useButton":true, "overrideTimeFormat": 24, "overrideTimeOutput":"@DateTimeCSJSConvert.CSToJSTimeMobile(param.Format)"}' />
+				</div>
+
+				@RenderDateTimeSelectBox(false, dateTimeValue.Value.ToString())
+			</div>
+		}
+		else
+		{
+			<div class="datePickerRightButtons">
+				<span class="clearDatePicker pickerClearValue ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline"></span>
+
+				<span class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline date-picker-swich-icon"></span>
+			</div>
+
+			<div class="aside dateTimeSearchInput pickerContent " id="OMW_SearchDatePicker_@(param.Position)"
+				 data-position="@param.Position" data-type="datetime">
+
+				<div class="date-fields">
+					<input class=" dateTimeDate" type="text" data-role="datebox" value="@dateValue" data-defaultvalue="@dateValue"
+						   data-options='{"mode":"datebox", "useFocus":true, "useInline":false, "enablePopup":true, "lockInput":true,"overrideHeaderFormat":"@DateTimeCSJSConvert.CSToJSDateMobile(param.Format)", "useButton":true, "overrideDateFormat":"@DateTimeCSJSConvert.CSToJSDateMobile(param.Format)", "overrideDateFieldOrder": @DateTimeCSJSConvert.GetDateFieldOrder(param.Format) }' />
+
+
+					<input class=" dateTimeInputRight dateTimeTime " type="text" data-role="datebox" value="@timeValue" data-defaultvalue="@timeValue"
+						   data-options='{"mode":"timebox", "useFocus":true, "useInline":false, "enablePopup":true, "lockInput":true, "useButton":true, "overrideTimeFormat": 24, "overrideTimeOutput":"@DateTimeCSJSConvert.CSToJSTimeMobile(param.Format)"}' />
+				</div>
+
+				@RenderDateTimeSelectBox(true, dateTimeValue.Value.ToString())
+			</div>
+		}
+
+	</div>
+	<div class="clear"></div>
+}
+
+@helper RenderDateControl(OMWSearchParam param)
+{
+
+OMWSTypes.OMWValueDateTime dateValue = (OMWSTypes.OMWValueDateTime)param.Value;
+string value = dateValue.Value.ToString(param.Format != null ? param.Format : "dd/MM/yyyy");
+if (dateValue.Value.Year == 1)
+{
+	value = "";
+}
+	<label for="OMW_SearchDatePickerDate_@(param.Position)">@param.Label</label>
+	<div class="dateTimePickerWithDelete">
+
+		@if (ShowDateCombobox())
+		{
+			<div class="datePickerRightButtons">
+				<span class="clearDatePicker pickerClearValue ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline"></span>
+
+				<span class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline date-picker-swich-icon ui-icon-calendar"></span>
+				@*<span class="ui-btn ui-shadow ui-corner-all ui-icon-calendar ui-btn-icon-notext ui-btn-inline hidden date-picker-swich-icon"></span>*@
+			</div>
+
+			<div class=" pickerContent">
+				<div class="date-fields hidden">
+					<input id="OMW_SearchDatePickerDate_@(param.Position)" data-position="@param.Position" class="dateInput dateTimeInputRight dateTimeTime" type="text" data-role="datebox"
+						   data-options='{"mode":"datebox", "useFocus":true, "useInline":false, "enablePopup":true, "lockInput":true, "useButton":true, "overrideDateFormat":"@DateTimeCSJSConvert.CSToJSDateMobile(param.Format)", "overrideHeaderFormat":"@DateTimeCSJSConvert.CSToJSDateMobile(param.Format)" , "overrideDateFieldOrder":@DateTimeCSJSConvert.GetDateFieldOrder(param.Format) }'
+						   data-type="date" value="@value" data-defaultvalue="@value" />
+				</div>
+				@RenderDateTimeSelectBox(false, value)
+			</div>
+		}
+		else
+		{
+			<div class="datePickerRightButtons">
+				<span class="clearDatePicker pickerClearValue ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline"></span>
+
+				<span class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline date-picker-swich-icon"></span>
+				@*<span class="ui-btn ui-shadow ui-corner-all ui-icon-calendar ui-btn-icon-notext ui-btn-inline hidden date-picker-swich-icon"></span>*@
+			</div>
+
+			<div class=" pickerContent">
+				<div class="date-fields">
+					<input id="OMW_SearchDatePickerDate_@(param.Position)" data-position="@param.Position" class="dateInput dateTimeInputRight dateTimeTime" type="text" data-role="datebox"
+						   data-options='{"mode":"datebox", "useFocus":true, "useInline":false, "enablePopup":true, "lockInput":true, "useButton":true, "overrideDateFormat":"@DateTimeCSJSConvert.CSToJSDateMobile(param.Format)", "overrideHeaderFormat":"@DateTimeCSJSConvert.CSToJSDateMobile(param.Format)" , "overrideDateFieldOrder":@DateTimeCSJSConvert.GetDateFieldOrder(param.Format) }'
+						   data-type="date" value="@value" data-defaultvalue="@value" />
+				</div>
+				@RenderDateTimeSelectBox(true, value)
+			</div>
+		}
+
+	</div>
+	<div class="clear"></div>
+}
+
+@helper RenderTimeControl(OMWSearchParam param)
+{
+OMWSTypes.OMWValueDateTime dateValue = (OMWSTypes.OMWValueDateTime)param.Value;
+string value = dateValue.Value.ToString(param.Format != null ? param.Format : "hh:mm:ss");
+if (dateValue.Value.Year == 1)
+{
+	value = "";
+}
+
+	<label for="OMW_SearchDatePickerTime_@(param.Position)">@param.Label</label>
+	<div class="dateTimePickerWithDelete">
+		@if (ShowDateCombobox())
+		{
+			<div class="datePickerRightButtons">
+				<span class="clearDatePicker pickerClearValue ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline"></span>
+
+				<span class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline date-picker-swich-icon ui-icon-calendar"></span>
+				@*<span class="ui-btn ui-shadow ui-corner-all ui-icon-calendar ui-btn-icon-notext ui-btn-inline hidden date-picker-swich-icon"></span>*@
+			</div>
+
+			<div class=" pickerContent">
+				<div class="date-fields hidden">
+					<input id="OMW_SearchDatePickerTime_@(param.Position)" data-position="@param.Position" class="dateInput dateTimeInputRight dateTimeTime" type="text" data-role="datebox"
+						   data-options='{"mode":"timebox", "useFocus":true, "useInline":false, "enablePopup":true, "lockInput":true, "useButton":true, "overrideTimeFormat": 24, "overrideTimeOutput":"@DateTimeCSJSConvert.CSToJSTimeMobile(param.Format)"}'
+						   data-type="date" value="@value" data-defaultvalue="@value" />
+
+				</div>
+				@RenderDateTimeSelectBox(false, value)
+			</div>
+		}
+		else
+		{
+			<div class="datePickerRightButtons">
+				<span class="clearDatePicker pickerClearValue ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline"></span>
+
+				<span class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline date-picker-swich-icon"></span>
+				@*<span class="ui-btn ui-shadow ui-corner-all ui-icon-calendar ui-btn-icon-notext ui-btn-inline hidden date-picker-swich-icon"></span>*@
+			</div>
+
+			<div class=" pickerContent">
+				<div class="date-fields">
+					<input id="OMW_SearchDatePickerTime_@(param.Position)" data-position="@param.Position" class="dateInput dateTimeInputRight dateTimeTime" type="text" data-role="datebox"
+						   data-options='{"mode":"timebox", "useFocus":true, "useInline":false, "enablePopup":true, "lockInput":true, "useButton":true, "overrideTimeFormat": 24, "overrideTimeOutput":"@DateTimeCSJSConvert.CSToJSTimeMobile(param.Format)"}'
+						   data-type="date" value="@value" data-defaultvalue="@value" />
+
+				</div>
+				@RenderDateTimeSelectBox(true, value)
+			</div>
+		}
+	</div>
+	<div class="clear"></div>
+}
+
+@helper RenderDurationControl(OMWSearchParam param)
+{
+OMWSTypes.OMWValueDateTime dateValue = (OMWSTypes.OMWValueDateTime)param.Value;
+string value = dateValue.Value.ToString(param.Format != null ? param.Format : "hh:mm:ss");
+if (dateValue.Value.Year == 1)
+{
+	value = "";
+}
+
+	<label for="OMW_SearchDatePickerTime_@(param.Position)">@param.Label</label>
+	<div class="dateTimePickerWithDelete">
+		@if (ShowDateCombobox())
+		{
+			<div class="datePickerRightButtons">
+				<span class="clearDatePicker pickerClearValue ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline"></span>
+
+				<span class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline date-picker-swich-icon ui-icon-calendar"></span>
+				@*<span class="ui-btn ui-shadow ui-corner-all ui-icon-calendar ui-btn-icon-notext ui-btn-inline hidden date-picker-swich-icon"></span>*@
+			</div>
+			<div class="pickerContent hidden">
+				<div class="date-fields">
+					<input class="dateInput " type="text" data-role="datebox" data-position="@param.Position"
+						   data-options='{"mode":"durationbox","useFocus":true, "useInline":false, "enablePopup":true, "lockInput":true, "useButton":true}'
+						   id="OMW_SearchDatePickerTime_@(param.Position)" data-type="date"
+						   value="@value" data-defaultvalue="@value" />
+
+				</div>
+
+				@RenderDateTimeSelectBox(false, value)
+			</div>
+		}
+		else
+		{
+			<div class="datePickerRightButtons">
+				<span class="clearDatePicker pickerClearValue ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline"></span>
+
+				<span class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline date-picker-swich-icon"></span>
+				@*<span class="ui-btn ui-shadow ui-corner-all ui-icon-calendar ui-btn-icon-notext ui-btn-inline hidden date-picker-swich-icon"></span>*@
+			</div>
+			<div class="pickerContent">
+				<div class="date-fields">
+					<input class="dateInput " type="text" data-role="datebox" data-position="@param.Position"
+						   data-options='{"mode":"durationbox","useFocus":true, "useInline":false, "enablePopup":true, "lockInput":true, "useButton":true}'
+						   id="OMW_SearchDatePickerTime_@(param.Position)" data-type="date"
+						   value="@value" data-defaultvalue="@value" />
+
+				</div>
+
+				@RenderDateTimeSelectBox(true, value)
+			</div>
+		}
+	</div>
+	<div class="clear"></div>
+}
+
+@helper RenderDateTimeSelectBox(bool hidden, string selectedValue)
+{
+
+string[] values = new string[] { "ignore", "yesterday", "today", "tomorrow", "last week", "this week",
+		"next week", "last month", "this month", "next month", "last year", "this year", "next year", "last 24 hours" ,
+		"last 12 hours", "last 6 hours", "last 2 hour", "last 1 hour"};
+if (hidden)
+{
+		<div class="date-select-box hidden">
+			<select class="date-custom-combobox">
+				@for (int i = 0; i < values.Length; i++)
+				{
+					if (values[i] == selectedValue)
+					{
+						<option selected value="@values[i]">@values[i]</option>
+					}
+					else
+					{
+						<option value="@values[i]">@values[i]</option>
+					}
+				}
+			</select>
+
+		</div>
+}
+else
+{
+		<div class="date-select-box">
+			<select class="date-custom-combobox">
+				@for (int i = 0; i < values.Length; i++)
+				{
+					if (values[i] == selectedValue)
+					{
+						<option selected value="@values[i]">@values[i]</option>
+					}
+					else
+					{
+						<option value="@values[i]">@values[i]</option>
+					}
+				}
+			</select>
+		</div>
+}
+}
+@functions {
+
+	public static bool DateValueIsSelectOption(string value)
+	{
+		string[] values = new string[] { "ignore", "yesterday", "today", "tomorrow", "last week", "this week",
+		"next week", "last month", "this month", "next month", "last year", "this year", "next year", "last 24 hours" ,
+		"last 12 hours", "last 6 hours", "last 2 hour", "last 1 hour"};
+
+		for (int i = 0; i < values.Length; i++)
+		{
+			if (values[i] == value)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public static bool ShowDateCombobox()
+	{
+		if (DateTime.Now.Millisecond % 2 == 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}

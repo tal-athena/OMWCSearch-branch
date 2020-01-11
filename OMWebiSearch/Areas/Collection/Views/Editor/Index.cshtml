@@ -1,0 +1,49 @@
+﻿@using OMWebiSearch.Areas.ViewModels
+@model CollectionViewModel
+
+@{
+	ViewBag.Type = OMWSTypes.EPageType.Collection;
+	ViewBag.Title = "Collection";
+	Layout = "~/Areas/Common/Views/_Layout.cshtml";
+}
+
+@section CommandPanel
+{
+	<script type="text/javascript">
+        OMWClientContext.InitStory('@Url.Content("~/")', parseInt('@Model.NavigationPaneNumber'), parseInt('@Model.NavigationPaneItemId'));
+	</script>
+
+	<div class="headerButtonsLeft">
+		@Html.Partial("~/Areas/Common/Views/_NewItem.cshtml")
+		@Html.Partial("~/Areas/Upload/Views/_Upload.cshtml")
+	</div>
+}
+
+@section ToolbarPanel
+{
+	@Html.Partial("~/Areas/Collection/Views/Shared/CollectionButtonsView.cshtml", new ToolbarViewModel() { viewSelectData = ViewBag.ToolbarComboBox, ToolbarItems = ViewBag.ToolbarButtons, IsNewInEnabled = Model.IsNewInEnabled })
+}
+
+@section HeaderPanel
+{
+	@Html.Hidden("baseURL", Url.Action("Index", "EditStory", new { area = "Story" }))
+	@Html.Partial("Fields", new CollectionViewModel() { CollectionId = Model.CollectionId })
+
+	<script type="text/javascript">
+		OMWClientContext.Collection.SetupHeaderFields();
+
+		// TODO
+		//OMWClientContext.UpdateHeaderFields();
+	</script>
+}
+
+@section ContentPanel
+{
+	@Html.Partial("Contents", new CollectionViewModel() { CollectionId = Model.CollectionId })
+	<script>
+		$(document).ready(function ()
+		{
+			$('#rightSlidebarM').show();
+		});
+	</script>
+}

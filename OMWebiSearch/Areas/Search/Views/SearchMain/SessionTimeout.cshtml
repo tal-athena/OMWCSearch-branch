@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Session expired";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div class="header-wrap1">
+            <div class="loginHeaderWrap">
+                &nbsp;
+            </div>
+            <div class="header-wrap2">
+                <div class="search-prof-wrap bottomMargin">
+                    @Html.ActionLink("Log On", "LogOn", "Account", new { area = "Authentication" }, null)
+                </div>
+                <ul>
+                <li>Session has expired. Please re-login.</li>
+                <li>Current session timeout is @Session.Timeout minutes</li>
+                </ul>
+                <br />
+            </div>            
+        </div>
+</body>
+</html>

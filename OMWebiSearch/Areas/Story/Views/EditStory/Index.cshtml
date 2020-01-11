@@ -1,0 +1,100 @@
+﻿@using System.Web.Mvc.Html
+@using OMWebiSearch.Areas.ViewModels
+@model OMWebiSearch.Areas.ViewModels.StoryPageViewModel
+@{
+	ViewBag.Type = OMWSTypes.EPageType.Story;
+	ViewBag.Title = "Story";
+	Layout = "~/Areas/Common/Views/_Layout.cshtml";
+}
+@section CommandPanel
+{
+	<script type="text/javascript">
+        @*@Model.Story.ShowText*@
+        OMWClientContext.InitStory('@Url.Content("~/")', parseInt('@Model.NavigationPaneNumber'), parseInt('@Model.NavigationPaneItemId'));
+	</script>
+	@Html.Partial("LoadStoryCommandPanel", new StoryViewModel() { Story = Model.Story })
+}
+@section HeaderPanel
+{
+
+	@Html.Hidden("baseURL", Url.Content("~/Story/EditStory/"))
+	@*// Url.Action("Index", "EditStory", new { area = "Story" }))*@
+
+	@Html.Hidden("hdnShowText", Model.Story.ShowText)
+	@Html.Hidden("hdnPageType", "Story")
+
+	@Html.Hidden("hdnFontSize", (string) ViewBag.fontSize)
+	@Html.Hidden("hdnFontFace", (string) ViewBag.fontFace)
+
+	@Html.Hidden("hdnIsRTLText", ((bool) ViewBag.IsRTLText).ToString())
+
+
+	@Html.Partial("StoryButtonsView", new ToolbarViewModel() { viewSelectData = ViewBag.ToolbarComboBox, ToolbarItems = ViewBag.ToolbarButtons, StoryReadonly = Model.Story.ReadOnly })
+
+	@if (Model.Story.ReadOnly)
+	{
+		<script type="text/javascript" src="~/Scripts/ckeditor-toolbar/ckeditor_desktop_read_only.js"></script>
+	}
+	else
+	{
+		<script type="text/javascript" src="~/Scripts/ckeditor-toolbar/ckeditor_desktop_editable.js"></script>
+	}
+	
+		@Html.Partial("LoadStoryFields", new StoryViewModel() { Story = Model.Story })
+
+	@if (Model.Story.ShowText == true)
+	{
+		<script type="text/javascript">
+			OMWClientContext.Story.SetupHeaderFields();
+			// TODO
+			//OMWClientContext.UpdateHeaderFields();
+		</script>
+	}
+	else
+	{
+		<script type="text/javascript">
+			OMWClientContext.Story.SetupHeaderFields();
+		</script>
+	}
+
+
+
+	<div id="superUserModal" class="modalDialog">
+		<div>
+			<div class="dialogTitlebar">
+				<h2>Super user modal</h2>
+				<a id="superUserModalCloseIcon" href="#" title="Close" class="close" style="width:17px;"></a>
+			</div>
+
+			<div>
+				<p id="superUserModalTextMessage"></p>
+				<textarea id="superUserModalCKEditor"></textarea>
+			</div>
+
+			<div class="buttons">
+				<table>
+					<tr>
+						<td>
+							<button id="superUserModalCopyToClipboard" class="toolbarButton">
+								Copy to clipboard
+							</button>
+						</td>
+						<td style="padding-left: 40px;">
+							<button id="superUserModalClose" class="toolbarButton">Close</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+	</div>
+
+
+}
+@section ContentPanel
+{
+	@if (Model.Story.ShowText == true)
+	{
+		@Html.Partial("LoadStoryContent", new StoryViewModel() { Story = Model.Story })
+	}
+}

@@ -1,0 +1,60 @@
+﻿@using OMWebiSearch.Areas.ViewModels
+@model NavigationPaneItemViewModel
+@{
+    ViewBag.Type = OMWSTypes.EPageType.Search;
+    ViewBag.Title = "Search";
+    Layout = "~/Areas/Search/Views/Shared/_MobileLayout.cshtml";
+}
+
+
+<input type="hidden" id="startPageBaseUrl" value="@Url.Content("~/Search/SearchMain/")" />
+<input type="hidden" id="hdnPaneName" value="@ViewBag.PaneName" />
+
+<div data-role="page" id="paneItems">
+
+    <div class="ui-header ui-bar-inherit">
+
+        <h3 class="ui-title" aria-level="1"></h3>
+
+        <div class="ui-btn-left headerCustomControlGroup">
+            <a href="@Url.Content("~/Search/SearchMain/Index")"
+               class="backButton  ui-link ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all "
+               data-direction="reverse" data-role="button" role="button">Back</a>
+
+            <a href="@Url.Content("~/Authentication/Account/LogOff")" class="ui-link ui-btn ui-icon-logout-icon ui-btn-icon-left ui-shadow ui-corner-all "
+               data-icon="logout-icon" data-iconpos="left" data-ajax="false" data-role="button" role="button">Logout</a>
+
+            @*<a href="@Url.Content("~/Search/SearchMain/Index")" class="ui-link ui-btn ui-icon-home ui-btn-icon-left ui-shadow ui-corner-all "
+               data-icon="home" data-iconpos="left" data-direction="reverse" data-role="button" role="button">Home</a>*@
+            
+        </div>
+        <a id="mobileToolbarLogo" href="@Url.Content("~/Search/SearchMain/Index")" data-direction="reverse">
+        </a>
+    </div>
+
+
+    <div class="ui-bar ui-bar-blue">
+        <h3 class="navigationPaneName blueBarPageTitle"></h3>
+    </div>
+
+    <div data-role="content">
+
+        <ul id="listSearchProfileItems" data-role="listview">
+            @foreach (var paneItem in Model.PaneItems)
+            {
+                <li id="paneItem@(paneItem.ID)" data-searchprofileid='@paneItem.SearchProfileID'>
+
+                    <a class="paneItem" data-name="@paneItem.Name" data-id="@(paneItem.ID)"
+                       href="@Url.Content("~/Search/SearchMain/Index/" + paneItem.SearchProfileID.ToString() + "/" + ViewBag.NavigationPane.ToString())"
+                       data-transition="slide">
+                        <img class='paneItemImage ui-li-icon' src="@paneItem.Icon.ToString()" alt='icon' />@paneItem.Name</a>
+
+                </li>
+
+            }
+        </ul>
+    </div>
+
+    <div data-role="footer">
+    </div>
+</div>

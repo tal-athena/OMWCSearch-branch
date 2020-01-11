@@ -1,0 +1,37 @@
+﻿@{
+	Layout = null;
+}
+
+<div id="listFieldDialog" class="modalDialog pop-up-dialog" keyboard-navigation keyboard-save="save()" keyboard-cancel="close()">
+	<div ng-style="getStyle()" ng-keydown="onKeyDown($event)">
+		
+		<div class="dialogTitlebar">
+			<h2>Select value</h2>
+			<a id="closeX" tab-order="0" title="Close" class="close" ng-click="close()"></a>
+		</div>
+
+		<div class="listFieldDialog-loading" ng-if="showLoadingAnimation">
+		</div>
+
+		<div class="pop-up-body" ng-if="!showLoadingAnimation">
+			
+			<div class="pop-up-dialog-table edit-list-field-value-table">
+				<div id="editListFieldGrid" class="grid" ui-grid="gridOptions"></div>
+			</div>
+
+		</div>
+
+		<div ng-if="!showLoadingAnimation" style="height: 36px">
+			<button id="btnClear" ng-click="clearValue()" class="toolbarButton toolbarCustomButton pull-left" tab-order="4">
+				<img class="iconBox" src="~/Content/Images/dialog_close.png" />
+				<span class="buttonText">Clear</span>
+			</button>
+			<button id="btnSave" ng-click="save()" class="toolbarButton toolbarCustomButton pull-right" tab-order="3">
+				<img class="iconBox" src="~/Content/Images/dialog_ok.png" />
+				<span class="buttonText">Save</span>
+			</button>
+		</div>
+
+	</div>
+</div>
+

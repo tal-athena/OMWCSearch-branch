@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97AE045C-A9C7-4FE4-9E98-6732E9EE5EBB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OMWCSearch</RootNamespace>
+    <AssemblyName>OMWCSearch</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Exchange2013\Microsoft.Exchange.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.Data.Common, Version=8.0.681.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Exchange2013\Microsoft.Exchange.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\HtmlStory.cs" />
+    <Compile Include="Enums\SearchResultsType.cs" />
+    <Compile Include="Enums\DateTimeDisplayMode.cs" />
+    <Compile Include="Domain\OMWSearchParamDateTime.cs" />
+    <Compile Include="Interfaces\ICollectionsAccess.cs" />
+    <Compile Include="Interfaces\IPortletRepository.cs" />
+    <Compile Include="Interfaces\IPortletService.cs" />
+    <Compile Include="Interfaces\IDocumentsAccess.cs" />
+    <Compile Include="Interfaces\ISearchParametersParser.cs" />
+    <Compile Include="Domain\SearchParametersParser.cs" />
+    <Compile Include="Interfaces\ISelectionLists.cs" />
+    <Compile Include="Interfaces\IToolbarManager.cs" />
+    <Compile Include="Services\OMNavigation.cs" />
+    <Compile Include="UnitTest\FakeCollectionsAccess.cs" />
+    <Compile Include="UnitTest\FakeDataAccess.cs" />
+    <Compile Include="UnitTest\SearchProfilesDeserializer.cs" />
+    <Compile Include="UnitTest\SearchService.cs" />
+    <Compile Include="UnitTest\DCOMWSearchProfile.cs" />
+    <Compile Include="UnitTest\FakeSearchProvider.cs" />
+    <Compile Include="Interfaces\ISearchProvider.cs" />
+    <Compile Include="Interfaces\ISearchService.cs" />
+    <Compile Include="Interfaces\IUserService.cs" />
+    <Compile Include="MembershipProviders\OMWCMembershipProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTest\SearchServiceFWDS.cs" />
+    <Compile Include="UnitTest\ToolbarManager.cs" />
+    <Compile Include="UnitTest\UserService.cs" />
+    <Compile Include="Utils\ParseHTML\ParseHTMLDoc.cs" />
+    <Compile Include="Utils\ParseHTML\ParseHTMLTextDirection.cs" />
+    <Compile Include="Utils\RTFToHTML.cs" />
+    <Compile Include="Utils\UploadParseXML.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OMWSTypes\OMWSTypes.csproj">
+      <Project>{2ACD226C-9E83-4418-A559-FFAEB6193A79}</Project>
+      <Name>OMWSTypes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="profile2.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="panes1.xml" />
+    <EmbeddedResource Include="pane_items1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="stories.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="collections.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

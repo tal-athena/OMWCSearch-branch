@@ -1,0 +1,38 @@
+﻿<div>
+	<div ng-class="{ 'omw-field-type-list': paramFieldType != 'search'  }">
+		<input type="text"
+		       ng-class="{ 'SearchInput': paramFieldType == 'search' }"
+		       id="{{paramControlId}}"
+		       ng-model="inputValue"
+		       data-originalval="{{paramOriginalValue}}"
+		       data-fieldid="{{paramFieldId}}" />
+	</div>
+
+	<tags-input ng-model="tags"
+	            ng-disabled="paramIsReadOnly"
+	            ng-focus="onFocus()"
+	            ng-blur="onBlur()"
+	            on-tag-added="onTagAdded($tag)"
+	            on-tag-removed="onTagRemoved($tag)"
+	            spellcheck="false"
+	            add-from-autocomplete-only="false"
+	            add-on-blur="false"
+	            add-on-comma="false"
+	            min-length="1"
+	            placeholder="Type and press Return to add value"
+	            replace-spaces-with-dashes="false">
+		<auto-complete ng-if="paramEnableSuggestions"
+		               source="loadSuggestions($query)"
+		               display-property="text"
+		               min-length="1"
+		               select-first-match="false"
+		               max-results-to-show="100"
+		               highlight-matched-text="true">
+		</auto-complete>
+	</tags-input>
+	<span class="header-field-edit" ng-click="onEditClick($event)" ng-hide="paramIsReadOnly" ng-mouseenter="onMouseEnter($event)" ng-mouseleave="onMouseLeave($event)"></span>
+</div>
+<div class="loading-popup" ng-if="showLoadingPopup" ng-style="getLoadingPopupStyles()">
+	<img src="../../../Content/Images/loader1.gif" />
+	<span>Loading suggestions...</span>
+</div>

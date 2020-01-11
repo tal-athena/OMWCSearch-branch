@@ -1,0 +1,66 @@
+﻿
+<div class="modalDialog pop-up-dialog">
+    <div>
+
+        <div class="dialogTitlebar">
+            <h2>Create new document</h2>
+            <a id="closeX" title="Close" class="close" ng-click="close()"></a>
+        </div>
+
+        <div class="pop-up-body">
+            <span class="selectDocumentType">Select document type:</span>
+
+            <!--<div ng-style="{'width': getWidthOfColumns() }">-->
+            <div>
+
+                <table class="pop-up-dialog-table">
+                    <thead>
+                        <tr>
+                            <th class="pop-up-dialog-icon"></th>
+                            <th ng-repeat="col in columns" data-id="{{::col.ID}}" ng-style="{'width': col.width }">
+                                {{::col.title}}
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+
+                <div class="documentTypes">
+                    <table class="pop-up-dialog-table">
+                        <tbody>
+                            <tr ng-repeat="row in data" ng-click="selectRow(row)" ng-class="{selected: row._selected}" class="pop-up-dialog-table-row" ng-hide="row.hide">
+                                <!--Section-->
+                                <td ng-if="!!row.section" class="pop-up-dialog-table-subsection">
+                                    <i class="pop-up-expand-icon" ng-click="toggleRow(row, $event, $index)"></i>
+                                </td>
+                                <td ng-if="!!row.section" class="pop-up-dialog-table-subsection" colspan="{{columns.length}}">{{row.section}}</td>
+                                
+                                <!--Data-->
+                                <td ng-if="!row.section && !!row.data" class="pop-up-dialog-icon">
+                                    <img ng-if="firstColumnIcon" ng-src="{{row.icon}}" alt="" />
+                                </td>
+                                <td ng-if="!row.section && !!row.data" ng-repeat="col in columns" ng-style="{'width': col.width }">
+                                    {{::getRowValue(row, col.ID)}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div>
+            <div class="buttons-row">
+                <button id="btnSave"
+                        ng-click="save()"
+                        class="linkButton save-button">
+                    Save
+                </button>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+</div>
+

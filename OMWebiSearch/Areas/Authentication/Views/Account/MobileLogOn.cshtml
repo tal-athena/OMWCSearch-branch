@@ -1,0 +1,66 @@
+﻿@using System.Web.Mvc.Html
+@model OMWebiSearch.Models.LogOnModel
+@{
+    Layout = "~/Areas/Authentication/Views/Shared/_MobileLayout.cshtml";
+}
+
+<div id="logOnPage" data-role="page" data-external-page="true" data-dom-cache="false" data-title="LogOn">
+    @*HEADER*@
+    <div data-role="header" class="ui-header">
+        <img class="mobileLoginImage" src="@Url.Content("~/Content/Styles/logo-mobile.png")" alt="login image" />
+    </div>
+
+    @*CONTENT*@
+    <div data-role="content">
+
+        @Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again.")
+
+
+        @using (Html.BeginForm("LogOn", ViewContext.RouteData.GetRequiredString("controller"), FormMethod.Post))
+        {
+
+
+            <input type="hidden" name="returnUrl" value="@Request.Params["returnUrl"]" />
+
+
+            <div class="fieldcontain">
+                @Html.LabelFor(m => m.UserName, "Login")
+                @Html.TextBoxFor(m => m.UserName, new { @class = "formInput", autocomplete = "on" })
+                @Html.ValidationMessageFor(m => m.UserName)
+
+            </div>
+            <div class="fieldcontain">
+
+                @Html.LabelFor(m => m.Password)
+
+                @Html.PasswordFor(m => m.Password, new { @class = "formInput", autocomplete = "on" })
+                @Html.ValidationMessageFor(m => m.Password)
+
+            </div>
+
+
+            <div class="fieldcontain" style="width: 210px; margin: auto;">
+                <div class="loginCenterWrapper" style="margin-right: 10px;">
+                    <button data-icon="delete" class="loginFormCancel">Cancel</button>
+                </div>
+                <div class="loginCenterWrapper">
+                    <button class=" ui-button-blue " type="submit">Submit</button>
+                </div>
+            </div>
+
+        }
+
+    </div>
+
+    @if (ViewBag.otherUrl != null)
+    {
+        <a href="@ViewBag.otherUrl" class="otherWebSiteLink">Standard Web App</a>
+    }
+   
+
+    <div data-role="footer" data-position="fixed">
+    </div>
+
+    <script href="@Url.Content("~/Scripts/OMW_MobileLogOn.js")" type="text/javascript"></script>
+
+</div>

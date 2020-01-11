@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> 
+    <script>
+        function AddFrame() {
+            $("#FrameDiv").append("<div style='float:left; width:355px;'><iframe src='test.htm' width='350' height='350'></iframe></div>");
+        }
+    </script>
+</head>
+    <body>
+        <button onclick="AddFrame();">Add Frame</button><br/>
+        <div id="FrameDiv"></div>
+    </body>
+</html>

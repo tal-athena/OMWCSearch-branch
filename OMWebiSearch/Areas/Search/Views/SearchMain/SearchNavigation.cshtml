@@ -1,0 +1,11 @@
+﻿@using OMWebiSearch.Areas.ViewModels
+@model SearchNavigationViewModel
+
+
+    @{
+        for (var i = Model.Min; i <= Model.Max; i++)
+        {
+            var c = (Model.PageNumber == i ? "current" : string.Empty);
+            <text><a href="#" onclick="NavigateToPage('@Url.Content("~/")',@i.ToString()); return false;" class="pageNumbers @c">@((i+1).ToString())</a>&nbsp;</text>
+        }
+    }

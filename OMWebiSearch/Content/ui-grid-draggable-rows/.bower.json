@@ -1,0 +1,41 @@
+{
+  "name": "ui-grid-draggable-rows",
+  "version": "0.2.2",
+  "authors": [
+    "Szymon Krajewski <szykra@gmail.com>"
+  ],
+  "description": "HTML5 Drag and Drop functionality for angular ui-grid",
+  "main": "js/draggable-rows.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "angular",
+    "ui-grid",
+    "drag",
+    "and",
+    "drop",
+    "html5",
+    "draggable"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".eslintrc"
+  ],
+  "homepage": "https://github.com/cdwv/ui-grid-draggable-rows",
+  "_release": "0.2.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.2",
+    "commit": "6f7dc4fa92ed853f81066ca0be3d37332d9de159"
+  },
+  "_source": "git://github.com/cdwv/ui-grid-draggable-rows.git",
+  "_target": "~0.2.2",
+  "_originalSource": "ui-grid-draggable-rows",
+  "_direct": true
+}

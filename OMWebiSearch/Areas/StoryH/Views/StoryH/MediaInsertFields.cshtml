@@ -1,0 +1,67 @@
+﻿@using NUnit.Framework
+@using OMWCSearch
+@using OMWSTypes
+@model List<OMWCSearch.OMWNamedField>
+
+@functions {
+	private string GetFieldPrefix(EOMWFieldDisplayType displayType, bool isInternalLink)
+	{
+		if (isInternalLink)
+			return "OMW_InternalLink_";
+
+		switch (displayType)
+		{
+			case EOMWFieldDisplayType.eOMFieldDisplayType_Text:
+				return "OMW_SearchTextBox_";
+			case EOMWFieldDisplayType.eOMFieldDisplayType_Combo:
+				return "comboBox_";
+			case EOMWFieldDisplayType.eOMFieldDisplayType_List:
+				return "list_";
+			case EOMWFieldDisplayType.eOMFieldDisplayType_Check:
+				return "OMW_SearchCheckBox_";
+			case EOMWFieldDisplayType.eOMFieldDisplayType_Number:
+				return "OMW_SearchNumericTextBox_";
+			case EOMWFieldDisplayType.eOMFieldDisplayType_DateTime:
+				return "OMW_SearchDatePicker_";
+			case EOMWFieldDisplayType.eOMFieldDisplayType_Duration:
+				return "OMW_SearchDuration_";
+			case EOMWFieldDisplayType.eOMFieldDisplayType_TimeOnly:
+				return "OMW_SearchDatePickerTime_";
+			case EOMWFieldDisplayType.eOMFieldDisplayType_DateOnly:
+				return "OMW_SearchDatePickerDate_";
+			case EOMWFieldDisplayType.eOMFieldDisplayType_Hyperlink:
+				return "Hyperlink_";
+			case EOMWFieldDisplayType.eOMFieldDisplayType_MultilineText:
+				return "OMW_SearchMultiline_";
+			case EOMWFieldDisplayType.eOMFieldDisplayType_InternalLink:
+				return "OMW_InternalLink_";
+			case EOMWFieldDisplayType.eOMFieldDisplayType_Undefined:
+			default:
+				return "";
+		}
+	}
+}
+@{
+	Layout = null;
+
+	var renderArray = new List<KeyValuePair<int, string>>();
+	@HeaderFieldsHelpers.PutDataInHTML(Model, renderArray);
+}
+
+@Html.Hidden("fields-data", Json.Encode(renderArray.Select((x, index) => new { FieldID = x.Key, Value = x.Value, OriginalValue = x.Value, DisplayType = Model[index].DisplayType, Prefix = GetFieldPrefix(Model[index].DisplayType, Model[index].InternalLink != null)}).ToList()))
+
+<div class="media-insert-fields">
+	@{
+		for (var i = 0; i < Model.Count; i++)
+		{
+			var field = Model[i];
+
+			<div class="media-insert-field-item">
+				@HeaderFieldsHelpers.RenderControl(field.FieldID, field, i, "auto", true)
+			</div>
+		}
+	}
+
+</div>
+
+

@@ -1,0 +1,56 @@
+﻿private void DoClean(DCOMWSearchProfile profile)
+{
+    foreach (var p in profile.SearchParams)
+    {
+        if (p.Value.ValueType == EOMWDataType.DateTime)
+        {
+            var val = p.Value as OMWValueDateTime;
+            val.Value = DateTime.Now;
+        }
+    }
+}
+
+
+private DCOMWSearchProfile GetSearchProfile(SearchProfileID searchProfileID, int paneID, int paneItemID, int viewID = -1)
+{
+    var retVal = this._searchProvider.GetSearchProfileByID(searchProfileID, paneID, paneItemID, viewID);
+
+    DoClean(retVal);
+
+    // create an object that will format as JSON
+    var jss = new JavaScriptSerializer();
+    string json = jss.Serialize(retVal);
+
+    DataContractJsonSerializer serializer =
+        new DataContractJsonSerializer(typeof(DCOMWSearchProfile));
+
+    // Create a stream to hold the serialization.
+    using (MemoryStream stream = new MemoryStream())
+    {
+        // Serialize the Customer.
+        serializer.WriteObject(stream, retVal);
+
+        // Convert the stream into a string.
+        stream.Seek(0, SeekOrigin.Begin);
+        string serialization;
+        using (StreamReader reader = new StreamReader(stream))
+        {
+            serialization = reader.ReadToEnd();
+
+            int i = 0;
+            i++;
+
+            // Display the serialization.
+            // serializationTextBox.Text = serialization;
+
+            // Deserialize from the stream.
+            //stream.Position = 0;
+            //Customer newCustomer = (Customer)serializer.ReadObject(stream);
+
+            // Display the deserialization.
+            //DisplayCustomer(deserializedTextBox, newCustomer);
+        }
+    }
+
+    return retVal;
+}

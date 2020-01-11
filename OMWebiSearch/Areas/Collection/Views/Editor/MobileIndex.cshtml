@@ -1,0 +1,91 @@
+﻿@using System.Web.Script.Serialization
+@using OMWebiSearch.Areas.ViewModels
+@model OMWebiSearch.Areas.ViewModels.CollectionViewModel
+@{
+    ViewBag.Type = OMWSTypes.EPageType.Collection;
+    ViewBag.Title = "Collection";
+    Layout = "~/Areas/Collection/Views/Shared/_MobileLayout.cshtml";
+}
+@{
+    var url = "/OMWebiSearch/Collection/Editor/Index/" + Model.CollectionId + "#";
+}
+
+
+<input type="hidden" id="hdnAppBaseUrl" value="@Url.Content("~/")" />
+<input type="hidden" id="hdnAuthBaseURL" value="@Url.Content("~/Authentication/Account/LogOn")" />
+
+<!--COLLECTION PAGE-->
+
+<div data-role="page" id="collectionPage" data-url="@url" data-dom-cache="true" data-title="Collection">
+
+
+    <input type="hidden" id="hdnCollectionId" value="@Model.CollectionId.ToString()" />
+    <input type="hidden" id="hdnTemplateId" value="@Model.TemplateId.ToString()" />
+
+
+
+    @*HEADER*@
+    <div class="collectionHeader" id="collectionHeader">
+        <div class="ui-header ui-bar-inherit">
+
+            <h3 class="ui-title" aria-level="1"></h3>
+
+            <div class="ui-btn-left headerCustomControlGroup">
+                <a href="" 
+                   class="backButton pageBackButton ui-link ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all "
+                   rel="external" data-ajax="false"
+                   data-icon="back" data-transition="slide" data-external-page="true" data-direction="reverse" role="button">Back</a>
+
+
+                <a href="@Url.Content("~/Authentication/Account/LogOff")" class="ui-link ui-btn ui-icon-logout-icon ui-btn-icon-left ui-shadow ui-corner-all"
+                   rel="external" data-ajax="false"
+                   data-icon="logout-icon" data-iconpos="left" data-role="button" role="button">Logout</a>
+
+            </div>
+
+
+            <a id="mobileToolbarLogo" href="@Url.Content("~/Search/SearchMain/Index")"
+               rel="external" data-ajax="false" data-direction="reverse">
+            </a>
+        </div>
+    </div>
+
+    <div data-role="navbar" class="nav-glyphish ui-navbar ui-mini" id="collectionNavigationHeader">
+        <ul class="ui-grid">
+            <li class="recordsNavBtn">
+                <a data-transition="slide" class="ui-btn ui-icon-edit ui-btn-icon-left navRecords ui-btn-active">
+                    Records
+                </a>
+            </li>
+            <li class="headerNavBtn">
+                <a data-transition="slide" class="ui-btn ui-icon-bullets ui-btn-icon-left navBtnHeader">
+                    Header
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="headerPage mobilePage">
+        <div data-role="header">
+        </div>
+
+        <div data-role="content" class="collectionPageContent">
+            <ul data-role="listview" class="collectionHeaderFields">
+                @Html.Partial("MobileFields", new CollectionViewModel() { CollectionId = Model.CollectionId })
+            </ul>
+        </div>
+    </div>
+    <div class="recordsPage mobilePage">
+        <div data-role="header">
+        </div>
+        <div data-role="content">
+            <ul id="collectionListItems" data-role="listview"></ul>
+        </div>
+    </div>
+
+    <div data-role="footer">
+    </div>
+
+</div>
+

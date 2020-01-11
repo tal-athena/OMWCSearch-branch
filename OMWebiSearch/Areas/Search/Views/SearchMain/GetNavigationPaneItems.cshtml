@@ -1,0 +1,20 @@
+﻿@using OMWebiSearch.Areas.ViewModels
+@model NavigationPaneItemViewModel
+@foreach (var paneItem in Model.PaneItems)
+{
+    <div
+         class="navigationPaneItem @(paneItem.SearchProfileID == ((int?)ViewBag.SearchProfileID??-1)? "selectedNavigationPaneItem" : "")" 
+         id="navigationPaneItem@(paneItem.SearchProfileID)" 
+         profileId = "@paneItem.SearchProfileID" 
+         onclick="OMWClientContext.SearchResults.LoadSearchProfile(@paneItem.PaneID, @paneItem.SearchProfileID, this);">
+        <div class="navigationImage"><img src="@(paneItem.Icon)" alt="" style="height:24px; width:24px;" /></div>
+        <div style="float:left"><p>@paneItem.Name</p></div>
+        <div style="float:left" class="ngCellOpenIcons"><a href="#" onclick="OMWClientContext.SearchResults.ShowSearchProfile(@paneItem.PaneID, @paneItem.SearchProfileID);"><img src="@Url.Content("~/Content/Images/FuncIcons/item_open_new_016.png")" alt="Open in New Tab" /></a>
+        </div>
+        <div style="float:left" class="ngCellOpenIcons">
+            <a href="#" onclick="OMWClientContext.SearchResults.OpenSearchProfileInNewWindow(@paneItem.PaneID, @paneItem.SearchProfileID);"><img src="@Url.Content("~/Content/Images/FuncIcons/item_open_tab_016.png")" alt="Open" /></a>
+        </div>
+
+
+        </div>
+}

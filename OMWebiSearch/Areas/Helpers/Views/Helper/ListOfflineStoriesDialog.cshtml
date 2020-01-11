@@ -1,0 +1,34 @@
+﻿@{
+	Layout = null;
+}
+
+<div id="listFieldDialog" class="modalDialog pop-up-dialog" keyboard-navigation keyboard-save="open()" keyboard-cancel="close()">
+	<div ng-style="getStyle()">
+		
+		<div class="dialogTitlebar">
+			<h2>Saved Stories</h2>
+			<a id="closeX" tab-order="0" title="Close" class="close" ng-click="close()"></a>
+		</div>
+
+		<div class="pop-up-body">
+			
+			<div class="pop-up-dialog-table edit-list-field-value-table">
+				<div class="grid" ui-grid="gridOptions"></div>
+			</div>
+
+		</div>
+
+		<div style="height: 36px">
+			<button id="btnClear" ng-click="close()" class="toolbarButton toolbarCustomButton pull-right" tab-order="3" style="margin-right: 5px">
+				<img class="iconBox" src="~/Content/Images/dialog_close.png" />
+				<span class="buttonText">Cancel</span>
+			</button>
+			<button id="btnSave" ng-click="open()" class="toolbarButton toolbarCustomButton pull-right" tab-order="2">
+				<img class="iconBox" src="~/Content/Images/dialog_ok.png" />
+				<span class="buttonText">OK</span>
+			</button>
+		</div>
+
+	</div>
+</div>
+

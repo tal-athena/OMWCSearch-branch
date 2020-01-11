@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMWebAppServices", "OMWCSearch\OMWebAppServices.csproj", "{97AE045C-A9C7-4FE4-9E98-6732E9EE5EBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMWSTypes", "OMWSTypes\OMWSTypes.csproj", "{2ACD226C-9E83-4418-A559-FFAEB6193A79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMWSessionManagement", "OMWSessionManagement\OMWSessionManagement.csproj", "{9145DE7C-39E1-4B3B-B612-49E2F2A28DD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMWebApp", "OMWebiSearch\OMWebApp.csproj", "{1198C3FE-F0C5-4F96-BA99-84A75A09797D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTF2HtmlTest", "RTF2HtmlTest\RTF2HtmlTest.csproj", "{105BFCF1-28A9-4807-B6ED-F16A708CE47E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMWebSecurityDemo", "OMWebSecurityDemo\OMWebSecurityDemo.csproj", "{C210DAE1-2F8C-4492-A48E-36BB23DE106E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReplaceIcon", "ReplaceIcon\ReplaceIcon.csproj", "{292F06A8-8668-430A-90AA-A9A7669ED097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSockets", "WebSockets\WebSockets.csproj", "{B9439C50-5591-4EF9-9EFD-670100E01173}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://cleanit.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = OMWCSearch\\OMWebAppServices.csproj
+		SccProjectName1 = OMWCSearch
+		SccLocalPath1 = OMWCSearch
+		SccProjectUniqueName2 = OMWebiSearch\\OMWebApp.csproj
+		SccProjectName2 = OMWebiSearch
+		SccLocalPath2 = OMWebiSearch
+		SccProjectUniqueName3 = OMWSessionManagement\\OMWSessionManagement.csproj
+		SccProjectName3 = OMWSessionManagement
+		SccLocalPath3 = OMWSessionManagement
+		SccProjectUniqueName4 = OMWSTypes\\OMWSTypes.csproj
+		SccProjectName4 = OMWSTypes
+		SccLocalPath4 = OMWSTypes
+		SccProjectUniqueName5 = RTF2HtmlTest\\RTF2HtmlTest.csproj
+		SccProjectName5 = RTF2HtmlTest
+		SccLocalPath5 = RTF2HtmlTest
+		SccProjectUniqueName6 = OMWebSecurityDemo\\OMWebSecurityDemo.csproj
+		SccProjectName6 = OMWebSecurityDemo
+		SccLocalPath6 = OMWebSecurityDemo
+		SccProjectUniqueName7 = ReplaceIcon\\ReplaceIcon.csproj
+		SccProjectName7 = ReplaceIcon
+		SccLocalPath7 = ReplaceIcon
+		SccProjectUniqueName8 = WebSockets\\WebSockets.csproj
+		SccProjectName8 = WebSockets
+		SccLocalPath8 = WebSockets
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97AE045C-A9C7-4FE4-9E98-6732E9EE5EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97AE045C-A9C7-4FE4-9E98-6732E9EE5EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97AE045C-A9C7-4FE4-9E98-6732E9EE5EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97AE045C-A9C7-4FE4-9E98-6732E9EE5EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ACD226C-9E83-4418-A559-FFAEB6193A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ACD226C-9E83-4418-A559-FFAEB6193A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ACD226C-9E83-4418-A559-FFAEB6193A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ACD226C-9E83-4418-A559-FFAEB6193A79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9145DE7C-39E1-4B3B-B612-49E2F2A28DD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9145DE7C-39E1-4B3B-B612-49E2F2A28DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9145DE7C-39E1-4B3B-B612-49E2F2A28DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9145DE7C-39E1-4B3B-B612-49E2F2A28DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1198C3FE-F0C5-4F96-BA99-84A75A09797D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1198C3FE-F0C5-4F96-BA99-84A75A09797D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1198C3FE-F0C5-4F96-BA99-84A75A09797D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1198C3FE-F0C5-4F96-BA99-84A75A09797D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{105BFCF1-28A9-4807-B6ED-F16A708CE47E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{105BFCF1-28A9-4807-B6ED-F16A708CE47E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{105BFCF1-28A9-4807-B6ED-F16A708CE47E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{105BFCF1-28A9-4807-B6ED-F16A708CE47E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C210DAE1-2F8C-4492-A48E-36BB23DE106E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C210DAE1-2F8C-4492-A48E-36BB23DE106E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C210DAE1-2F8C-4492-A48E-36BB23DE106E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C210DAE1-2F8C-4492-A48E-36BB23DE106E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{292F06A8-8668-430A-90AA-A9A7669ED097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{292F06A8-8668-430A-90AA-A9A7669ED097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{292F06A8-8668-430A-90AA-A9A7669ED097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{292F06A8-8668-430A-90AA-A9A7669ED097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9439C50-5591-4EF9-9EFD-670100E01173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9439C50-5591-4EF9-9EFD-670100E01173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9439C50-5591-4EF9-9EFD-670100E01173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9439C50-5591-4EF9-9EFD-670100E01173}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

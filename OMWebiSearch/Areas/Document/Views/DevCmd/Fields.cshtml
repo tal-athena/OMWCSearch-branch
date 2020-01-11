@@ -1,0 +1,17 @@
+﻿@model OMWebiSearch.Areas.ViewModels.StoryPageViewModel
+@{
+    Layout = null;
+}
+
+
+<div class="field">
+    @{
+        var _fields = Model.Story.HeaderFields.ToList();
+        for (var i = 0; i < _fields.Count; i++)
+        {
+            <div class="field-item">
+                @StoryPopUpHeaderFields.RenderControl(_fields[i].FieldID, _fields[i], i, "")
+            </div>
+        }
+    }
+</div>

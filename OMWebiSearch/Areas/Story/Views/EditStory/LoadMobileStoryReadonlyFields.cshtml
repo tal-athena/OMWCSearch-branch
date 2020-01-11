@@ -1,0 +1,17 @@
+﻿@using OMWebiSearch.Areas.Common
+@using OMWebiSearch.Areas.ViewModels
+@using OMWCSearch
+@using OMWSTypes
+@model StoryViewModel
+
+
+@foreach (var headerField in Model.Story.HeaderFields)
+{
+    <li class="storyDisplayFieldItem">
+        <div>
+            <span class=" headerFieldLabel" id="readOnly_@headerField.FieldID">@headerField.Label:</span>
+            <span class=" headerFieldValue">@headerField.FieldValue</span>
+        </div>
+        <div style="clear: both;"></div>
+    </li>
+}

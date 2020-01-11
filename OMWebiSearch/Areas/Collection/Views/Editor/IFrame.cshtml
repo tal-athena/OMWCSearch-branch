@@ -1,0 +1,132 @@
+﻿@using OMWebiSearch.Areas.ViewModels
+@model CollectionViewModel
+
+@{
+	ViewBag.Type = OMWSTypes.EPageType.Collection;
+	ViewBag.Title = "Collection";
+	Layout = "~/Areas/Common/Views/_BaseLayout.cshtml";
+}
+
+<div id="idIframeLoader" class="iframe-loader">
+</div>
+
+@if (ViewBag.IsCompactView == true)
+{
+	<script type="text/javascript">
+
+		$(document.body).css("min-width", "420px", "important");
+
+	</script>
+}
+
+<div class="iframe @(ViewBag.IsCompactView == true ? "compact" : "")">
+	<input id="hdnTopLevelBaseUrl" type="hidden" value="@Url.Content("~/")" />
+
+	<div id="headerM">
+		<div id="commandPanel" class="np">
+			<script type="text/javascript">
+				OMWClientContext.InitStory('@Url.Content("~/")', parseInt('@Model.NavigationPaneNumber'), parseInt('@Model.NavigationPaneItemId'));
+			</script>
+		</div>
+	</div>
+	<div id="mainPanel">
+		<div id="leftPanel" class="leftPanelOpened np" style="width: 0; margin-left: 0">
+			<div id="leftSlidebarM" style="width: 0">
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<script src="@Url.Content("~/Scripts/OMW_InitNavigation.js")" type="text/javascript"></script>
+
+
+		<div id="contentM" class="contentWith1Tap">
+			<div class="panelRight">
+
+				<div id="splitterContentPanel" class="split-pane fixed-right" ng-controller="uiLayoutController">
+
+					<div style="flex: 1; display: flex; flex-direction: column">
+						@Html.Partial("CollectionButtonsView", new ToolbarViewModel() { viewSelectData = ViewBag.ToolbarComboBox, ToolbarItems = ViewBag.ToolbarButtons, IsNewInEnabled = Model.IsNewInEnabled })
+						<div id="centralComponent" ui-layout="{ flow : 'row', dividerSize: dividerSize }" class="ui-layout-panel">
+							<div ui-layout-container size="{{size + 'px'}}" style="height: 0">
+								<input type="hidden" id="hdnSearchContextID" />
+
+								@Html.Hidden("baseURL", Url.Action("Index", "EditStory", new
+																						 {
+																							 area = "Story"
+																						 }))
+
+								@Html.Partial("Fields", new CollectionViewModel()
+														{
+															CollectionId = Model.CollectionId
+														})
+
+								<script type="text/javascript">
+									OMWClientContext.Collection.SetupHeaderFields();
+
+									// TODO
+									//OMWClientContext.UpdateHeaderFields();
+									//$(window).trigger("resize");
+								</script>
+							</div>
+							<div class="contentPanelWrap" ui-layout-container min-size="350px">
+								<div id="contentPanel">
+									@Html.Partial("Contents", new CollectionViewModel()
+															  {
+																  CollectionId = Model.CollectionId
+															  })
+									<script>
+										$(document).ready(function ()
+										{
+											$('#rightSlidebarM').show();
+										});
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="split-pane-divider" id="rightSplitterDivider"></div>
+
+					@*Panel right*@
+					<div id="rightSlidebarM" class="closedRightTab split-pane-component">
+						<div id="rightSlidebarMInner">
+							<div id="rightTogglerBar" class="expandR expandRActive np"></div>
+							<div id="rightPreviewContainer">
+								<div id="previewButtonsContainer">
+									<div class="textButton" onclick="OMWClientContext.OpenFullScreenPreview()" id="optFullScreen">
+										<img src="/OMWebiSearch/Content/Images/full_screen_icon_48.png" class="img125" alt="Full Screen" />
+									</div>
+									<div class="textButton" onclick="OMWClientContext.OpenFullScreenPreview()" id="optEdit">
+										<img src="/OMWebiSearch/Content/Images/edit.png" class="img125" alt="Edit" />
+									</div>
+									<div class="textButton" onclick="OMWClientContext.Font125('searchResultGridDetailView', this)">
+										<img src="/OMWebiSearch/Content/Images/font_size_icon_48.png" class="img125" alt="125%" />
+									</div>
+									<div class="textButton" style="background-color: rgb(206,208,210);" onclick="OMWClientContext.Font100('searchResultGridDetailView', this)">
+										<img src="/OMWebiSearch/Content/Images/font_size_icon_48.png" class="img100" alt="100%" />
+									</div>
+									<div class="textButton" onclick="OMWClientContext.Font75('searchResultGridDetailView', this)">
+										<img src="/OMWebiSearch/Content/Images/font_size_icon_48.png" class="img75" alt="75%" />
+									</div>
+
+									@*<div class="textButton" style="float:right;" onclick="OMWClientContext.IncreaseSpacing('searchResultGridDetailView')">-</div>
+										<div class="textButton" style="float:right;" onclick="OMWClientContext.DecreaseSpacing('searchResultGridDetailView')">+</div>*@
+								</div>
+								<div id="previewHeaderContainer"></div>
+								<div id="searchResultGridDetailView"></div>
+								<div id="iframeContainerStoryH">
+									<img id="iframeStoryHLoader" src="~/Content/Images/ajax-loader.gif" width="36" height="36" alt="loading gif" />
+									<iframe id="iframeStoryH"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="print-footer"></div>
+	</div>
+</div>

@@ -1,0 +1,46 @@
+﻿@using OMWebiSearch.Areas.Common
+@using OMWebiSearch.Areas.ViewModels
+@using OMWCSearch
+@using OMWSTypes
+@model StoryViewModel
+@{
+    //var _fields = Model.Story.HeaderFields.Take(5).ToList();
+    var _fields = Model.Story.HeaderFields.ToList();
+    
+
+    @Html.Hidden("hdnPageType", "Story")
+    
+    List<KeyValuePair<int, string>> renderArray = new List<KeyValuePair<int, string>>();
+    
+    @HeaderFieldsHelpers.PutDataInHTML(_fields, renderArray);
+    
+    <script id="data" type="text/data-template">
+        @Html.Raw(System.Web.Helpers.Json.Encode(renderArray))
+    </script>
+    
+    var controls = _fields;
+    var count = controls.Count();
+    var maxChars = 0; //maximum length of the label
+    controls.ForEach(t => maxChars = UIHelper.GetMaxChars(t.Label, maxChars)); //get max label chars
+    var labelWidth = UIHelper.CalculateLabelWidth(maxChars);
+    
+	<div class="storyHeaderWrap" id="headerSearchController" ng-controller="headerController" style="width: 100%;">
+
+		@Html.Hidden("hdnNumberOfLines", (int) ViewBag.NumberOfLines)
+		@Html.Hidden("hdnMaxFieldsPerLine", (int) ViewBag.MaxFieldsPerLine)
+		@Html.Hidden("hdnHeaderFieldsOrientation", (string) ViewBag.HeaderFieldsOrientation)
+
+		<div class="storyLoader"></div>
+
+		<div class="storyHeader">
+			@for (var i = 0; i < count; i++)
+			{
+				@HeaderFieldsHelpers.RenderControl(controls[i].FieldID, controls[i], i, labelWidth)
+			}
+		</div>
+
+	</div>
+    
+    <input type="hidden" id="hdnStoryShowText" value="@Model.Story.ShowText" />
+
+}

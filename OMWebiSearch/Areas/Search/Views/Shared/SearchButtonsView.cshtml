@@ -1,0 +1,31 @@
+﻿@model OMWebiSearch.Areas.ViewModels.ToolbarViewModel
+
+<input type="hidden" id="hdnToolbarButtonsData" value="@Json.Encode(Model.ToolbarItems)" />
+
+<div class="toolbarWrapper">
+    <div class="toolbarMenu">
+
+        <div id="searchButton" class="toolbarButton toolbarCustomButton"
+             onclick="OMWClientContext.SearchResults.DoSearch(SearchResultsType.Grid);">
+            <img class=" iconBox" src="~/Content/Images/ButtonFind036.png" />
+            <span class="buttonText">Search</span>
+        </div>
+
+        @HeaderFieldsHelpers.RenderToolbar(Model.ToolbarItems)
+
+
+        <div class="toolbarButton toolbarCombobox">
+            <input type="hidden" id="hdnToolbarComboboxValue" value="@Json.Encode(Model.viewSelectData)" />
+            <input type="hidden" id="hdnToolbarComboboxViewID" value="@ViewBag.ViewID" />
+
+            @*Test*@
+            <input type="hidden" id="hdnSelectedViewID" value="3" />
+            <div id="toolbarCombobox" class=""></div>
+        </div>
+
+    </div>
+
+    <div class="toolbarOverlay"></div>
+
+    <div class="clear"></div>
+</div>

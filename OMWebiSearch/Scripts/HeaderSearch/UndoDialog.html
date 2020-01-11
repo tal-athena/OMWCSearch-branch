@@ -1,0 +1,36 @@
+﻿<div id="undo-dialog" class="modalDialog pop-up-dialog" keyboard-navigation keyboard-save="ok()" keyboard-cancel="close()">
+    <div>
+
+        <div class="dialogTitlebar">
+            <h2>Select an object</h2>
+            <a id="closeX" title="Close" class="close" ng-click="close()" tab-order="0"></a>
+        </div>
+
+        <div class="pop-up-body">
+            <div class="pop-up-dialog-table edit-list-field-value-table">
+                <div id="editListFieldGrid" class="grid"
+                     ui-grid="gridOptions"></div>
+
+                <div id="loading" ng-show="showLoadingAnimation" style="display:block;">
+                    <div class="imageHolder"></div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="buttons-row">
+                <button id="btnSave"
+                        ng-click="ok()"
+                        tab-order="2"
+                        class="linkButton save-button">
+                    OK
+                </button>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+</div>
+
+<div class="ui-grid-long-content-pane" ng-if="!!longContent" ng-style="contentPaneStyle">
+	{{longContent}}
+</div>

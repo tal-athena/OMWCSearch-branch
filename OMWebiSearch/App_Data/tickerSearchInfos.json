@@ -1,0 +1,61 @@
+{
+	"tickerSearchInfos": [
+		{
+			"lowId": 11,
+			"systemId": "6290b86c-3cdd-4d52-8340-df3b9bf2aa15",
+			"name": "Eil",
+			"iconUrl": "App_Sprites/icons/10155.png",
+			"category": "Agenturen",
+			"defaultWidth": 5,
+			"defaultDocumentWidth": 0,
+			"tickerCategory": 2
+		},
+		{
+			"lowId": 474,
+			"systemId": "6290b86c-3cdd-4d52-8340-df3b9bf2aa15",
+			"name": "Breaking News",
+			"iconUrl": "App_Sprites/icons/10160.png",
+			"category": "Themen",
+			"defaultWidth": 5,
+			"defaultDocumentWidth": 0,
+			"tickerCategory": 1
+		},
+		{
+			"lowId": 475,
+			"systemId": "6290b86c-3cdd-4d52-8340-df3b9bf2aa15",
+			"name": "Meine Aufgaben und Produkte",
+			"iconUrl": "App_Sprites/icons/10161.png",
+			"category": null,
+			"defaultWidth": 0,
+			"defaultDocumentWidth": 0,
+			"tickerCategory": 3
+		},
+		{
+			"lowId": 11,
+			"systemId": "1eeef1aa-bd18-466d-ae49-d482875505cb",
+			"name": "Eil",
+			"iconUrl": "App_Sprites/icons/34.png",
+			"category": null,
+			"defaultWidth": 0,
+			"defaultDocumentWidth": 0,
+			"tickerCategory": 1
+		}
+	],
+	"tickerStyles": [
+		{
+			"category": 1,
+			"color": 4278228774,
+			"backgroundColor": 4294967295
+		},
+		{
+			"category": 2,
+			"color": 4278228774,
+			"backgroundColor": 4294967295
+		},
+		{
+			"category": 3,
+			"color": 4278228774,
+			"backgroundColor": 4294967295
+		}
+	]
+}

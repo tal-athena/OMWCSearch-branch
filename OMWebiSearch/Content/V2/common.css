@@ -1,0 +1,25 @@
+﻿html
+{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+body
+{
+	padding: 0;
+	margin: 0;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+	body > div
+	{
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}

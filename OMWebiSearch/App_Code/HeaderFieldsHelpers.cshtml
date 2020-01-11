@@ -1,0 +1,588 @@
+﻿@using OMWCSearch
+@using OMWebiSearch.Areas.Common
+@using OMWSTypes
+@using OMWCSearch.Interfaces
+
+@helper RenderToolbar(List<ToolBarButton> toolbar)
+{
+
+	for (int i = 0; i < toolbar.Count; i++)
+	{
+		var item = toolbar[i];
+		<div class="toolbarButton toolbarCustomButton" data-position="@i">
+			<img class="iconBox" src="~/Content/RecordIcons/@item.iconRelativePath" />
+			<span class="buttonText">@item.title</span>
+		</div>
+	}
+
+	<div class="toolbarButton toolbarMoreButton">
+		<span class="buttonText">More</span>
+
+	</div>
+	<div class="toolbarMoreItems">
+		<ul></ul>
+	</div>
+
+	<div class="toolbarOverlay"></div>
+}
+
+
+@helper RenderControl(int index, OMWNamedField control, int i, string labelWidth, bool isStoryDialog = false)
+{
+	if (control.DisplayType == EOMWFieldDisplayType.eOMFieldDisplayType_MultilineText || control.DisplayType == EOMWFieldDisplayType.eOMFieldDisplayType_List || control.InternalLink != null || control.DisplayType == EOMWFieldDisplayType.eOMFieldDisplayType_InternalLink)
+	{
+		<div class="headerFieldContainerMultiline storyRow">
+			@RenderInput(index, control, i, labelWidth, isStoryDialog)
+		</div>
+	}
+	else
+	{
+		<div class="headerFieldContainer storyRow @(control.DisplayType == EOMWFieldDisplayType.eOMFieldDisplayType_Duration ? "overflow-visible": "")">
+			@RenderInput(index, control, i, labelWidth, isStoryDialog)
+		</div>
+	}
+
+}
+
+
+@helper PutDataInHTML(List<OMWNamedField> _fields, List<KeyValuePair<int, string>> renderArray)
+{
+
+foreach (var item in _fields)
+{
+	string val = "";
+	string format = "";
+	if (!String.IsNullOrEmpty(item.Format))
+	{
+		format = "{0:" + item.Format + "}";
+	}
+
+	if (item.DisplayType == EOMWFieldDisplayType.eOMFieldDisplayType_InternalLink || item.InternalLink != null)
+	{
+		val = (!item.FieldValue.IsEmpty) ? (item.FieldValue as OMWValueString).Value : String.Empty;
+		renderArray.Add(new KeyValuePair<int, string>(item.FieldID, val));
+		continue;
+	}
+
+	switch (item.DisplayType)
+	{
+		case EOMWFieldDisplayType.eOMFieldDisplayType_Text:
+			val = (!item.FieldValue.IsEmpty) ? (item.FieldValue as OMWValueString).Value : String.Empty;
+			renderArray.Add(new KeyValuePair<int, string>(item.FieldID, val));
+			break;
+		case EOMWFieldDisplayType.eOMFieldDisplayType_Number:
+			val = (!item.FieldValue.IsEmpty) ? (item.FieldValue as OMWValueInt).Value.ToString() : String.Empty;
+			renderArray.Add(new KeyValuePair<int, string>(item.FieldID, val));
+			break;
+		case EOMWFieldDisplayType.eOMFieldDisplayType_MultilineText:
+			val = (!item.FieldValue.IsEmpty) ? (item.FieldValue as OMWValueString).Value : String.Empty;
+			renderArray.Add(new KeyValuePair<int, string>(item.FieldID, val));
+			break;
+		case EOMWFieldDisplayType.eOMFieldDisplayType_TimeOnly:
+
+
+
+			//val = item.FieldValue.IsEmpty ? string.Empty : string.Format("{0:HH:mm:ss}", (item.FieldValue as OMWValueTime).Value);
+
+			if (String.IsNullOrEmpty(format))
+			{
+				format = "{0:HH:mm:ss}";
+			}
+
+			val = item.FieldValue.IsEmpty ? string.Empty : string.Format(format, (item.FieldValue as OMWValueTime).Value);
+
+			renderArray.Add(new KeyValuePair<int, string>(item.FieldID, val));
+			break;
+		case EOMWFieldDisplayType.eOMFieldDisplayType_Duration:
+			try
+			{
+				val = item.FieldValue.IsEmpty ? string.Empty : string.Format("{0:HH:mm:ss}", (item.FieldValue as OMWValueTime).Value);
+			}
+			catch (Exception) { val = ""; }
+			renderArray.Add(new KeyValuePair<int, string>(item.FieldID, val));
+			break;
+		case EOMWFieldDisplayType.eOMFieldDisplayType_DateTime:
+
+			// val = item.FieldValue.IsEmpty ? string.Empty : string.Format("{0:dd.MM.yyyy HH:mm:ss}", (item.FieldValue as OMWValueDateTime).Value);
+			if (String.IsNullOrEmpty(format))
+			{
+				format = "{0:dd.MM.yyyy HH:mm:ss}";
+			}
+			val = item.FieldValue.IsEmpty ? string.Empty : string.Format(format, (item.FieldValue as OMWValueDateTime).Value);
+
+			renderArray.Add(new KeyValuePair<int, string>(item.FieldID, val));
+			break;
+		case EOMWFieldDisplayType.eOMFieldDisplayType_DateOnly:
+
+
+			// val = item.FieldValue.IsEmpty ? string.Empty : string.Format("{0:dd.MM.yyyy HH:mm:ss}", (item.FieldValue as OMWValueDate).Value);
+
+			if (String.IsNullOrEmpty(format))
+			{
+				format = "{0:dd.MM.yyyy}";
+			}
+
+			val = item.FieldValue.IsEmpty ? string.Empty : string.Format(format, (item.FieldValue as OMWValueDate).Value);
+
+			renderArray.Add(new KeyValuePair<int, string>(item.FieldID, val));
+			break;
+		case EOMWFieldDisplayType.eOMFieldDisplayType_Check:
+			val = (!item.FieldValue.IsEmpty) ? (item.FieldValue as OMWValueInt).Value.ToString() : String.Empty;
+			renderArray.Add(new KeyValuePair<int, string>(item.FieldID, val));
+			break;
+		case EOMWFieldDisplayType.eOMFieldDisplayType_Combo:
+			val = (!item.FieldValue.IsEmpty) ? (item.FieldValue as OMWValueString).Value : String.Empty;
+			renderArray.Add(new KeyValuePair<int, string>(item.FieldID, val));
+			break;
+		case EOMWFieldDisplayType.eOMFieldDisplayType_List:
+			val = (!item.FieldValue.IsEmpty) ? (item.FieldValue as OMWValueString).Value : String.Empty;
+			renderArray.Add(new KeyValuePair<int, string>(item.FieldID, val));
+			break;
+		case EOMWFieldDisplayType.eOMFieldDisplayType_Undefined:
+			val = "";
+			renderArray.Add(new KeyValuePair<int, string>(item.FieldID, val));
+			break;
+		default:
+			val = "";
+			renderArray.Add(new KeyValuePair<int, string>(item.FieldID, val));
+			break;
+	}
+}
+
+}
+
+
+
+
+
+@helper RenderInput(int index, OMWNamedField param, int indexForArray, string labelWidth, bool isStoryDialog = false)
+{
+		<div style="margin-left: 10px; min-width: 300px">
+
+			<header-field-context-menu field-id="@param.FieldID"></header-field-context-menu>
+
+			@if (param.InternalLink != null)
+			{
+				<div class="flex-row">
+					<span class="searchFieldLabel" style="width: @labelWidth; min-width: @labelWidth">@param.Label:</span>
+					<internal-link field-id="@param.FieldID"
+								   title="@param.InternalLink.Title"
+					               doc-id="@param.InternalLink.docIdValue"
+								   base-url="@VirtualPathUtility.ToAbsolute("~/")"
+					               icon-url="@param.InternalLink.iconURL"
+					               type="@(isStoryDialog ? "media-insert" : "collection-header")"
+					               is-read-only="@param.ReadOnly.ToString()"></internal-link>
+				</div>
+			}
+			else
+			{
+				<div class="@param.Label">
+					@switch (param.DisplayType)
+					{
+					case EOMWFieldDisplayType.eOMFieldDisplayType_Undefined:
+
+					break;
+
+					case EOMWFieldDisplayType.eOMFieldDisplayType_Text:
+					string type = "url";
+					if (type == "url")
+					{
+					<span class="searchFieldLabel storyFieldLabelURL" style="width: @labelWidth;" onclick="OMWClientContext.Story.LinkTitleClick(@param.FieldID)">@param.Label:</span>
+					<div class="searchFieldWrap omw-field-type-text">
+						@if (index < 0)
+						{
+
+							var textValue = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueString).Value : String.Empty;
+							<input type="text"
+								   value="@textValue"
+								   class="SearchInputLink SearchInput  updateField"
+								   @ReadOnlyControl(param) />
+						}
+						else
+						{
+							<input type="text"
+								   id="OMW_SearchTextBox_@( param.FieldID.ToString())"
+								   class="SearchInputLink SearchInput  updateField"
+								   ng-model="fieldsList[@indexForArray].Value"
+								   @RenderAttributeIfNotInStoryDialog(isStoryDialog, "ng-model-onblur")
+								   @ReadOnlyControl(param) />
+						}
+						<div class="headerOpenIcons">
+							<a href="javascript:void(0);" tabindex="-1" onclick="OMWClientContext.Header.OpenInputLink(OMW_SearchTextBox_@( index));"><span class="openNewTab" alt="Open in New Tab"></span></a>
+							<a href="javascript:void(0);" tabindex="-1" onclick="OMWClientContext.Header.OpenInputLinkInNewWindow(OMW_SearchTextBox_@( index));"><span class="open" alt="Open"></span></a>
+						</div>
+					</div>
+					}
+					else
+					{
+					<div class="searchFieldLabel">@param.Label:</div>
+					<div class="searchFieldWrap omw-field-type-text">
+						@if (index < 0)
+						{
+							var textValue = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueString).Value : String.Empty;
+							<input type="text" class="SearchInput  updateField" @ReadOnlyControl(param)
+								   value="@textValue" />
+						}
+						else
+						{
+							<input type="text" id="OMW_SearchTextBox_@( param.FieldID.ToString())" class="SearchInput  updateField" @ReadOnlyControl(param) @RenderAttributeIfNotInStoryDialog(isStoryDialog, "ng-model-onblur") ng-model="fieldsList[@indexForArray].Value" />
+						}
+					</div>
+					}
+
+					break;
+					case EOMWFieldDisplayType.eOMFieldDisplayType_DateTime:
+					@HeaderFieldsHelpers.RenderDateTimeControl(param, index, indexForArray, labelWidth, isStoryDialog)
+					;
+					break;
+					case EOMWFieldDisplayType.eOMFieldDisplayType_DateOnly:
+					@RenderDateControl(param, index, indexForArray, labelWidth, isStoryDialog)
+					;
+					break;
+					case EOMWFieldDisplayType.eOMFieldDisplayType_TimeOnly:
+					@RenderTimeControl(param, index, indexForArray, labelWidth, isStoryDialog)
+					;
+					break;
+					case EOMWFieldDisplayType.eOMFieldDisplayType_Duration:
+					@RenderDurationControl(param, index, indexForArray, labelWidth, isStoryDialog)
+					;
+					break;
+					case EOMWFieldDisplayType.eOMFieldDisplayType_Number:
+					<div class="searchFieldLabel" style="width: @labelWidth;">@param.Label:</div>
+					<div class="searchFieldWrap omw-field-type-number">
+						@if (index < 0)
+						{
+							var numValue = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueInt).Value.ToString() : String.Empty;
+							<input type="text" onkeypress="return OMWClientContext.OnlyNumbers();"
+								   class="SearchInput  updateField" value="@numValue"
+								   @ReadOnlyControl(param) />
+						}
+						else
+						{
+							<input type="text" onkeypress="return OMWClientContext.OnlyNumbers();"
+								   id="OMW_SearchNumericTextBox_@( param.FieldID.ToString())"
+								   class="SearchInput  updateField"
+								   @ReadOnlyControl(param)
+								   @RenderAttributeIfNotInStoryDialog(isStoryDialog, "ng-model-onblur")
+								   ng-model="fieldsList[@indexForArray].Value" />
+						}
+
+					</div>
+					break;
+					case EOMWFieldDisplayType.eOMFieldDisplayType_Check:
+					<div class="searchFieldLabel" style="width: @labelWidth;">@param.Label:</div>
+					<div class="searchFieldWrap omw-field-type-checkbox">
+
+						@if (index < 0)
+						{
+							var checkVal = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueInt).Value : 0;
+
+							<input type="checkbox" class="SearchInput cute-checkbox collectionStoryCheckBox"
+								   id="OMW_SearchCheckBox_Edit"
+								   style="width: 15px; height: 15px;" @ReadOnlyControl(param)
+								   data-val="@checkVal.ToString()" />
+							<label for="OMW_SearchCheckBox_Edit" class="cute-label"></label>
+						}
+						else
+						{
+							<input type="checkbox" class="SearchInput cute-checkbox collectionStoryCheckBox"
+								   id="OMW_SearchCheckBox_@( index)" style="width: 15px;"
+								   ng-model="fieldsList[@indexForArray].Value" ng-change="checkBoxValueChange(@indexForArray)" )
+								   ng-true-value="1" ng-false-value="0" @ReadOnlyControl(param) />
+							<label for="OMW_SearchCheckBox_@( index)" class="cute-label"></label>
+						}
+
+					</div>
+					break;
+					case EOMWFieldDisplayType.eOMFieldDisplayType_Combo:
+					<div class="searchFieldLabel" style="width: @labelWidth;">
+						@param.Label:
+						@if (param.Dynamic)
+						{
+							<img id="comboBoxLoader_@( param.FieldID)" src="~/Content/Images/combo-loader.gif" style="display: none; width: 16px; height: 16px; float: right" />
+						}
+					</div>
+					<div class="searchFieldWrap omw-field-type-combobox">
+						@{
+							var comboVal = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueString).Value : String.Empty;
+							<select data-indexofelement="@indexForArray"
+									data-val="@comboVal"
+									data-dynamic="@param.Dynamic"
+									class="customCombobox"
+									@ReadOnlyControl(param)
+									id="comboBox_@( param.FieldID)">
+
+								@if (!param.Dynamic)
+								{
+									foreach (var item in param.SelectionList)
+									{
+										<option value="@item">@item</option>
+									}
+								}
+								else
+								{
+									<option value="@comboVal">@comboVal</option>
+								}
+
+							</select> }
+					</div>
+					break;
+
+					case EOMWFieldDisplayType.eOMFieldDisplayType_List:
+					<div class="searchFieldLabel" style="width: @labelWidth;">@param.Label:</div>
+					<div class="searchFieldWrap">
+						@{
+							var listVal = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueString).Value : String.Empty;
+
+							<header-field param-field-type="collection"
+										  param-enable-suggestions="true"
+										  param-static-suggestions="Opt1 val;Opt2 val;Opt3 val"
+										  param-is-dynamic="true"
+										  param-is-read-only="@param.ReadOnly.ToString().ToLower()"
+										  param-control-id="list_@param.FieldID"
+										  param-original-value="{{::fieldsList[@indexForArray].Value}}"
+										  param-fields-list="fieldsList"
+										  param-field-id="@param.FieldID"
+										  param-on-edit-click="editListHeaderField"
+										  @RenderAttributeIfInStoryDialog(isStoryDialog, "param-is-story-dialog=\"true\"")>
+							</header-field> }
+					</div>
+					break;
+
+					case EOMWFieldDisplayType.eOMFieldDisplayType_MultilineText:
+
+					<div class="searchFieldLabel" style="width: @labelWidth;">@param.Label:</div>
+					<div class="searchFieldWrap omw-field-type-multiline">
+
+						@if (index < 0)
+						{
+							<textarea class="multilineInput"
+									  rows="@param.NumberOfLines" @ReadOnlyControl(param)>
+															@( (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueString).Value : String.Empty)
+														</textarea>
+						}
+						else
+						{
+							<textarea class="multilineInput"
+									  id="OMW_SearchMultiline_@( param.FieldID)"
+									  rows="@param.NumberOfLines" @ReadOnlyControl(param)
+									  max-rows="10"
+									  textarea-toolbar
+									  ng-model="fieldsList[@indexForArray].Value">
+															@( (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueString).Value : String.Empty)
+														</textarea>
+						}
+					</div>
+
+
+					break;
+				}
+			</div>
+		}
+
+	</div>
+}
+
+@helper ReadOnlyControl(OMWNamedField param)
+{
+	if (param.ReadOnly != null && param.ReadOnly == true)
+								{
+		<text> readonly disabled </text>
+	}
+
+							}
+
+
+							@helper RenderDateControl(OMWNamedField param, int index, int indexForArray, string labelWidth, bool isStoryDialog)
+							{
+	<div class="searchFieldLabel" style="width:@labelWidth;">@param.Label:</div>
+	<div class="searchFieldWrap omw-field-type-date">
+
+		@if (index < 0)
+		{
+			var dateVal = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueDate).Value.ToString() : String.Empty;
+
+			<input type="text"
+				   data-index="@indexForArray"
+				   class="SearchInput updateDateField dateFormatPicker"
+				   data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)"
+				   @ReadOnlyControl(param)
+			       datepicker
+			       @RenderAttributeIfInStoryDialog(isStoryDialog, "data-noupdate")
+				   data-val="@dateVal"
+				   data-locale="@UIHelper.GetLocale()"
+				   readonly="true" />
+		}
+		else
+		{
+			<input type="text"
+				   id="OMW_SearchDatePickerDate_@(param.FieldID.ToString())"
+				   data-index="@indexForArray"
+				   class="SearchInput updateDateField dateFormatPicker"
+				   data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)"
+				   @ReadOnlyControl(param)
+			       datepicker
+			       @RenderAttributeIfInStoryDialog(isStoryDialog, "data-noupdate")
+				   data-locale="@UIHelper.GetLocale()"
+				   ng-model="fieldsList[@indexForArray].Value"
+				   readonly="true" />
+		}
+
+	</div>
+}
+
+@helper RenderTimeControl(OMWNamedField param, int index, int indexForArray, string labelWidth, bool isStoryDialog)
+{
+	<div class="searchFieldLabel" style="width:@labelWidth;">@param.Label:</div>
+	<div class="searchFieldWrap omw-field-type-time">
+		@{
+			var dateVal = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueTime).Value.ToString() : String.Empty;
+
+			 if (index < 0)
+			 {
+				 if (isStoryDialog)
+				 {
+					 <input type="text"
+					        @ReadOnlyControl(param)
+					        custom-time
+					        step="1"
+					        class="SearchInput updateDateField timeFormat"
+					        data-val="@dateVal"/>
+				 }
+				 else
+				 {
+					 <input type="text"
+					        data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)"
+					        @ReadOnlyControl(param)
+					        class="SearchInput updateDateField timeFormat"
+					        timepicker
+					        @RenderAttributeIfInStoryDialog(isStoryDialog, "data-noupdate")
+					        data-val="@dateVal"
+					        data-locale="@UIHelper.GetLocale()"
+					        readonly="true"/>
+				 }
+			 }
+			 else
+			 {
+				 if (isStoryDialog)
+				 {
+					 <input type="time"
+					        id="OMW_SearchDatePickerTime_@( param.FieldID.ToString())"
+					        @ReadOnlyControl(param)
+					        custom-time
+					        step="1"
+					        class="SearchInput updateDateField timeFormat"
+					        data-val="@dateVal"/>
+				 }
+				 else
+				 {
+					 <input type="text"
+					        id="OMW_SearchDatePickerTime_@( param.FieldID.ToString())"
+					        data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)"
+					        @ReadOnlyControl(param)
+					        class="SearchInput updateDateField timeFormat"
+					        ng-model="fieldsList[@indexForArray].Value"
+					        timepicker
+					        @RenderAttributeIfInStoryDialog(isStoryDialog, "data-noupdate")
+					        data-locale="@UIHelper.GetLocale()"
+					        readonly="true"/>
+				 }
+			 }
+		}
+	</div>
+}
+
+
+@helper RenderDateTimeControl(OMWNamedField param, int index, int indexForArray, string labelWidth, bool isStoryDialog)
+{
+
+	<div class="searchFieldLabel" style="width:@labelWidth;">@param.Label:</div>
+	<div class="searchFieldWrap omw-field-type-date-time">
+		@if (index < 0)
+		{
+			var dateVal = (!param.FieldValue.IsEmpty) ? (param.FieldValue as OMWValueDateTime).Value.ToString() : String.Empty;
+
+			<input type="text"
+				   class="SearchInput updateDateField"
+				   @ReadOnlyControl(param)
+				   datetimepicker
+				   data-val="@dateVal"
+				   data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)"
+				   data-locale="@UIHelper.GetLocale()"
+				   readonly="true" />
+		}
+		else
+		{
+			<input type="text"
+				   id="OMW_SearchDatePicker_@(param.FieldID.ToString())"
+				   class="SearchInput updateDateField"
+				   @ReadOnlyControl(param)
+				   ng-model="fieldsList[@indexForArray].Value"
+			       datetimepicker
+			       @RenderAttributeIfInStoryDialog(isStoryDialog, "data-noupdate")
+				   data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)"
+				   data-locale="@UIHelper.GetLocale()"
+				   readonly="true" />
+		}
+	</div>
+}
+
+
+@helper RenderDurationControl(OMWNamedField param, int index, int indexForArray, string labelWidth, bool isStoryDialog)
+{
+	string value = "";
+	try
+	{
+		value = param.FieldValue.IsEmpty ? string.Empty : string.Format("{0:HH:mm:ss}", (param.FieldValue as OMWValueTime).Value);
+	}
+	catch { }
+	<div class="searchFieldLabel" style="width:@labelWidth;">@param.Label: </div>
+	<div class="searchFieldWrap omw-field-type-duration" style="width: calc(100% @(labelWidth != "auto" ? " - " + labelWidth : "") - 10px)">
+		@if (index < 0)
+		{
+			if (isStoryDialog)
+			{
+				<input type="text" class="SearchInput updateDateField" @ReadOnlyControl(param) custom-duration data-val="@value" />
+			}
+			else
+			{
+				<input type="text"
+					   class="SearchInput updateDateField"
+					   @ReadOnlyControl(param)
+					   durationpicker
+					   data-val="@value"
+					   data-locale="@UIHelper.GetLocale()"
+					   data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)" />
+			}
+		}
+		else
+		{
+			if (isStoryDialog)
+			{
+				<input type="text" class="SearchInput updateDateField" @ReadOnlyControl(param) id="OMW_SearchDuration_@(param.FieldID.ToString())" custom-duration data-val="@value" />
+			}
+			else
+			{
+				<input type="text"
+					   id="OMW_SearchDuration_@( param.FieldID.ToString())"
+					   class="SearchInput updateDateField"
+					   @ReadOnlyControl(param)
+					   ng-model="fieldsList[@indexForArray].Value"
+					   data-val="@value"
+					   durationpicker
+					   data-locale="@UIHelper.GetLocale()"
+					   data-dateformat="@DateTimeCSJSConvert.CSToJS(param.Format)" />
+			}
+		}
+	</div>
+}
+
+@helper RenderAttributeIfInStoryDialog(bool isStoryDialog, string attribute)
+{
+	@(isStoryDialog ? attribute : "")
+}
+
+@helper RenderAttributeIfNotInStoryDialog(bool isStoryDialog, string attribute)
+{
+	@(isStoryDialog ? new HtmlString("") : new HtmlString(attribute))
+}

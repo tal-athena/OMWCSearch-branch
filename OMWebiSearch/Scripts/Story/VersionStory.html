@@ -1,0 +1,45 @@
+﻿
+<div id="version-story-dialog" class="modalDialog pop-up-dialog">
+    <div>
+
+        <div class="dialogTitlebar">
+            <h2>Version History</h2>
+            <a id="closeX" title="Close" class="close" ng-click="close()"></a>
+        </div>
+
+        <div class="pop-up-body">
+            <div class="content">
+                <div class="content-item-1">
+                    <div class="pop-up-dialog-table edit-list-field-value-table">
+                        <div id="editListFieldGrid" class="grid"
+                             ui-grid="gridOptions" ui-grid-resize-columns></div>
+
+                    </div>
+                </div>
+
+                <div class="content-item-2">
+                    <textarea id="versionStoryText" name="versionStoryText" contenteditable="true"></textarea>
+                </div>
+            </div>
+
+            <div id="loading" ng-show="showLoadingAnimation" style="display:block;">
+                <div class="imageHolder"></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="buttons-row">
+                <button ng-click="restore()"
+                        class="linkButton">
+                    Restore Version
+                </button>
+                <button ng-click="delete()"
+                        class="linkButton">
+                    Delete Version
+                </button>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+</div>
+

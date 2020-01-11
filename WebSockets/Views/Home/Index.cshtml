@@ -1,0 +1,163 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@*<script type="text/javascript">
+        var ws;
+        $(document).ready(function () {
+            $("#btnConnect").click(function () {
+                $("#spanStatus").text("connecting");
+                ws = new WebSocket("ws://" + window.location.host +
+                    "/api/WebSocket");
+                ws.onopen = function () {
+                    $("#spanStatus").text("connected");
+                };
+                ws.onmessage = function (evt) {
+                    $("#spanStatus").text(evt.data);
+                };
+                ws.onerror = function (evt) {
+                    $("#spanStatus").text(evt.message);
+                };
+                ws.onclose = function () {
+                    $("#spanStatus").text("disconnected");
+                };
+            });
+            $("#btnSend").click(function () {
+                if (ws.readyState == WebSocket.OPEN) {
+                    ws.send($("#textInput").val());
+                }
+                else {
+                    $("#spanStatus").text("Connection is closed");
+                }
+            });
+            $("#btnDisconnect").click(function () {
+                ws.close();
+            });
+        });
+    </script>
+
+    <input type="button" value="Connect" id="btnConnect" />
+    <input type="button" value="Disconnect" id="btnDisconnect" /><br />
+    <input type="text" id="textInput" />
+    <input type="button" value="Send" id="btnSend" /><br />
+    <span id="spanStatus">(display)</span>*@
+
+
+@*<script type="text/javascript">
+
+    var webSocket;
+    var username;
+
+    //Check is made if the WebSocket are supported on the browser or not and if they are supported then connection is established. As this is the sample i have created the
+    //connection here on page load but you can also create the connection on click of the join button.
+    function WebSocketTest() {
+        if ("WebSocket" in window) {
+            webSocket = new WebSocket("ws://" + window.location.host + "/WebSocket");
+            webSocket.onopen = function () {
+                //Connection Opened, if you want to do something while opening connection do it here
+                console.log('opened');
+            };
+        }
+        else {
+            alert("WebSocket NOT supported by your Browser!");
+        }
+    }
+
+    WebSocketTest();
+
+    //When user joins in by clicking in Join button, Message is sent to the server that the user joined in which is broadcasted for every user
+    function JoinUser() {
+        username = document.getElementById('txtUserName').value;
+        var joinButton = document.getElementById('btnJoin');
+        webSocket.send("JOINEDSAMPLECHAT:" + username);
+        username.disabled = true;
+        joinButton.disabled = true;
+    }
+
+    //When the user writes it any message it is broadcasted to every user.
+    function SendMessage() {
+        var message = document.getElementById('txtMessage').value;
+        webSocket.send("BROADCAST:" + username + ": " + message);
+    }
+
+    //Fired when message is recieved from the server and displays it in the user window.
+    webSocket.onmessage = function (evt) {
+        var messages = document.getElementById('divMessages');
+        var received_msg = evt.data;
+        messages.innerHTML = messages.innerHTML + received_msg + '</br>';
+    };
+
+    //fired when the connection gets closed
+    webSocket.onclose = function () {
+        alert("Connection is closed");
+    };
+
+    //Fired when there comes some error in the web socket connection
+    webSocket.onerror = function(error)
+    {
+        console.error(error.data);
+    };
+
+</script>
+
+
+
+   Username:
+<input type="text" id="txtUserName" />&nbsp;<input type="button" id="btnJoin" value="Join" onclick="JoinUser();" /><br />
+    Message:
+<input type="text" id="txtMessage" />&nbsp;<input type="button" id="btnBroadcaseMessage" value="Broadcast" onclick="SendMessage();" /><br />
+<div id="divMessages">
+</div>*@
+
+
+<div id="messages"></div>
+<input type="text" id="message" />
+<button id="send">Send</button>
+<button id="close">Close</button>
+<script>
+    var ws;
+
+    function wireEvents() {
+        $('#send').click(function () {
+            var message = $('#message');
+            ws.send(message.val());
+            message.val('');
+        });
+
+        $('#close').click(function () {
+            ws.close();
+        });
+    }
+
+    function createSpan(text) {
+        var span = document.createElement('span');
+        span.innerHTML = text + '<br />';
+        return span;
+    }
+
+    window.onload = function () {
+        var messages = $('#messages');
+        var url = 'ws://' + window.location.host + '/WebSocketsServer2.ashx';
+
+        ws = new WebSocket(url);
+
+        ws.onerror = function (e) {
+            console.error(e);
+        };
+        
+        ws.onopen = function (e) {
+            console.log('opened');
+            console.log(e);
+        };
+
+        ws.onmessage = function (e) {
+            console.log(e);
+            messages.append(createSpan(e.data.toString()));
+        };
+
+        ws.onclose = function (e) {
+            console.log('closed ', e);
+        };
+
+        wireEvents();
+    }
+</script>
